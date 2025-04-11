@@ -1,0 +1,768 @@
+@prefix hi: <http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51> a owl:Ontology .
+
+hi:Adaptiveness a hi:Capability,
+        owl:NamedIndividual .
+
+hi:Adult a hi:Human,
+        owl:NamedIndividual .
+
+hi:BDI a hi:Capability,
+        owl:NamedIndividual .
+
+hi:Child a hi:Human,
+        owl:NamedIndividual .
+
+hi:Collaboration-based a hi:InteractionMethod,
+        owl:NamedIndividual .
+
+hi:Collaborativeness a hi:Capability,
+        owl:NamedIndividual .
+
+hi:Communication a hi:Capability,
+        owl:NamedIndividual .
+
+hi:Contribution-based a hi:InteractionMethod,
+        owl:NamedIndividual .
+
+hi:Designer a hi:Human,
+        owl:NamedIndividual .
+
+hi:Explainability a hi:InteractionTask,
+        owl:NamedIndividual .
+
+hi:Generating a hi:ProcessingTask,
+        owl:NamedIndividual .
+
+hi:Hybrid a hi:ProcessingMethod,
+        owl:NamedIndividual .
+
+hi:Intelligent_System a hi:ArtificialAgent,
+        owl:NamedIndividual .
+
+hi:Learning a hi:ProcessingTask,
+        owl:NamedIndividual .
+
+hi:Multimodal a hi:InteractionMethod,
+        owl:NamedIndividual .
+
+hi:Neuro-symbolic a hi:ProcessingMethod,
+        owl:NamedIndividual .
+
+hi:Non-cooperative a hi:InteractionMethod,
+        owl:NamedIndividual .
+
+hi:Question-Answering a hi:InteractionTask,
+        owl:NamedIndividual .
+
+hi:Reasoning a hi:ProcessingTask,
+        owl:NamedIndividual .
+
+hi:Recommendation a hi:InteractionTask,
+        owl:NamedIndividual .
+
+hi:Responsibility a hi:Capability,
+        owl:NamedIndividual .
+
+hi:Robot a hi:ArtificialAgent,
+        owl:NamedIndividual .
+
+hi:Single-agent a hi:InteractionMethod,
+        owl:NamedIndividual .
+
+hi:Statistical a hi:ProcessingMethod,
+        owl:NamedIndividual .
+
+hi:Symbolic a hi:ProcessingMethod,
+        owl:NamedIndividual .
+
+hi:Teacher a hi:Human,
+        owl:NamedIndividual .
+
+hi:Transforming a hi:ProcessingTask,
+        owl:NamedIndividual .
+
+hi:Transparency a hi:Capability,
+        owl:NamedIndividual .
+
+hi:capability a owl:ObjectProperty ;
+    rdfs:domain hi:Actor ;
+    rdfs:range hi:Capability .
+
+hi:context a owl:ObjectProperty ;
+    rdfs:domain hi:Scenario ;
+    rdfs:range hi:Context .
+
+hi:domain a owl:ObjectProperty ;
+    rdfs:domain hi:Scenario ;
+    rdfs:range hi:Domain .
+
+hi:endgoal a owl:ObjectProperty ;
+    rdfs:domain hi:Scenario ;
+    rdfs:range hi:Endgoal .
+
+hi:hasEthicalConsideration a owl:ObjectProperty ;
+    rdfs:domain hi:Scenario ;
+    rdfs:range hi:EthicalConsideration .
+
+hi:hasInteraction a owl:ObjectProperty ;
+    rdfs:domain hi:Scenario ;
+    rdfs:range hi:Interaction .
+
+hi:inScenario a owl:ObjectProperty ;
+    rdfs:domain hi:Actor ;
+    rdfs:range hi:Scenario ;
+    rdfs:subPropertyOf owl:topObjectProperty .
+
+hi:informationMethod a owl:ObjectProperty ;
+    rdfs:domain hi:InformationProcessing ;
+    rdfs:range hi:ProcessingMethod .
+
+hi:interactingAgent a owl:ObjectProperty ;
+    rdfs:domain hi:Interaction ;
+    rdfs:range hi:Actor .
+
+hi:interactionMethod a owl:ObjectProperty ;
+    rdfs:domain hi:Interaction ;
+    rdfs:range hi:InteractionMethod .
+
+hi:interactionTask a owl:ObjectProperty ;
+    rdfs:domain hi:Interaction ;
+    rdfs:range hi:InteractionTask .
+
+hi:processingInformation a owl:ObjectProperty ;
+    rdfs:domain hi:Actor ;
+    rdfs:range hi:InformationProcessing .
+
+hi:processingTask a owl:ObjectProperty ;
+    rdfs:domain hi:InformationProcessing ;
+    rdfs:range hi:ProcessingTask .
+
+hi:Context a owl:Class .
+
+hi:Domain a owl:Class .
+
+hi:Endgoal a owl:Class .
+
+hi:EthicalConsideration a owl:Class .
+
+hi:ArtificialAgent a owl:Class ;
+    rdfs:subClassOf hi:Actor .
+
+hi:InformationProcessing a owl:Class .
+
+hi:Human a owl:Class ;
+    rdfs:subClassOf hi:Actor .
+
+hi:Interaction a owl:Class .
+
+hi:InteractionTask a owl:Class .
+
+hi:ProcessingMethod a owl:Class .
+
+hi:ProcessingTask a owl:Class .
+
+hi:Actor a owl:Class .
+
+hi:InteractionMethod a owl:Class .
+
+hi:Scenario a owl:Class .
+
+hi:Capability a owl:Class .
+
+#  New classes
+hi:TrustState a owl:Class ;
+    rdfs:subClassOf hi:Context .
+
+hi:ExplanationStrategy a owl:Class ;
+    rdfs:subClassOf hi:InteractionTask .
+
+hi:ArgumentationSystem a owl:Class ;
+    rdfs:subClassOf hi:ArtificialAgent .
+
+hi:TeamingStrategy a owl:Class ;
+    rdfs:subClassOf hi:Context .
+
+hi:CoactiveTeamDesign a owl:Class ;
+    rdfs:subClassOf hi:System .
+
+hi:RelationalModel a owl:Class ;
+    rdfs:subClassOf hi:Context .
+
+hi:HybridTeam a owl:Class ;
+    rdfs:subClassOf hi:Actor .
+
+hi:EthicalFramework a owl:Class ;
+    rdfs:subClassOf hi:Context .
+
+hi:ValueSensitiveDesign a owl:Class ;
+    rdfs:subClassOf hi:Context .
+
+hi:EducationalFeedback a owl:Class ;
+    rdfs:subClassOf hi:Interaction .
+
+hi:AdaptationStrategy a owl:Class ;
+    rdfs:subClassOf hi:Context .
+
+hi:TransparencyTool a owl:Class ;
+    rdfs:subClassOf hi:System .
+
+hi:BiometricSignal a owl:Class ;
+    rdfs:subClassOf hi:Context .
+
+hi:TrustCalibrationModel a owl:Class ;
+    rdfs:subClassOf hi:System .
+
+hi:EthicalNorm a owl:Class ;
+    rdfs:subClassOf hi:EthicalConsideration .
+
+hi:UserRole a owl:Class ;
+    rdfs:subClassOf hi:Context .
+
+hi:ControlMode a owl:Class ;
+    rdfs:subClassOf hi:Context .
+
+hi:GovernanceFramework a owl:Class ;
+    rdfs:subClassOf hi:Context .
+
+hi:StakeholderRole a owl:Class ;
+    rdfs:subClassOf hi:Actor .
+
+hi:EmbodiedAgent a owl:Class ;
+    rdfs:subClassOf hi:ArtificialAgent .
+
+hi:SensorData a owl:Class ;
+    rdfs:subClassOf hi:Context .
+
+hi:BiasMitigationStrategy a owl:Class ;
+    rdfs:subClassOf hi:Context .
+
+# Object Properties 
+hi:usedInScenario a owl:ObjectProperty ;
+    rdfs:domain hi:System ;
+    rdfs:range hi:Scenario .
+
+hi:providesExplanation a owl:ObjectProperty ;
+    rdfs:domain hi:System ;
+    rdfs:range hi:ExplanationStrategy .
+
+hi:receivesFeedback a owl:ObjectProperty ;
+    rdfs:domain hi:System ;
+    rdfs:range hi:EducationalFeedback .
+
+hi:collaboratesWith a owl:ObjectProperty ;
+    rdfs:domain hi:Actor ;
+    rdfs:range hi:Actor .
+
+hi:hasTeamingStrategy a owl:ObjectProperty ;
+    rdfs:domain hi:Scenario ;
+    rdfs:range hi:TeamingStrategy .
+
+hi:hasRelationalModel a owl:ObjectProperty ;
+    rdfs:domain hi:Scenario ;
+    rdfs:range hi:RelationalModel .
+
+hi:usesFramework a owl:ObjectProperty ;
+    rdfs:domain hi:Scenario ;
+    rdfs:range hi:EthicalFramework .
+
+hi:appliesNorm a owl:ObjectProperty ;
+    rdfs:domain hi:System ;
+    rdfs:range hi:EthicalNorm .
+
+hi:customizesExplanationFor a owl:ObjectProperty ;
+    rdfs:domain hi:System ;
+    rdfs:range hi:UserRole .
+
+hi:sharesControlWith a owl:ObjectProperty ;
+    rdfs:domain hi:System ;
+    rdfs:range hi:Human .
+
+hi:perceivesAffordance a owl:ObjectProperty ;
+    rdfs:domain hi:EmbodiedAgent ;
+    rdfs:range hi:Context .
+
+hi:buildsAwarenessFrom a owl:ObjectProperty ;
+    rdfs:domain hi:System ;
+    rdfs:range hi:SensorData .
+
+hi:employsStrategy a owl:ObjectProperty ;
+    rdfs:domain hi:Scenario ;
+    rdfs:range hi:BiasMitigationStrategy .
+
+# Data Properties
+hi:trustScore a owl:DatatypeProperty ;
+    rdfs:domain hi:Context ;
+    rdfs:range xsd:float .
+
+hi:explanationType a owl:DatatypeProperty ;
+    rdfs:domain hi:ExplanationStrategy ;
+    rdfs:range xsd:string .
+
+hi:feedbackContent a owl:DatatypeProperty ;
+    rdfs:domain hi:EducationalFeedback ;
+    rdfs:range xsd:string .
+
+hi:adaptationType a owl:DatatypeProperty ;
+    rdfs:domain hi:AdaptationStrategy ;
+    rdfs:range xsd:string .
+
+hi:normLabel a owl:DatatypeProperty ;
+    rdfs:domain hi:EthicalNorm ;
+    rdfs:range xsd:string .
+
+hi:roleName a owl:DatatypeProperty ;
+    rdfs:domain hi:UserRole ;
+    rdfs:range xsd:string .
+
+hi:controlLevel a owl:DatatypeProperty ;
+    rdfs:domain hi:ControlMode ;
+    rdfs:range xsd:string .
+
+hi:sourcePaper a owl:AnnotationProperty .
+
+hi:ArgSystem_Justice2023 a hi:ArgumentationSystem ;
+    hi:usedInScenario hi:Scenario_LegalAid ;
+    hi:providesExplanation hi:Explanation_Contrastive ;
+    hi:trustScore "0.85"^^xsd:float ;
+    hi:sourcePaper "10.3233/FAIA230098" .
+
+hi:Explanation_Contrastive a hi:ExplanationStrategy ;
+    hi:explanationType "contrastive" ;
+    hi:sourcePaper "10.3233/FAIA230098" .
+
+hi:Scenario_LegalAid a hi:Scenario ;
+    hi:context hi:Trust_Context_Justice ;
+    hi:endgoal hi:Goal_TrustworthyAdvice ;
+    hi:sourcePaper "10.3233/FAIA230098" .
+
+hi:Trust_Context_Justice a hi:TrustState ;
+    hi:trustScore "0.85"^^xsd:float ;
+    hi:sourcePaper "10.3233/FAIA230098" .
+
+hi:Goal_TrustworthyAdvice a hi:Endgoal ;
+    rdfs:label "User receives trustworthy legal advice" ;
+    hi:sourcePaper "10.3233/FAIA230098" .
+
+hi:AutoSystem_CoPilot2022 a hi:ArtificialAgent ;
+    hi:usedInScenario hi:Scenario_AVUrban ;
+    hi:capability hi:Collaborativeness ;
+    hi:sourcePaper "10.3233/FAIA220190" .
+
+hi:Scenario_AVUrban a hi:Scenario ;
+    hi:context hi:Teaming_Context_UrbanDriving ;
+    hi:hasTeamingStrategy hi:Strategy_MutualPredictability ;
+    hi:endgoal hi:Goal_SafeNavigation ;
+    hi:sourcePaper "10.3233/FAIA220190" .
+
+hi:Teaming_Context_UrbanDriving a hi:Context ;
+    rdfs:label "Urban autonomous driving scenario" ;
+    hi:sourcePaper "10.3233/FAIA220190" .
+
+hi:Strategy_MutualPredictability a hi:TeamingStrategy ;
+    rdfs:label "Mutual predictability in coactive team design" ;
+    hi:sourcePaper "10.3233/FAIA220190" .
+
+hi:Goal_SafeNavigation a hi:Endgoal ;
+    rdfs:label "Safe and collaborative driving" ;
+    hi:sourcePaper "10.3233/FAIA220190" .
+
+hi:Team_Hybrid2023 a hi:HybridTeam ;
+    hi:inScenario hi:Scenario_TeamCrowdResearch ;
+    hi:capability hi:Collaboration-based ;
+    hi:sourcePaper "10.3233/FAIA220207" .
+
+hi:Scenario_TeamCrowdResearch a hi:Scenario ;
+    hi:context hi:Relational_Context_Discussion ;
+    hi:endgoal hi:Goal_CrowdInsight ;
+    hi:sourcePaper "10.3233/FAIA220207" .
+
+hi:Relational_Context_Discussion a hi:RelationalModel ;
+    rdfs:label "Relational context among hybrid team agents" ;
+    hi:sourcePaper "10.3233/FAIA220207" .
+
+hi:Goal_CrowdInsight a hi:Endgoal ;
+    rdfs:label "Extract knowledge from human-AI discussions" ;
+    hi:sourcePaper "10.3233/FAIA220207" .
+
+hi:Scenario_ElderCareEthics a hi:Scenario ;
+    hi:usesFramework hi:Framework_EthicsVSD ;
+    hi:endgoal hi:Goal_EthicalSupport ;
+    hi:context hi:Context_ElderCare ;
+    hi:sourcePaper "10.3233/FAIA230076" .
+
+hi:Framework_EthicsVSD a hi:EthicalFramework ;
+    rdfs:label "Ethics in Value Sensitive Design" ;
+    hi:sourcePaper "10.3233/FAIA230076" .
+
+hi:Goal_EthicalSupport a hi:Endgoal ;
+    rdfs:label "Provide ethical decision support" ;
+    hi:sourcePaper "10.3233/FAIA230076" .
+
+hi:Context_ElderCare a hi:Context ;
+    rdfs:label "Care environments for the elderly" ;
+    hi:sourcePaper "10.3233/FAIA230076" .
+
+hi:System_IMLTutor a hi:Intelligent_System ;
+    hi:usedInScenario hi:Scenario_EduFeedback ;
+    hi:providesExplanation hi:Explanation_ProgressiveHinting ;
+    hi:receivesFeedback hi:Feedback_EduSession1 ;
+    hi:sourcePaper "10.3233/FAIA230079" .
+
+hi:Scenario_EduFeedback a hi:Scenario ;
+    hi:context hi:Context_LanguageLearning ;
+    hi:endgoal hi:Goal_KnowledgeGain ;
+    hi:sourcePaper "10.3233/FAIA230079" .
+
+hi:Context_LanguageLearning a hi:Context ;
+    rdfs:label "Language learning through adaptive systems" ;
+    hi:sourcePaper "10.3233/FAIA230079" .
+
+hi:Explanation_ProgressiveHinting a hi:ExplanationStrategy ;
+    hi:explanationType "step-wise hints" ;
+    hi:sourcePaper "10.3233/FAIA230079" .
+
+hi:Feedback_EduSession1 a hi:EducationalFeedback ;
+    hi:feedbackContent "Needs more grammar support" ;
+    hi:sourcePaper "10.3233/FAIA230079" .
+
+hi:Goal_KnowledgeGain a hi:Endgoal ;
+    rdfs:label "Improve learner understanding" ;
+    hi:sourcePaper "10.3233/FAIA230079" .
+
+hi:Scenario_JusticeWorkshop a hi:Scenario ;
+    hi:context hi:Context_TransparencyDesign ;
+    hi:endgoal hi:Goal_CitizenTrust ;
+    hi:sourcePaper "10.3233/FAIA230082" .
+
+hi:Tool_ExplainPanel a hi:TransparencyTool ;
+    rdfs:label "Explainability Panel" ;
+    hi:sourcePaper "10.3233/FAIA230082" .
+
+hi:Context_TransparencyDesign a hi:Context ;
+    rdfs:label "Participatory design context with stakeholders" ;
+    hi:sourcePaper "10.3233/FAIA230082" .
+
+hi:Goal_CitizenTrust a hi:Endgoal ;
+    rdfs:label "Increase citizen trust in justice AI" ;
+    hi:sourcePaper "10.3233/FAIA230082" .
+
+hi:System_TrustBot a hi:Intelligent_System ;
+    hi:usedInScenario hi:Scenario_TrustCalFlight ;
+    hi:capability hi:Adaptiveness ;
+    hi:sourcePaper "10.3233/FAIA230088" .
+
+hi:Scenario_TrustCalFlight a hi:Scenario ;
+    hi:context hi:Context_Biometric ;
+    hi:endgoal hi:Goal_TrustAlignment ;
+    hi:sourcePaper "10.3233/FAIA230088" .
+
+hi:Context_Biometric a hi:BiometricSignal ;
+    rdfs:label "Real-time trust sensing via biometrics" ;
+    hi:sourcePaper "10.3233/FAIA230088" .
+
+hi:Goal_TrustAlignment a hi:Endgoal ;
+    rdfs:label "Align trust levels via calibration model" ;
+    hi:sourcePaper "10.3233/FAIA230088" .
+
+hi:System_NegotiatorX a hi:Intelligent_System ;
+    hi:appliesNorm hi:Norm_RespectPrivacy ;
+    hi:usedInScenario hi:Scenario_UnionTalks ;
+    hi:sourcePaper "10.3233/FAIA230091" .
+
+hi:Norm_RespectPrivacy a hi:EthicalNorm ;
+    hi:normLabel "Respect for personal data in labor disputes" ;
+    hi:sourcePaper "10.3233/FAIA230091" .
+
+hi:Scenario_UnionTalks a hi:Scenario ;
+    hi:context hi:Context_LaborNegotiation ;
+    hi:endgoal hi:Goal_Agreement ;
+    hi:sourcePaper "10.3233/FAIA230091" .
+
+hi:Context_LaborNegotiation a hi:Context ;
+    rdfs:label "Union negotiation scenario" ;
+    hi:sourcePaper "10.3233/FAIA230091" .
+
+hi:Goal_Agreement a hi:Endgoal ;
+    rdfs:label "Reach ethical agreement between parties" ;
+    hi:sourcePaper "10.3233/FAIA230091" .
+
+hi:System_ExplainMed a hi:Intelligent_System ;
+    hi:customizesExplanationFor hi:Role_Doctor ;
+    hi:usedInScenario hi:Scenario_ClinicalAid ;
+    hi:sourcePaper "10.3233/FAIA240202" .
+
+hi:Role_Doctor a hi:UserRole ;
+    hi:roleName "Medical professional" ;
+    hi:sourcePaper "10.3233/FAIA240202" .
+
+hi:Scenario_ClinicalAid a hi:Scenario ;
+    hi:context hi:Context_HospitalCare ;
+    hi:endgoal hi:Goal_ExplainDecision ;
+    hi:sourcePaper "10.3233/FAIA240202" .
+
+hi:Context_HospitalCare a hi:Context ;
+    rdfs:label "AI in hospital-based decision-making" ;
+    hi:sourcePaper "10.3233/FAIA240202" .
+
+hi:Goal_ExplainDecision a hi:Endgoal ;
+    rdfs:label "Explain automated medical decisions" ;
+    hi:sourcePaper "10.3233/FAIA240202" .
+
+hi:System_CobotLine a hi:Intelligent_System ;
+    hi:sharesControlWith hi:Operator_Anna ;
+    hi:usedInScenario hi:Scenario_FactoryAssist ;
+    hi:sourcePaper "10.3233/FAIA240203" .
+
+hi:Operator_Anna a hi:Human ;
+    rdfs:label "Line Operator Anna" ;
+    hi:sourcePaper "10.3233/FAIA240203" .
+
+hi:Scenario_FactoryAssist a hi:Scenario ;
+    hi:context hi:ControlMode_Mixed ;
+    hi:endgoal hi:Goal_EfficientAssembly ;
+    hi:sourcePaper "10.3233/FAIA240203" .
+
+hi:ControlMode_Mixed a hi:ControlMode ;
+    hi:controlLevel "semi-autonomous" ;
+    hi:sourcePaper "10.3233/FAIA240203" .
+
+hi:Goal_EfficientAssembly a hi:Endgoal ;
+    rdfs:label "Boost assembly efficiency and safety" ;
+    hi:sourcePaper "10.3233/FAIA240203" .
+
+hi:Scenario_AIGovernance a hi:Scenario ;
+    hi:context hi:Context_MultiStakeholder ;
+    hi:endgoal hi:Goal_Accountability ;
+    hi:usesFramework hi:Framework_ResponsibleAI ;
+    hi:sourcePaper "10.3233/FAIA240204" .
+
+hi:Context_MultiStakeholder a hi:Context ;
+    rdfs:label "Governance by multiple stakeholders" ;
+    hi:sourcePaper "10.3233/FAIA240204" .
+
+hi:Framework_ResponsibleAI a hi:GovernanceFramework ;
+    rdfs:label "Responsible AI Policy Framework" ;
+    hi:sourcePaper "10.3233/FAIA240204" .
+
+hi:Goal_Accountability a hi:Endgoal ;
+    rdfs:label "Ensure accountability in decision making" ;
+    hi:sourcePaper "10.3233/FAIA240204" .
+
+hi:System_HomeBot a hi:EmbodiedAgent ;
+    hi:perceivesAffordance hi:Affordance_Graspable ;
+    hi:usedInScenario hi:Scenario_DailyAssistance ;
+    hi:sourcePaper "10.3389/frobt.2023.1152595" .
+
+hi:Affordance_Graspable a hi:Context ;
+    rdfs:label "Objects graspable by the robot" ;
+    hi:sourcePaper "10.3389/frobt.2023.1152595" .
+
+hi:Scenario_DailyAssistance a hi:Scenario ;
+    hi:context hi:Affordance_Graspable ;
+    hi:endgoal hi:Goal_AutonomyHome ;
+    hi:sourcePaper "10.3389/frobt.2023.1152595" .
+
+hi:Goal_AutonomyHome a hi:Endgoal ;
+    rdfs:label "Enable autonomous living support" ;
+    hi:sourcePaper "10.3389/frobt.2023.1152595" .
+
+hi:System_FireResponseAI a hi:Intelligent_System ;
+    hi:buildsAwarenessFrom hi:Sensor_BuildingSmoke ;
+    hi:usedInScenario hi:Scenario_FireAlert ;
+    hi:sourcePaper "hhai-2021_paper_96" .
+
+hi:Sensor_BuildingSmoke a hi:SensorData ;
+    rdfs:label "Smoke sensor from building system" ;
+    hi:sourcePaper "hhai-2021_paper_96" .
+
+hi:Scenario_FireAlert a hi:Scenario ;
+    hi:context hi:Context_FireResponse ;
+    hi:endgoal hi:Goal_EvacuationSafety ;
+    hi:sourcePaper "hhai-2021_paper_96" .
+
+hi:Context_FireResponse a hi:Context ;
+    rdfs:label "AI for emergency awareness" ;
+    hi:sourcePaper "hhai-2021_paper_96" .
+
+hi:Goal_EvacuationSafety a hi:Endgoal ;
+    rdfs:label "Evacuate building efficiently" ;
+    hi:sourcePaper "hhai-2021_paper_96" .
+
+hi:Scenario_BiasWorkshop a hi:Scenario ;
+    hi:context hi:Context_MiniCoDeEthics ;
+    hi:endgoal hi:Goal_BiasAwareness ;
+    hi:employsStrategy hi:Strategy_PreAudit ;
+    hi:sourcePaper "hhai-2022_paper_58" .
+
+hi:Context_MiniCoDeEthics a hi:Context ;
+    rdfs:label "Roleplay-based ethics workshop" ;
+    hi:sourcePaper "hhai-2022_paper_58" .
+
+hi:Strategy_PreAudit a hi:BiasMitigationStrategy ;
+    rdfs:label "Pre-deployment audit for bias" ;
+    hi:sourcePaper "hhai-2022_paper_58" .
+
+hi:Goal_BiasAwareness a hi:Endgoal ;
+    rdfs:label "Make stakeholders aware of algorithmic bias" ;
+    hi:sourcePaper "hhai-2022_paper_58" .
+
+
+hi:Explanation_Contrastive hi:sourcePaper "10.3233/FAIA230098", "10.3233/FAIA230079" .
+
+
+hi:Role_Doctor hi:sourcePaper "10.3233/FAIA240202", "10.3233/FAIA240204" .
+
+
+hi:Norm_RespectPrivacy hi:sourcePaper "10.3233/FAIA230091", "10.3233/FAIA240204" .
+
+
+hi:Context_Biometric hi:sourcePaper "10.3233/FAIA230088", "10.3233/FAIA240202" .
+
+hi:Scenario_BiasWorkshop hi:hasEthicalConsideration hi:Norm_RespectPrivacy .
+hi:Scenario_AIGovernance hi:hasEthicalConsideration hi:Norm_RespectPrivacy .
+
+hi:Human owl:disjointWith hi:ArtificialAgent .
+hi:ArtificialAgent owl:disjointWith hi:System .
+hi:System owl:disjointWith hi:Interaction .
+hi:Context owl:disjointWith hi:Endgoal, hi:Domain, hi:EthicalConsideration .
+hi:ProcessingTask owl:disjointWith hi:ProcessingMethod .
+hi:InteractionTask owl:disjointWith hi:InteractionMethod .
+
+hi:EmbodiedAgent rdfs:subClassOf hi:ArtificialAgent .
+hi:ArtificialAgent rdfs:subClassOf hi:Actor .
+hi:Human rdfs:subClassOf hi:Actor .
+
+
+hi:endgoal a owl:FunctionalProperty .
+hi:context a owl:FunctionalProperty .
+hi:capability a owl:ObjectProperty ; owl:inverseOf hi:possessesCapability .
+hi:possessesCapability a owl:ObjectProperty ; rdfs:domain hi:Capability ; rdfs:range hi:Actor .
+
+hi:interactingAgent owl:inverseOf hi:inScenario .
+hi:hasInteraction owl:inverseOf hi:partOfScenario .
+
+
+hi:Scenario a owl:Class ;
+    owl:equivalentClass [
+        a owl:Class ;
+        owl:intersectionOf (
+            [ a owl:Restriction ; owl:onProperty hi:endgoal ; owl:someValuesFrom hi:Endgoal ]
+            [ a owl:Restriction ; owl:onProperty hi:context ; owl:someValuesFrom hi:Context ]
+        )
+    ] .
+
+hi:System a owl:Class ;
+    owl:equivalentClass [
+        a owl:Class ;
+        owl:intersectionOf (
+            [ a owl:Restriction ; owl:onProperty hi:usedInScenario ; owl:someValuesFrom hi:Scenario ]
+            [ a owl:Restriction ; owl:onProperty hi:providesExplanation ; owl:someValuesFrom hi:ExplanationStrategy ]
+        )
+    ] .
+
+hi:EmbodiedAgent a owl:Class ;
+    owl:equivalentClass [
+        a owl:Class ;
+        owl:intersectionOf (
+            hi:ArtificialAgent
+            [ a owl:Restriction ; owl:onProperty hi:perceivesAffordance ; owl:someValuesFrom hi:Context ]
+        )
+    ] .
+
+
+hi:StakeholderRole a owl:Class ;
+    owl:equivalentClass [
+        a owl:Class ;
+        owl:unionOf (hi:Human hi:ArtificialAgent)
+    ] .
+
+hi:EthicallyAwareScenario a owl:Class ;
+    rdfs:subClassOf hi:Scenario ;
+    owl:equivalentClass [
+        a owl:Class ;
+        owl:intersectionOf (
+            hi:Scenario
+            [ a owl:Restriction ; owl:onProperty hi:hasEthicalConsideration ; owl:someValuesFrom hi:EthicalConsideration ]
+        )
+    ] .
+
+
+hi:TrustCalibratingSystem a owl:Class ;
+    rdfs:subClassOf hi:System ;
+    owl:equivalentClass [
+        a owl:Class ;
+        owl:intersectionOf (
+            hi:System
+            [ a owl:Restriction ; owl:onProperty hi:buildsAwarenessFrom ; owl:someValuesFrom hi:SensorData ]
+            [ a owl:Restriction ; owl:onProperty hi:capability ; owl:hasValue hi:Adaptiveness ]
+        )
+    ] .
+
+
+hi:System_TrustBot a hi:TrustCalibratingSystem ;
+    owl:sameAs [
+        a hi:Intelligent_System ;
+        hi:usedInScenario hi:Scenario_TrustCalFlight ;
+        hi:buildsAwarenessFrom hi:Context_Biometric ;
+        hi:capability hi:Adaptiveness
+    ] .
+
+hi:TeachingAgent a owl:Class ;
+    owl:equivalentClass [
+        a owl:Class ;
+        owl:intersectionOf (
+            hi:ArtificialAgent
+            [ a owl:Restriction ; owl:onProperty hi:receivesFeedback ; owl:someValuesFrom hi:EducationalFeedback ]
+        )
+    ] .
+
+hi:Role_Doctor a hi:UserRole, hi:StakeholderRole .
+
+hi:Scenario a owl:Class ;
+    owl:equivalentClass [
+        a owl:Class ;
+        owl:intersectionOf (
+            [ a owl:Restriction ; owl:onProperty hi:endgoal ; owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ; owl:onClass hi:Endgoal ]
+            [ a owl:Restriction ; owl:onProperty hi:context ; owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ; owl:onClass hi:Context ]
+        )
+    ] .
+
+hi:System_ExplainMed a hi:Intelligent_System ;
+    hi:customizesExplanationFor hi:Role_Doctor ;
+    hi:providesExplanation hi:Explanation_Contrastive ;
+    hi:usedInScenario hi:Scenario_ClinicalAid ;
+    hi:sourcePaper "10.3233/FAIA240202" ;
+    owl:sameAs [
+        a hi:TeachingAgent ;
+        hi:receivesFeedback hi:Feedback_EduSession1
+    ] .
+
+hi:sharesControlWith a owl:SymmetricProperty .
+hi:collaboratesWith a owl:SymmetricProperty .
+hi:providesExplanation a owl:FunctionalProperty .
+hi:customizesExplanationFor a owl:InverseFunctionalProperty .
+
+hi:Actor a owl:Class ;
+    owl:disjointWith [
+        a owl:Class ;
+        owl:unionOf (hi:Context hi:System hi:Scenario)
+    ] .
+
+hi:Interaction a owl:Class ;
+    owl:disjointWith hi:Scenario .
+
+hi:Norm_RespectPrivacy a hi:EthicalNorm, hi:EthicalConsideration ;
+    hi:normLabel "Respect for personal data in labor disputes" .
+
+hi:Affordance_Graspable a hi:Context ;
+    rdfs:label "Objects graspable by the robot" ;
+    owl:deprecated false .
+
+hi:Scenario_BiasWorkshop a hi:EthicallyAwareScenario .
+hi:Scenario_AIGovernance a hi:EthicallyAwareScenario .
+

@@ -1,0 +1,123 @@
+SPARQL Queries:
+
+Query 1:
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT DISTINCT ?instance ?class ?property ?range
+WHERE {
+  # Get all instances and their classes (excluding blank nodes)
+  ?instance a ?class .
+  FILTER(!isBlank(?instance))
+  FILTER(!isBlank(?class))
+  
+  
+  # Get all properties of the instance (excluding blank node properties)
+  ?instance ?property ?value .
+  FILTER(!isBlank(?property))
+  FILTER(!isBlank(?value))
+ 
+  
+  # Get range of the property (direct or inferred)
+  {
+    # Direct range declarations
+    { ?property rdfs:range ?range }
+    UNION
+    # Range from domain/range restrictions
+    { 
+      ?restriction a owl:Restriction ;
+                   owl:onProperty ?property ;
+                   owl:allValuesFrom|owl:someValuesFrom ?range .
+      FILTER(!isBlank(?restriction))
+    }
+  }
+  FILTER(!isBlank(?range))
+  
+  
+  # We have written the following section to remove the system triples as they are not relevant to understand the KG
+  FILTER(!STRSTARTS(STR(?property), "http://www.w3.org/2000/01/rdf-schema#"))
+  FILTER(!STRSTARTS(STR(?property), "http://www.w3.org/1999/02/22-rdf-syntax-ns#"))
+  FILTER(!STRSTARTS(STR(?property), "http://www.w3.org/2002/07/owl#"))
+}
+ORDER BY DESC(?instance && ?property)
+LIMIT 1000
+
+
+Query 2:Instance-Paper Analysis: Class Membership & Shared Citation Counts
+
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX hi: <http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/> 
+PREFIX dbr: <http://dbpedia.org/resource/> 
+PREFIX wikidata: <http://www.wikidata.org/entity/> 
+PREFIX schema: <http://schema.org/> 
+PREFIX orkg: <https://orkg.org/resource/> 
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#> 
+PREFIX hi1: <http://www.owl-ontologies.com/hi#> 
+PREFIX hi2: <http://www.semanticweb.org/hi_ontology#> 
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+
+SELECT ?instance ?class ?sourcePaper (COUNT(DISTINCT ?otherInstance) AS ?sharedPaperCount)
+WHERE {
+  # Get the instance, its class, and source paper
+  ?instance a ?class ;
+            hi:sourcePaper ?sourcePaper .
+  
+  # Count other instances that share the same paper
+  OPTIONAL {
+    ?otherInstance hi:sourcePaper ?sourcePaper .
+    FILTER(?otherInstance != ?instance)
+  }
+  
+  # Filter to only include instances in the hi: namespace
+ FILTER(STRSTARTS(STR(?instance), STR(hi:)) && 
+         STRSTARTS(STR(?class), STR(hi:)))
+}
+GROUP BY ?instance ?class ?sourcePaper
+ORDER BY DESC(?sharedPaperCount) ?instance
+
+Query 3: Instance count per class:
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?class (COUNT(?instance) AS ?instanceCount)
+
+WHERE {
+  ?instance a ?class .
+  FILTER(!isBlank(?class)) 
+}
+GROUP BY ?class ?classLabel
+ORDER BY DESC(?instanceCount)
+
+Query 4:The same was done for property count
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?class  (COUNT(DISTINCT ?p) AS ?propertyCount)
+WHERE {
+  ?instance a ?class .
+  ?instance ?p ?o .
+  OPTIONAL { ?class rdfs:label ?classLabel }
+  FILTER(!isBlank(?class) && !STRSTARTS(STR(?p), "http://www.w3.org/"))
+}
+GROUP BY ?class ?classLabel
+ORDER BY DESC(?propertyCount)
+LIMIT 20
+
+
+Query 5:And also for Property Usage count, this allows the user to 
+understand how often and how important some properties are to the KG.
+
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?property ?propertyLabel (COUNT(*) AS ?usageCount)
+WHERE {
+  ?s ?property ?o .
+  OPTIONAL { ?property rdfs:label ?propertyLabel }
+  FILTER(!STRSTARTS(STR(?property), "http://www.w3.org/"))
+}
+GROUP BY ?property ?propertyLabel
+ORDER BY DESC(?usageCount)
+LIMIT 50
+

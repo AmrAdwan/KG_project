@@ -1,0 +1,5733 @@
+@prefix : <http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51#> .
+@prefix dbr: <http://dbpedia.org/resource/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix hi: <http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/> .
+@prefix hi1: <http://www.owl-ontologies.com/hi#> .
+@prefix hi2: <http://www.semanticweb.org/hi_ontology#> .
+@prefix mod: <https://w3id.org/mod#> .
+@prefix ns1: <http://webprotege.stanford.edu/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbr: <http://dbpedia.org/resource/> .
+@prefix wikidata: <http://www.wikidata.org/entity/> .
+@prefix schema: <http://schema.org/> .
+@prefix orkg: <https://orkg.org/resource/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+
+ns1:R4MKmIsAkyWIwBuSOAtZN6 a ns1:R8s5V56zgX2LzaYacaq4k4r,
+        owl:NamedIndividual ;
+    rdfs:label "Simulation"@en .
+
+ns1:R72gfbkwERIZ1VGEkLgtTU1 a ns1:R8s5V56zgX2LzaYacaq4k4r,
+        owl:NamedIndividual ;
+    rdfs:label "A/B Testing"@en .
+
+ns1:R7L3KLrm8cLtFdMAA89UmTk a [ a owl:Restriction ;
+            owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+            owl:onClass hi:Actor ;
+            owl:onProperty ns1:R9WgEN4qpLkvWgswO8jPyWR ],
+        hi:ArtificialAgent,
+        owl:NamedIndividual ;
+    rdfs:label "Multi_Agent"@en ;
+    hi:interactionMethod ns1:RcBYlApBcbGhmcXc0b6LTz .
+
+ns1:R7Pi79vGgBDsoAu5EYTCyRj a ns1:R974KWLHbQiSe4BiDbpTZif,
+        owl:NamedIndividual ;
+    rdfs:label "Contribution_Based_Agent"@en ;
+    hi:interactionMethod hi:Contribution-based .
+
+ns1:R7PrkJQokJKieMcN54TaT0E a [ a owl:Restriction ;
+            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onClass hi:Actor ;
+            owl:onProperty ns1:R9WgEN4qpLkvWgswO8jPyWR ],
+        hi:ArtificialAgent,
+        owl:NamedIndividual ;
+    rdfs:label "Single_Agent"@en ;
+    hi:interactionMethod hi:Single-agent .
+
+ns1:R7WbVZEfJz4r7ePsnQ0FQZh a owl:ObjectProperty ;
+    rdfs:label "hasSettings"@en ;
+    rdfs:domain ns1:RBX4tpiW9NTr9B05tfGd7xz ;
+    rdfs:range ns1:R83sQEGoISKKTq0Qqbt0921 ;
+    rdfs:subPropertyOf owl:topObjectProperty .
+
+ns1:R7aogVbO7lLktPAkTQUVdJH a ns1:R8s5V56zgX2LzaYacaq4k4r,
+        owl:NamedIndividual ;
+    rdfs:label "UserStudy"@en .
+
+ns1:R7q54aFhAWY3QwwvSNABowg a owl:Class ;
+    rdfs:label "H0"@en ;
+    rdfs:subClassOf ns1:RBo1xAvYzFirAJHx2vQQvb .
+
+ns1:R84h9Bb0TuNDNEJghHNk29T a ns1:R28UKpkU3djqDapS0PZmOg,
+        owl:NamedIndividual ;
+    rdfs:label "Bias_Mitigation"@en .
+
+ns1:R86BegvsfDHQigRLwfC1dr0 a ns1:RCUnyALP3vdjgbyXAktIoiv,
+        owl:NamedIndividual ;
+    rdfs:label "Unsupervised_Learning"@en .
+
+ns1:R880dNPsEsv3HpLT4TB86wh a [ a owl:Restriction ;
+            owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onClass hi:EthicalConsideration ;
+            owl:onProperty hi:hasEthicalConsideration ],
+        hi:ArtificialAgent,
+        owl:NamedIndividual ;
+    rdfs:label "Privacy_Auctioning_Learning_Agent"@en ;
+    hi:domain ns1:R7WivB5O3CgSGkUWI5zHduF .
+
+ns1:R8ZnaDFdOTdKufmfLcz3s9v a ns1:R8s5V56zgX2LzaYacaq4k4r,
+        owl:NamedIndividual ;
+    rdfs:label "Survey"@en .
+
+ns1:R8sDBic9BdVEMNIRlYUx2f5 a ns1:RCUnyALP3vdjgbyXAktIoiv,
+        owl:NamedIndividual ;
+    rdfs:label "Supervised_Learning"@en .
+
+ns1:R8tCYvzUcOztUf65XaBnqfq a ns1:R974KWLHbQiSe4BiDbpTZif,
+        owl:NamedIndividual ;
+    rdfs:label "Collaborative_Based_Agent"@en ;
+    hi:capability hi:Communication ;
+    hi:interactionMethod hi:Collaboration-based .
+
+ns1:R908pFLH6ON2q8F2nn0lBhU a owl:ObjectProperty ;
+    rdfs:label "hasGeneralisation"@en ;
+    rdfs:domain ns1:R7N8xlW48mWQqtwfhpbr4P3 ;
+    rdfs:range ns1:R7EdzGFV5LjYcLBwMjvuBX ;
+    rdfs:subPropertyOf owl:topObjectProperty .
+
+ns1:R93B7YvBIhZbqOPUDRfrrup a hi:ArtificialAgent,
+        owl:NamedIndividual ;
+    rdfs:label "ChatBot"@en .
+
+ns1:R96zg06ozYmrGBo01CICCqx a ns1:R28UKpkU3djqDapS0PZmOg,
+        owl:NamedIndividual ;
+    rdfs:label "Discrimination_Mitigation"@en .
+
+ns1:R9Sa5KMjYzR6HxeRAEWK8LU a owl:ObjectProperty ;
+    rdfs:label "hasHumanCalibration"@en ;
+    rdfs:domain ns1:R7N8xlW48mWQqtwfhpbr4P3 ;
+    rdfs:range ns1:RDq1ITXxRilqlyh1HVfW6az ;
+    rdfs:subPropertyOf owl:topObjectProperty .
+
+ns1:R9t3OSvVyo0NOuO5qrUEjF2 a ns1:RCUnyALP3vdjgbyXAktIoiv,
+        owl:NamedIndividual ;
+    rdfs:label "Reinforcement_Learning"@en .
+
+ns1:RBYGcEdiqSGFoa8wQOU6mK1 a owl:ObjectProperty ;
+    rdfs:label "hasEvaluation"@en ;
+    rdfs:domain ns1:RBX4tpiW9NTr9B05tfGd7xz ;
+    rdfs:range ns1:R8s5V56zgX2LzaYacaq4k4r ;
+    rdfs:subPropertyOf owl:topObjectProperty .
+
+ns1:RBt3f14U17YzpMxE3DHS3uy a ns1:RCUnyALP3vdjgbyXAktIoiv,
+        owl:NamedIndividual ;
+    rdfs:label "Deep_Learning"@en .
+
+ns1:RByjZuCE0k3BkgIO9ZKSxX3 a owl:Class ;
+    rdfs:label "SurveillanceRisk"@en ;
+    rdfs:subClassOf hi:EthicalConsideration .
+
+ns1:RC8driYRv5AOPWH4Lt3ko6D a owl:Class ;
+    rdfs:label "Trust"@en ;
+    rdfs:subClassOf hi:EthicalConsideration .
+
+ns1:RDEcnEWlY2ZLpMfUmaSHRSC a ns1:RCUnyALP3vdjgbyXAktIoiv,
+        owl:NamedIndividual ;
+    rdfs:label "Semi_Supervised_Learning"@en .
+
+ns1:RDcjNPbWt1bOdG6SLzh9UiZ a hi:ArtificialAgent,
+        owl:NamedIndividual ;
+    rdfs:label "Neuro_Symbolic_Agent"@en ;
+    ns1:RDz2FfIVCEqGm2E2j26hCfi ns1:RXkgCia5v1alxR8D7bBem3 ;
+    hi:informationMethod hi:Symbolic ;
+    hi:interactionMethod hi:Neuro-symbolic .
+
+ns1:RDwJXy6GSrchjXmSoSOjDW9 a owl:Class ;
+    rdfs:label "H1"@en ;
+    rdfs:subClassOf ns1:RBo1xAvYzFirAJHx2vQQvb .
+
+ns1:RDy1UJTgmMoXOfcaK2dqVm a ns1:RCTj2GYfzj9eiGHTj3Bx2gN,
+        owl:NamedIndividual ;
+    rdfs:label "Rule_Based"@en .
+
+ns1:RDz2FfIVCEqGm2E2j26hCfi a owl:ObjectProperty ;
+    rdfs:label "hasAIComponent"@en ;
+    rdfs:domain hi:ArtificialAgent ;
+    rdfs:range ns1:R7N8xlW48mWQqtwfhpbr4P3 ;
+    rdfs:subPropertyOf owl:topObjectProperty .
+
+ns1:RFey7NG0fEaPrGHufx0eEF a [ a owl:Restriction ;
+            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onClass hi:Actor ;
+            owl:onProperty ns1:R9WgEN4qpLkvWgswO8jPyWR ],
+        hi:ArtificialAgent,
+        owl:NamedIndividual ;
+    rdfs:label "NonCooperative_Agent"@en ;
+    hi:interactionMethod hi:Non-cooperative .
+
+ns1:RWXyXG4krYAJHhwLMXuE3q a [ a owl:Restriction ;
+            owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+            owl:onClass hi:InformationProcessing ;
+            owl:onProperty hi:processingInformation ],
+        hi:ArtificialAgent,
+        owl:NamedIndividual ;
+    rdfs:label "MultiModal_Agent"@en ;
+    hi:interactionMethod hi:Multimodal .
+
+ns1:RebnghGk4j45zEi40Aw09C a ns1:RCTj2GYfzj9eiGHTj3Bx2gN,
+        owl:NamedIndividual ;
+    rdfs:label "MDP"@en .
+
+ns1:Rh0LMNrw7IO0r7eUiJy2X2 a ns1:RCTj2GYfzj9eiGHTj3Bx2gN,
+        owl:NamedIndividual ;
+    rdfs:label "Decision_Tree"@en .
+
+ns1:Rhcx9g2XJ866Uy96SB8ntP a owl:ObjectProperty ;
+    rdfs:label "hasHypothesis"@en ;
+    rdfs:domain ns1:RBX4tpiW9NTr9B05tfGd7xz ;
+    rdfs:range ns1:RBo1xAvYzFirAJHx2vQQvb ;
+    rdfs:subPropertyOf owl:topObjectProperty .
+
+ns1:Rt8aWJ1SH2RxB3efTPphXw a ns1:R8s5V56zgX2LzaYacaq4k4r,
+        owl:NamedIndividual ;
+    rdfs:label "Observation"@en .
+
+ns1:Rzkf0AOFUz3fh8sPA0WpUA a owl:Class ;
+    rdfs:label "PrivacyProtection"@en ;
+    rdfs:subClassOf hi:EthicalConsideration .
+
+hi1: a owl:Ontology ;
+    mod:createdWith <https://chowlk.linkeddata.es/> .
+
+hi1:AssistingAssistant a hi1:Interaction,
+        owl:NamedIndividual ;
+    hi1:interactingAgent hi1:Cobot ;
+    hi1:interactionTask hi1:ActionSuggestion,
+        hi1:InformationProvision .
+
+hi1:BotTrader a hi1:ArtificialAgent,
+        owl:NamedIndividual ;
+    hi1:capability hi1:SpeculativeTrading ;
+    hi1:hasTargetUser hi1:Trader ;
+    hi1:inScenario hi1:Trading .
+
+hi1:COMPAS a hi1:ArtificialAgent,
+        owl:NamedIndividual ;
+    hi1:inScenario hi1:CriminalAnalysis ;
+    hi1:processingInformation hi1:CriminalRecords .
+
+hi1:ChatGPT a hi1:ArtificialAgent,
+        owl:NamedIndividual ;
+    hi1:inScenario hi1:TrustAnalysis .
+
+hi1:Collaboration a hi1:Interaction,
+        owl:NamedIndividual ;
+    hi1:interactingAgent hi1:GamePlayer ;
+    hi1:interactionMethod hi1:SimulationTheoryOfMind ;
+    hi1:interactionTask hi1:CommonGround .
+
+hi1:ConsentTheory a hi1:GovernanceApproach,
+        owl:NamedIndividual .
+
+hi1:CooperationRateDQNAgents a hi1:InformationProcessing,
+        owl:NamedIndividual .
+
+hi1:CostOfErrors a hi1:EthicalConsideration,
+        owl:NamedIndividual ;
+    hi1:lacks hi1:CostSensitivity .
+
+hi1:DecisionMaking a hi1:ProcessingTask,
+        owl:NamedIndividual .
+
+hi1:DeepInverseRL a hi1:ArtificialAgent,
+        owl:NamedIndividual ;
+    hi1:inScenario hi1:AddExpertData .
+
+hi1:DiCE a hi1:ArtificialAgent,
+        owl:NamedIndividual ;
+    hi1:ensures hi1:Diversity,
+        hi1:Plausibility ;
+    hi1:inScenario hi1:CounterfactualScenario ;
+    hi1:processingInformation hi1:PredictionModelFeatures .
+
+hi1:ExplainingPrediction a hi1:Interaction,
+        owl:NamedIndividual ;
+    hi1:interactingAgent hi1:ProtoTree ;
+    hi1:interactionMethod hi1:DecisionPath ;
+    hi1:interactionTask hi1:FeatureExplainability .
+
+hi1:GDPR a hi1:GovernanceApproach,
+        owl:NamedIndividual ;
+    hi1:enforces hi1:Contestability,
+        hi1:Transparency .
+
+hi1:HOLDA a hi1:ArtificialAgent,
+        owl:NamedIndividual ;
+    hi1:capability hi1:BestModelMaintenance ;
+    hi1:inScenario hi1:FedaratingData ;
+    hi1:processingInformation hi1:FederatedLearning .
+
+hi1:HumanInLoop a hi1:Human,
+        owl:NamedIndividual ;
+    hi1:inScenario hi1:ValueBased ;
+    hi1:processingInformation hi1:MLmodel .
+
+hi1:Hybrid a hi1:ProcessingMethod,
+        owl:NamedIndividual .
+
+hi1:InteractiveInterface a hi1:Interaction,
+        owl:NamedIndividual ;
+    hi1:interactingAgent hi1:FeatureSpaceNavigator,
+        hi1:UserLimitTechKnowledge ;
+    hi1:interactionMethod hi1:AdaptableDecisionBoundary,
+        hi1:FeatureExploration ;
+    hi1:interactionTask hi1:FeatureExplainability .
+
+hi1:NarxCare a hi1:ArtificialAgent,
+        owl:NamedIndividual ;
+    hi1:inScenario hi1:HealthAnalysis .
+
+hi1:ObjectiveTaskSolving a hi1:ProcessingTask,
+        owl:NamedIndividual ;
+    hi1:influences hi1:AlgorithmAppreciation .
+
+hi1:PerceivedExpertise a hi1:EthicalMetric,
+        owl:NamedIndividual ;
+    hi1:influences hi1:PerceivedRisk,
+        hi1:PerceivedUsefulness,
+        hi1:UserTrust .
+
+hi1:PrincipleOfPublicity a hi1:DemocraticApproach,
+        owl:NamedIndividual .
+
+hi1:PublicReason a hi1:DemocraticApproach,
+        owl:NamedIndividual .
+
+hi1:RawIsianJusticeAsFairness a hi1:GovernanceApproach,
+        owl:NamedIndividual .
+
+hi1:ResponsibilityGap a hi1:EthicalConsideration,
+        owl:NamedIndividual ;
+    hi1:lacks hi1:Accountability .
+
+hi1:SubjectiveTaskSolving a hi1:ProcessingTask,
+        owl:NamedIndividual ;
+    hi1:influences hi1:AlgorithmAversion .
+
+hi1:TLACE a hi1:ArtificialAgent,
+        owl:NamedIndividual ;
+    hi1:ensures hi1:Similarity ;
+    hi1:inScenario hi1:CounterfactualScenario .
+
+hi1:VisualInterface a hi1:Interaction,
+        owl:NamedIndividual ;
+    hi1:interactingAgent hi1:Prospector ;
+    hi1:interactionMethod hi1:FeatureExploration ;
+    hi1:interactionTask hi1:FeatureExplainability .
+
+hi1:capability a owl:ObjectProperty ;
+    rdfs:label "capability" ;
+    rdfs:domain hi1:Actor ;
+    rdfs:range hi1:Capability .
+
+hi1:context a owl:ObjectProperty ;
+    rdfs:label "context" ;
+    rdfs:domain hi1:Scenario ;
+    rdfs:range hi1:Context .
+
+hi1:contributesTo a owl:ObjectProperty ;
+    rdfs:label "contributes to" ;
+    rdfs:domain hi1:EthicalMetric ;
+    rdfs:range hi1:UserAttitude .
+
+hi1:domain a owl:ObjectProperty ;
+    rdfs:label "domain" ;
+    rdfs:domain hi1:Scenario ;
+    rdfs:range hi1:Domain .
+
+hi1:endgoal a owl:ObjectProperty ;
+    rdfs:label "endgoal" ;
+    rdfs:domain hi1:Scenario ;
+    rdfs:range hi1:Endgoal .
+
+hi1:enforces a owl:ObjectProperty ;
+    rdfs:label "enforces" ;
+    rdfs:domain hi1:GovernanceApproach ;
+    rdfs:range hi1:EthicalMetric .
+
+hi1:ensures a owl:ObjectProperty ;
+    rdfs:label "ensures" .
+
+hi1:hasEthicalConsideration a owl:ObjectProperty ;
+    rdfs:label "has ethical consideration" ;
+    rdfs:domain hi1:Scenario ;
+    rdfs:range hi1:EthicalConsideration .
+
+hi1:hasGovernanceApproach a owl:ObjectProperty ;
+    rdfs:label "has governance approach" ;
+    rdfs:domain hi1:ArtificialAgent ;
+    rdfs:range hi1:GovernanceApproach .
+
+hi1:hasInteraction a owl:ObjectProperty ;
+    rdfs:label "has interaction" ;
+    rdfs:domain hi1:Scenario ;
+    rdfs:range hi1:Interaction .
+
+hi1:hasTargetUser a owl:ObjectProperty ;
+    rdfs:label "has target user" .
+
+hi1:inScenario a owl:ObjectProperty ;
+    rdfs:label "in scenario" ;
+    rdfs:domain hi1:Actor ;
+    rdfs:range hi1:Scenario .
+
+hi1:influences a owl:ObjectProperty ;
+    rdfs:label "influences" .
+
+hi1:informationMethod a owl:ObjectProperty ;
+    rdfs:label "information method" ;
+    rdfs:domain hi1:InformationProcessing ;
+    rdfs:range hi1:ProcessingMethod .
+
+hi1:interactingAgent a owl:ObjectProperty ;
+    rdfs:label "interacting agent" ;
+    rdfs:domain hi1:Interaction ;
+    rdfs:range hi1:Actor .
+
+hi1:interactionMethod a owl:ObjectProperty ;
+    rdfs:label "interaction method" ;
+    rdfs:domain hi1:Interaction ;
+    rdfs:range hi1:InteractionMethod .
+
+hi1:interactionTask a owl:ObjectProperty ;
+    rdfs:label "interaction task" ;
+    rdfs:domain hi1:Interaction ;
+    rdfs:range hi1:InteractionTask .
+
+hi1:lacks a owl:ObjectProperty ;
+    rdfs:label "lacks" ;
+    rdfs:domain hi1:EthicalConsideration ;
+    rdfs:range hi1:EthicalMetric .
+
+hi1:processingInformation a owl:ObjectProperty ;
+    rdfs:label "processing information" ;
+    rdfs:domain hi1:Actor ;
+    rdfs:range hi1:InformationProcessing .
+
+hi1:processingTask a owl:ObjectProperty ;
+    rdfs:label "processing task" ;
+    rdfs:domain hi1:InformationProcessing ;
+    rdfs:range hi1:ProcessingTask .
+
+hi2:AIOutputTransparency a <http://www.co-ode.org/ontologies/ont.owl#AI_Trust_Ethics>,
+        owl:NamedIndividual ;
+    hi2:describedIn hi2:HybridIntelligenceGenerativeDesign ;
+    hi2:hasDescription "The degree to which the output generated by an AI system is understandable and interpretable to the human user" ;
+    hi2:hasName "AI Output Transparency" .
+
+hi2:Absolutist a hi2:AI_Concept,
+        owl:NamedIndividual ;
+    hi2:describedIn hi2:ExosoulEthicalProfiling ;
+    hi2:hasDescription "Principled idealists who endorse both reliance on moral standards and striving to minimize harm" ;
+    hi2:hasName "Absolutist" ;
+    hi2:partOf hi2:EthicsPositionTheory .
+
+hi2:ActivationSimilarity a <http://www.co-ode.org/ontologies/ont.owl#AI_Modeling_Representation>,
+        owl:NamedIndividual ;
+    hi2:hasDescription "Measure of how similar neuron activations are across different groups" ;
+    hi2:hasName "ActivationSimilarity" .
+
+hi2:AnnotationErrorDetection a <http://www.co-ode.org/ontologies/ont.owl#AI_Modeling_Representation>,
+        owl:NamedIndividual ;
+    hi2:hasDescription "Using topographic maps to identify systematic errors in data labeling" ;
+    hi2:hasName "AnnotationErrorDetection" ;
+    hi2:partOf hi2:NeuralNetworkVisualizationScenario .
+
+hi2:AppropriateReliance a hi2:AI_Concept,
+        owl:NamedIndividual ;
+    hi2:describedIn hi2:AIAssistedDecisionMakingReliance ;
+    hi2:hasDescription "Adhering to AI recommendations when correct and overriding when incorrect" ;
+    hi2:hasName "Appropriate Reliance" ;
+    hi2:partOf hi2:Reliances_Behavior ;
+    hi2:positivelyCorrelatedWith hi2:AIAssistedDecisionMakingTask .
+
+hi2:ArchitecturalExpert a <http://www.co-ode.org/ontologies/ont.owl#AI_Human_Factors>,
+        hi2:Human_Agent,
+        owl:NamedIndividual ;
+    hi2:achievesScore hi2:PartnershipScore ;
+    hi2:describedIn hi2:HybridIntelligenceGenerativeDesign ;
+    hi2:evaluatedWith hi2:HITAM_Evaluation ;
+    hi2:hasDescription "Human expert in architectural design who trains and personalizes the generative design assistant" ;
+    hi2:hasName "Architectural Expert" ;
+    hi2:interactsWith hi2:GenerativeDesignAssistant ;
+    hi2:performsTask hi2:FloorPlanDesignTask,
+        hi2:GenerativeDesignTrainingTask .
+
+hi2:BehaviorPredictionTask a hi2:Task,
+        owl:NamedIndividual ;
+    hi2:describedIn hi2:ExosoulEthicalProfiling ;
+    hi2:hasDescription "Predicting digital behaviors based on ethical profiles" ;
+    hi2:hasName "Behavior Prediction" ;
+    hi2:partOf hi2:EthicalProfilingScenario .
+
+hi2:BehavioralTrustMeasurement a <http://www.co-ode.org/ontologies/ont.owl#AI_Trust_Ethics>,
+        owl:NamedIndividual ;
+    hi2:describedIn hi2:TrustInterventionsHumanAI ;
+    hi2:hasDescription "Using behavioral indicators like intervention frequency to measure trust in human-AI interactions" ;
+    hi2:hasName "Behavioral Trust Measurement" ;
+    hi2:uses hi2:InterventionFrequency .
+
+hi2:BelowThresholdOrientedSampling a <http://www.co-ode.org/ontologies/ont.owl#AI_Optimization_Sampling>,
+        owl:NamedIndividual ;
+    hi2:hasDescription "A variant that selects only rejected samples closest to the threshold" ;
+    hi2:hasName "BelowThresholdOrientedSampling" ;
+    hi2:partOf hi2:ValueAwareActiveLearningScenario ;
+    hi2:uses hi2:RejectionThreshold .
+
+hi2:BiasVisualization a hi2:AI_Concept,
+        owl:NamedIndividual ;
+    hi2:hasDescription "Detecting potential biases in neural network representations" ;
+    hi2:hasName "BiasVisualization" ;
+    hi2:partOf hi2:NeuralNetworkVisualizationScenario .
+
+hi2:CaseBasedReasoningSystem a hi2:AI_Agent,
+        owl:NamedIndividual ;
+    hi2:describedIn hi2:LandmarksCaseBasedReasoning ;
+    hi2:hasDescription "AI system that provides explanations by analogy with training examples using case-based reasoning principles" ;
+    hi2:hasName "Case-Based Reasoning System" ;
+    hi2:performsTask hi2:AIInterpretabilityTask ;
+    hi2:uses hi2:LandmarkCases,
+        hi2:PrecedentialConstraint .
+
+hi2:CaseBasedReasoningXAI a hi2:AI_Concept,
+        owl:NamedIndividual ;
+    hi2:describedIn hi2:LandmarksCaseBasedReasoning ;
+    hi2:hasDescription "The idea of providing explanation of AI decisions through analogy with relevant training examples, based on case-based reasoning principles" ;
+    hi2:hasName "Case-Based Reasoning for Explainable AI" ;
+    hi2:relatedTo hi2:Trust,
+        hi2:UserControl ;
+    hi2:uses hi2:LandmarkCases,
+        hi2:PrecedentialConstraint .
+
+hi2:CaseResearcher a <http://www.co-ode.org/ontologies/ont.owl#AI_Human_Factors>,
+        hi2:Human_Agent,
+        owl:NamedIndividual ;
+    hi2:achievesScore hi2:COMPASConsistencyScore ;
+    hi2:describedIn hi2:LandmarksCaseBasedReasoning ;
+    hi2:evaluatedWith hi2:ConsistencyEvaluation ;
+    hi2:hasDescription "Human researcher analyzing machine learning training data as legal cases through the lens of precedential constraint" ;
+    hi2:hasName "Case Researcher" ;
+    hi2:performsTask hi2:CaseAnalysisTask .
+
+hi2:CertaintySampling a <http://www.co-ode.org/ontologies/ont.owl#AI_Optimization_Sampling>,
+        owl:NamedIndividual ;
+    hi2:hasDescription "Sampling instances with the highest confidence" ;
+    hi2:hasName "CertaintySampling" ;
+    hi2:partOf hi2:ValueAwareActiveLearningScenario .
+
+hi2:Clinc150Dataset a hi2:Dataset,
+        owl:NamedIndividual ;
+    hi2:hasDescription "A 150-class balanced dataset for intent classification" ;
+    hi2:hasName "Clinc150" ;
+    hi2:usedIn hi2:ValueAwareActiveLearning .
+
+hi2:ClinicalAISystem a hi2:AI_Agent,
+        owl:NamedIndividual ;
+    hi2:hasDescription "AI system deployed in clinical workflows for decision support" ;
+    hi2:hasName "Clinical AI System" .
+
+hi2:ClinicalAITrustScenario a hi2:Scenario,
+        owl:NamedIndividual ;
+    hi2:basedOn hi2:TrustInClinicalAI ;
+    hi2:hasDescription "A scenario exploring trust formation and calibration in clinical AI deployment" ;
+    hi2:hasName "Clinical AI Trust Development Scenario" .
+
+hi2:ClinicalExpert a <http://www.co-ode.org/ontologies/ont.owl#AI_Human_Factors>,
+        hi2:Human_Agent,
+        owl:NamedIndividual ;
+    hi2:hasDescription "Healthcare professional interacting with AI systems" ;
+    hi2:hasName "Clinical Expert" .
+
+hi2:CoActivationGraph a <http://www.co-ode.org/ontologies/ont.owl#AI_Modeling_Representation>,
+        owl:NamedIndividual ;
+    hi2:hasDescription "A method that considers the most similar pairs of neurons to create a layout" ;
+    hi2:hasName "CoActivationGraph" ;
+    hi2:partOf hi2:TopographicActivationMaps .
+
+hi2:Compliance a <http://www.co-ode.org/ontologies/ont.owl#AI_Trust_Ethics>,
+        owl:NamedIndividual ;
+    hi2:describedIn hi2:TrustInterventionsHumanAI ;
+    hi2:hasDescription "When the human accepts the agent's decisions, a behavioral demonstration of trust" ;
+    hi2:hasName "Compliance" ;
+    hi2:positivelyCorrelatedWith hi2:Trust .
+
+hi2:ComponentAnalysis a <http://www.co-ode.org/ontologies/ont.owl#AI_Modeling_Representation>,
+        owl:NamedIndividual ;
+    hi2:hasDescription "Metrics based on analyzing connected components in topographic maps" ;
+    hi2:hasName "ComponentAnalysis" .
+
+hi2:Conscientiousness a hi2:AI_Concept,
+        owl:NamedIndividual ;
+    hi2:describedIn hi2:ExosoulEthicalProfiling ;
+    hi2:hasDescription "Personality trait reflecting persistence, orderliness, self-regulation and integrity" ;
+    hi2:hasName "Conscientiousness" .
+
+hi2:ContextualThompsonSampling a <http://www.co-ode.org/ontologies/ont.owl#AI_Decision_Learning>,
+        owl:NamedIndividual ;
+    hi2:describedIn hi2:HumanCenteredAIDementiaCare ;
+    hi2:hasDescription "Reinforcement learning algorithm that adapts to each meal's context to optimize interventions" ;
+    hi2:hasName "Contextual Thompson Sampling" ;
+    hi2:partOf hi2:ReinforcementLearningDementiaCare .
+
+hi2:ConvolutionalNeuralNetwork a <http://www.co-ode.org/ontologies/ont.owl#AI_Modeling_Representation>,
+        owl:NamedIndividual ;
+    hi2:hasDescription "Neural network with convolutional layers" ;
+    hi2:hasName "ConvolutionalNeuralNetwork" .
+
+hi2:DBPediaDataset a hi2:Dataset,
+        owl:NamedIndividual ;
+    hi2:hasDescription "A 9-class unbalanced dataset for content classification from Wikipedia" ;
+    hi2:hasName "DBPedia" ;
+    hi2:usedIn hi2:ValueAwareActiveLearning .
+
+hi2:DataRepresentationAnalysis a <http://www.co-ode.org/ontologies/ont.owl#AI_Modeling_Representation>,
+        owl:NamedIndividual ;
+    hi2:hasDescription "Approach to investigate how a neural network processes input data by analyzing its internal representations" ;
+    hi2:hasName "DataRepresentationAnalysis" ;
+    hi2:partOf hi2:NeuralNetworkVisualizationScenario .
+
+hi2:DiabetesUseCase a hi2:Scenario,
+        owl:NamedIndividual ;
+    hi2:describedIn hi2:ConversationalAgentDiaryConstruction ;
+    hi2:hasDescription "Supporting lifestyle changes for patients with Type 2 Diabetes Mellitus" ;
+    hi2:hasName "Diabetes Management" ;
+    hi2:relatedTo hi2:DiaryConstructionScenario .
+
+hi2:DiaryUser a hi2:Human_Agent,
+        owl:NamedIndividual ;
+    hi2:describedIn hi2:ConversationalAgentDiaryConstruction ;
+    hi2:hasDescription "Person interacting with the conversational agent to build a diary" ;
+    hi2:hasName "Diary User/Patient" ;
+    hi2:interactsWith hi2:HybridIntelligenceAgent .
+
+hi2:DimensionOrdering a <http://www.co-ode.org/ontologies/ont.owl#AI_Modeling_Representation>,
+        owl:NamedIndividual ;
+    hi2:describedIn hi2:LandmarksCaseBasedReasoning ;
+    hi2:hasDescription "A method to determine the orders for dimensions in case-based reasoning by using statistical trends like logistic regression coefficients" ;
+    hi2:hasName "Dimension Ordering" ;
+    hi2:partOf hi2:PrecedentialConstraint .
+
+hi2:DimensionalityReduction a <http://www.co-ode.org/ontologies/ont.owl#AI_Modeling_Representation>,
+        owl:NamedIndividual ;
+    hi2:hasDescription "Techniques like PCA, t-SNE, and UMAP to project high-dimensional data into a two-dimensional space" ;
+    hi2:hasName "DimensionalityReduction" ;
+    hi2:partOf hi2:TopographicActivationMaps .
+
+hi2:DispositionalTrust a <http://www.co-ode.org/ontologies/ont.owl#AI_Trust_Ethics>,
+        owl:NamedIndividual ;
+    hi2:hasDescription "Personal tendency to trust based on individual characteristics like culture, age, personality traits" ;
+    hi2:partOf hi2:Trust .
+
+hi2:DuringDevelopmentTrustStage a hi2:AI_Concept,
+        owl:NamedIndividual ;
+    hi2:partOf hi2:Trust .
+
+hi2:DuringUseTrustStage a hi2:AI_Concept,
+        owl:NamedIndividual ;
+    hi2:partOf hi2:Trust .
+
+hi2:DynamicTrust a <http://www.co-ode.org/ontologies/ont.owl#AI_Trust_Ethics>,
+        owl:NamedIndividual ;
+    hi2:describedIn hi2:TrustInterventionsHumanAI ;
+    hi2:hasDescription "Trust as a dynamic process that changes over time, not a static one-time measurement" ;
+    hi2:hasName "Dynamic Trust" ;
+    hi2:relatedTo hi2:Trust .
+
+hi2:EnvironmentUncertainty a hi2:AI_Concept,
+        owl:NamedIndividual ;
+    hi2:describedIn hi2:TrustInterventionsHumanAI ;
+    hi2:hasDescription "Non-determinism in the environment, where external events occur outside the control of the agent and human" ;
+    hi2:hasName "Environment Uncertainty" ;
+    hi2:influences hi2:InterventionFrequency,
+        hi2:MiscalibratedTrust ;
+    hi2:negativelyCorrelatedWith hi2:Trust .
+
+hi2:EthicalProfilingTask a hi2:Task,
+        owl:NamedIndividual ;
+    hi2:describedIn hi2:ExosoulEthicalProfiling ;
+    hi2:hasDescription "Creating ethical profiles to predict digital behaviors" ;
+    hi2:hasName "Ethical Profiling" ;
+    hi2:partOf hi2:EthicalProfilingScenario .
+
+hi2:EvidenceGenerationTrustStage a <http://www.co-ode.org/ontologies/ont.owl#AI_Trust_Ethics>,
+        owl:NamedIndividual ;
+    hi2:partOf hi2:Trust .
+
+hi2:Exceptionist a hi2:AI_Concept,
+        owl:NamedIndividual ;
+    hi2:describedIn hi2:ExosoulEthicalProfiling ;
+    hi2:hasDescription "Conventionalists who tolerate exceptions to moral standards when benefits offset potential harmful consequences" ;
+    hi2:hasName "Exceptionist" ;
+    hi2:partOf hi2:EthicsPositionTheory .
+
+hi2:FairFaceDataset a hi2:Dataset,
+        owl:NamedIndividual ;
+    hi2:hasDescription "Balanced dataset for investigating potential racial bias in neural networks" ;
+    hi2:hasName "FairFace" ;
+    hi2:usedIn hi2:TopographicActivationMaps .
+
+hi2:FashionMNISTDataset a hi2:Dataset,
+        owl:NamedIndividual ;
+    hi2:hasDescription "Dataset used to demonstrate annotation error detection" ;
+    hi2:hasName "FashionMNIST" ;
+    hi2:usedIn hi2:TopographicActivationMaps .
+
+hi2:FeatureVisualization a hi2:AI_Concept,
+        owl:NamedIndividual ;
+    hi2:hasDescription "Method to explain internal structures of a deep learning model by investigating which patterns are detected by filters" ;
+    hi2:hasName "FeatureVisualization" ;
+    hi2:partOf hi2:NeuralNetworkVisualizationScenario .
+
+hi2:ForcingRelation a hi2:AI_Concept,
+        owl:NamedIndividual ;
+    hi2:describedIn hi2:LandmarksCaseBasedReasoning ;
+    hi2:hasDescription "Relation that models a fortiori reasoning: if a fact situation F has been decided for outcome s and we encounter a situation G that is at least as good for s, then G should also be decided for s" ;
+    hi2:hasName "Forcing Relation" ;
+    hi2:partOf hi2:PrecedentialConstraint .
+
+hi2:GoalMisalignment a <http://www.co-ode.org/ontologies/ont.owl#AI_Trust_Ethics>,
+        owl:NamedIndividual ;
+    hi2:describedIn hi2:TrustInterventionsHumanAI ;
+    hi2:hasDescription "When an agent's behavior or decisions do not fully align with what the user wants to accomplish" ;
+    hi2:hasName "Goal Misalignment" ;
+    hi2:influences hi2:InterventionFrequency ;
+    hi2:negativelyCorrelatedWith hi2:Trust ;
+    hi2:oppositeOf hi2:GoalAlignment .
+
+hi2:HI_TAM_Concept a hi2:AI_Concept,
+        owl:NamedIndividual ;
+    hi2:describedIn hi2:HybridIntelligenceGenerativeDesign ;
+    hi2:hasDescription "A model adapted from AI-TAM incorporating key aspects from HI including AI transparency and user control to support both virtual assistant training and general human-AI mutual learning" ;
+    hi2:hasName "Hybrid Intelligence Technology Acceptance Model" .
+
+hi2:HateSpeechDataset a hi2:Dataset,
+        owl:NamedIndividual ;
+    hi2:hasDescription "A 3-class unbalanced dataset for hate speech classification" ;
+    hi2:hasName "HateSpeech" ;
+    hi2:usedIn hi2:ValueAwareActiveLearning .
+
+hi2:HumanInLoopRLConcept a <http://www.co-ode.org/ontologies/ont.owl#AI_Decision_Learning>,
+        owl:NamedIndividual ;
+    hi2:describedIn hi2:RLHumanInLoopPaper ;
+    hi2:hasDescription "A paradigm emphasizing human involvement throughout the reinforcement learning process, from problem identification to system maintenance" ;
+    hi2:hasName "Human-in-the-Loop Reinforcement Learning" .
+
+hi2:HumanSimulator a hi2:AI_Concept,
+        owl:NamedIndividual ;
+    hi2:describedIn hi2:HumanCenteredAIDementiaCare ;
+    hi2:hasDescription "Simulation of behaviors and responses of users with dementia to test AI system effectiveness in a controlled environment" ;
+    hi2:hasName "Human Simulator" .
+
+hi2:HybridIntelligenceNarrative a <http://www.co-ode.org/ontologies/ont.owl#AI_Human_Factors>,
+        owl:NamedIndividual ;
+    hi2:describedIn hi2:HybridIntelligenceGenerativeDesign ;
+    hi2:hasDescription "A narrative designed to create a psychologically safe space for co-creation without the fear of job-replacement" ;
+    hi2:hasName "Hybrid Intelligence Narrative" .
+
+hi2:LearnedTrust a <http://www.co-ode.org/ontologies/ont.owl#AI_Trust_Ethics>,
+        owl:NamedIndividual ;
+    hi2:hasDescription "Trust developed through past interactions with the system, including initial and dynamic learned trust" ;
+    hi2:partOf hi2:Trust .
+
+hi2:LinearUpperConfidenceBound a <http://www.co-ode.org/ontologies/ont.owl#AI_Optimization_Sampling>,
+        owl:NamedIndividual ;
+    hi2:describedIn hi2:HumanCenteredAIDementiaCare ;
+    hi2:hasDescription "Contextual reinforcement learning algorithm for decision-making under uncertainty" ;
+    hi2:hasName "Linear Upper Confidence Bound" ;
+    hi2:partOf hi2:ReinforcementLearningDementiaCare .
+
+hi2:MDPFormulationTask a hi2:Task,
+        owl:NamedIndividual ;
+    hi2:describedIn hi2:RLHumanInLoopPaper ;
+    hi2:hasDescription "Collaborative task of defining action spaces, state representations, and reward functions with human experts" ;
+    hi2:hasName "Markov Decision Process Formulation" ;
+    hi2:partOf hi2:RLHumanInLoopScenario .
+
+hi2:MNISTDataset a hi2:Dataset,
+        owl:NamedIndividual ;
+    hi2:hasDescription "Handwritten digit dataset used for initial experiments" ;
+    hi2:hasName "MNIST" ;
+    hi2:usedIn hi2:TopographicActivationMaps .
+
+hi2:Machiavellianism a hi2:AI_Concept,
+        owl:NamedIndividual ;
+    hi2:describedIn hi2:ExosoulEthicalProfiling ;
+    hi2:hasDescription "Personality trait reflecting manipulative tactics, cynicism, and 'the ends justify the means' attitude" ;
+    hi2:hasName "Machiavellianism" ;
+    hi2:negativelyCorrelatedWith hi2:Idealism ;
+    hi2:positivelyCorrelatedWith hi2:Relativism .
+
+hi2:MachineLearningDeveloperRole a hi2:AI_Concept,
+        owl:NamedIndividual ;
+    hi2:describedIn hi2:RLHumanInLoopPaper ;
+    hi2:hasDescription "Technical role responsible for implementing RL algorithms, selecting learning approaches, and tuning system parameters" ;
+    hi2:hasName "Machine Learning Developer Role" .
+
+hi2:MeanSquaredError a <http://www.co-ode.org/ontologies/ont.owl#AI_Optimization_Sampling>,
+        owl:NamedIndividual ;
+    hi2:hasDescription "Metric to quantify the similarity between original and perturbed topographic maps" ;
+    hi2:hasName "MeanSquaredError" .
+
+hi2:ModelValue a <http://www.co-ode.org/ontologies/ont.owl#AI_Modeling_Representation>,
+        owl:NamedIndividual ;
+    hi2:hasDescription "A metric that jointly considers the benefit of correct prediction, cost of errors, and cost of abstaining" ;
+    hi2:hasName "Model Value" ;
+    hi2:uses hi2:CostFactor .
+
+hi2:MultiLayerPerceptron a <http://www.co-ode.org/ontologies/ont.owl#AI_Modeling_Representation>,
+        owl:NamedIndividual ;
+    hi2:hasDescription "A simple neural network model used in initial experiments" ;
+    hi2:hasName "MultiLayerPerceptron" .
+
+hi2:Narcissism a hi2:AI_Concept,
+        owl:NamedIndividual ;
+    hi2:describedIn hi2:ExosoulEthicalProfiling ;
+    hi2:hasDescription "Personality trait reflecting inflated opinion of self, entitlement, superiority and need for admiration" ;
+    hi2:hasName "Narcissism" .
+
+hi2:NavigatorHuman a hi2:Human_Agent,
+        owl:NamedIndividual ;
+    hi2:describedIn hi2:TrustInterventionsHumanAI ;
+    hi2:hasDescription "Human using the AI navigation system and making intervention decisions" ;
+    hi2:hasName "Navigator Human" ;
+    hi2:interactsWith hi2:NavigationAI ;
+    hi2:performsTask hi2:Intervention,
+        hi2:NavigationTask .
+
+hi2:OverReliance a <http://www.co-ode.org/ontologies/ont.owl#AI_Trust_Ethics>,
+        owl:NamedIndividual ;
+    hi2:describedIn hi2:AIAssistedDecisionMakingReliance ;
+    hi2:hasDescription "Adhering to AI recommendations in too many cases, potentially including wrong recommendations" ;
+    hi2:hasName "Over-Reliance" ;
+    hi2:negativelyCorrelatedWith hi2:AIAssistedDecisionMakingTask ;
+    hi2:partOf hi2:Reliances_Behavior .
+
+hi2:ParticleSwarmOptimization a <http://www.co-ode.org/ontologies/ont.owl#AI_Optimization_Sampling>,
+        owl:NamedIndividual ;
+    hi2:hasDescription "A biologically inspired algorithm to optimize neuron placement based on activation similarity" ;
+    hi2:hasName "ParticleSwarmOptimization" ;
+    hi2:partOf hi2:TopographicActivationMaps .
+
+hi2:PatientRecoveryUseCase a hi2:Scenario,
+        owl:NamedIndividual ;
+    hi2:describedIn hi2:ConversationalAgentDiaryConstruction ;
+    hi2:hasDescription "Monitoring recovery and functioning of elderly patients" ;
+    hi2:hasName "Patient Recovery and Functioning Patterns" ;
+    hi2:relatedTo hi2:DiaryConstructionScenario .
+
+hi2:PostDeploymentTrustStage a hi2:AI_Concept,
+        owl:NamedIndividual ;
+    hi2:partOf hi2:Trust .
+
+hi2:PreDevelopmentTrustStage a hi2:AI_Concept,
+        owl:NamedIndividual ;
+    hi2:partOf hi2:Trust .
+
+hi2:PwDUser a hi2:Human_Agent,
+        owl:NamedIndividual ;
+    hi2:describedIn hi2:HumanCenteredAIDementiaCare ;
+    hi2:hasDescription "User with early-stage dementia who needs assistance with eating and drinking routines" ;
+    hi2:hasName "Person with Early-Stage Dementia" ;
+    hi2:interactsWith hi2:WhoTakesCareAI .
+
+hi2:RLProblemIdentificationConcept a <http://www.co-ode.org/ontologies/ont.owl#AI_Decision_Learning>,
+        owl:NamedIndividual ;
+    hi2:describedIn hi2:RLHumanInLoopPaper ;
+    hi2:hasDescription "Process of identifying appropriate problems that can be effectively solved using Reinforcement Learning, requiring both technical and business input" ;
+    hi2:hasName "RL Problem Identification" ;
+    hi2:influences hi2:MDPFormulationConcept .
+
+hi2:RLProblemIdentificationTask a hi2:Task,
+        owl:NamedIndividual ;
+    hi2:describedIn hi2:RLHumanInLoopPaper ;
+    hi2:hasDescription "Evaluating potential RL applications, assessing technical feasibility, and determining potential return on investment" ;
+    hi2:hasName "RL Problem Identification" ;
+    hi2:partOf hi2:RLHumanInLoopScenario .
+
+hi2:RandomSampling a <http://www.co-ode.org/ontologies/ont.owl#AI_Optimization_Sampling>,
+        owl:NamedIndividual ;
+    hi2:hasDescription "A baseline strategy that samples instances randomly" ;
+    hi2:hasName "RandomSampling" ;
+    hi2:partOf hi2:ValueAwareActiveLearningScenario .
+
+hi2:RelianceEvaluation a hi2:Evaluation,
+        owl:NamedIndividual ;
+    hi2:appliesTo hi2:AIAssistedDecisionMakingTask ;
+    hi2:describedIn hi2:AIAssistedDecisionMakingReliance ;
+    hi2:hasDescription "Evaluation of human reliance behavior in AI-assisted decision-making" ;
+    hi2:hasName "Reliance Behavior Evaluation" .
+
+hi2:RelianceQuality a hi2:AI_Concept,
+        owl:NamedIndividual ;
+    hi2:describedIn hi2:AIAssistedDecisionMakingReliance ;
+    hi2:hasDescription "The ability of humans to distinguish correct and wrong AI recommendations" ;
+    hi2:hasName "Reliance Quality" .
+
+hi2:SaliencyMaps a hi2:AI_Concept,
+        owl:NamedIndividual ;
+    hi2:hasDescription "Technique to quantify the relevance of input values for the output of a neural network" ;
+    hi2:hasName "SaliencyMaps" ;
+    hi2:partOf hi2:NeuralNetworkVisualizationScenario .
+
+hi2:SelectiveClassification a hi2:AI_Concept,
+        owl:NamedIndividual ;
+    hi2:hasDescription "A classification approach where the model can choose to abstain from making a prediction on uncertain instances" ;
+    hi2:hasName "Selective Classification" ;
+    hi2:uses hi2:RejectionThreshold .
+
+hi2:SelfOrganizingMap a hi2:AI_Concept,
+        owl:NamedIndividual ;
+    hi2:hasDescription "A neural network technique to create a two-dimensional layout where similar neurons are placed nearby" ;
+    hi2:hasName "SelfOrganizingMap" ;
+    hi2:partOf hi2:TopographicActivationMaps .
+
+hi2:SituationalTrust a hi2:AI_Concept,
+        owl:NamedIndividual ;
+    hi2:hasDescription "Trust influenced by the context of interaction, including external and internal factors" ;
+    hi2:partOf hi2:Trust .
+
+hi2:Situationist a hi2:AI_Concept,
+        owl:NamedIndividual ;
+    hi2:describedIn hi2:ExosoulEthicalProfiling ;
+    hi2:hasDescription "Idealistic contextualists who value minimizing harm rather than reliance on moral standards" ;
+    hi2:hasName "Situationist" ;
+    hi2:partOf hi2:EthicsPositionTheory .
+
+hi2:SoftwareExoskeleton a hi2:AI_Concept,
+        owl:NamedIndividual ;
+    hi2:describedIn hi2:ExosoulEthicalProfiling ;
+    hi2:hasDescription "Software shield that protects users and mediates actions according to moral preferences" ;
+    hi2:hasName "Software Exoskeleton" ;
+    hi2:partOf hi2:ExosoulProject ;
+    hi2:uses hi2:LegalistProfile,
+        hi2:OpportunistProfile,
+        hi2:SensibleProfile,
+        hi2:VirtuousProfile .
+
+hi2:SubjectMatterExpertRole a hi2:AI_Concept,
+        owl:NamedIndividual ;
+    hi2:describedIn hi2:RLHumanInLoopPaper ;
+    hi2:hasDescription "Critical human role providing domain-specific knowledge and insights during RL problem formulation and evaluation" ;
+    hi2:hasName "Subject Matter Expert Role" .
+
+hi2:Subjectivist a hi2:AI_Concept,
+        owl:NamedIndividual ;
+    hi2:describedIn hi2:ExosoulEthicalProfiling ;
+    hi2:hasDescription "Realists who do not endorse moral standards or the avoidance of harmful consequences" ;
+    hi2:hasName "Subjectivist" ;
+    hi2:partOf hi2:EthicsPositionTheory .
+
+hi2:ThreeStageEscalationScenario a hi2:AI_Concept,
+        owl:NamedIndividual ;
+    hi2:describedIn hi2:HumanCenteredAIDementiaCare ;
+    hi2:hasDescription "Approach with increasing intensity of signals to gently guide dementia patients through eating routines" ;
+    hi2:hasName "Three-Stage Escalated Eating Scenario" .
+
+hi2:ThresholdOrientedSampling a <http://www.co-ode.org/ontologies/ont.owl#AI_Optimization_Sampling>,
+        owl:NamedIndividual ;
+    hi2:hasDescription "A novel strategy focusing on examples near the rejection threshold" ;
+    hi2:hasName "ThresholdOrientedSampling" ;
+    hi2:partOf hi2:ValueAwareActiveLearningScenario ;
+    hi2:uses hi2:RejectionThreshold .
+
+hi2:ToxicityUseCase a hi2:Scenario,
+        owl:NamedIndividual ;
+    hi2:describedIn hi2:ConversationalAgentDiaryConstruction ;
+    hi2:hasDescription "Monitoring side effects of cancer treatments like chemotherapy" ;
+    hi2:hasName "Cancer Therapy Toxicity Monitoring" ;
+    hi2:relatedTo hi2:DiaryConstructionScenario .
+
+hi2:TrainingProcessVisualization a hi2:AI_Concept,
+        owl:NamedIndividual ;
+    hi2:hasDescription "Tracking the evolution of neural network activations during training" ;
+    hi2:hasName "TrainingProcessVisualization" ;
+    hi2:partOf hi2:NeuralNetworkVisualizationScenario .
+
+hi2:TrustCalibrationTask a hi2:Task,
+        owl:NamedIndividual ;
+    hi2:hasDescription "Process of aligning AI system trust with its actual capabilities" ;
+    hi2:hasName "AI Trust Calibration" .
+
+hi2:TrustDampeningMechanism a <http://www.co-ode.org/ontologies/ont.owl#AI_Trust_Ethics>,
+        owl:NamedIndividual ;
+    hi2:hasDescription "Mechanisms to lower expectations and calibrate trust as needed" ;
+    hi2:partOf hi2:Trust .
+
+hi2:TrustRepairMechanism a <http://www.co-ode.org/ontologies/ont.owl#AI_Trust_Ethics>,
+        owl:NamedIndividual ;
+    hi2:hasDescription "Mechanisms to rebuild trust after a trust violation" ;
+    hi2:partOf hi2:Trust .
+
+hi2:TwitterUSAirlineSentimentDataset a hi2:Dataset,
+        owl:NamedIndividual ;
+    hi2:hasDescription "A 3-class unbalanced dataset for sentiment classification of airline tweets" ;
+    hi2:hasName "TwitterUSAirlineSentiment" ;
+    hi2:usedIn hi2:ValueAwareActiveLearning .
+
+hi2:UncertaintySampling a <http://www.co-ode.org/ontologies/ont.owl#AI_Optimization_Sampling>,
+        owl:NamedIndividual ;
+    hi2:hasDescription "The standard active learning strategy that samples instances with the highest uncertainty" ;
+    hi2:hasName "UncertaintySampling" ;
+    hi2:partOf hi2:ValueAwareActiveLearningScenario .
+
+hi2:UnderReliance a <http://www.co-ode.org/ontologies/ont.owl#AI_Trust_Ethics>,
+        owl:NamedIndividual ;
+    hi2:describedIn hi2:AIAssistedDecisionMakingReliance ;
+    hi2:hasDescription "Adhering to AI recommendations in too few cases, potentially missing correct recommendations" ;
+    hi2:hasName "Under-Reliance" ;
+    hi2:negativelyCorrelatedWith hi2:AIAssistedDecisionMakingTask ;
+    hi2:partOf hi2:Reliances_Behavior .
+
+hi2:VGG16 a <http://www.co-ode.org/ontologies/ont.owl#AI_Modeling_Representation>,
+        owl:NamedIndividual ;
+    hi2:hasDescription "Pre-trained deep convolutional neural network used for feature extraction" ;
+    hi2:hasName "VGG16" .
+
+hi2:ValueAwareActiveLearningTask a hi2:Task,
+        owl:NamedIndividual ;
+    hi2:hasDescription "Task of selecting the most valuable instances to label in an active learning scenario" ;
+    hi2:hasName "Value-Aware Active Learning" ;
+    hi2:partOf hi2:ValueAwareActiveLearningScenario .
+
+hi2:ValuePerformanceMetric a hi2:AI_Concept,
+        owl:NamedIndividual ;
+    hi2:hasDescription "A performance metric that considers the value of correct predictions, errors, and abstentions" ;
+    hi2:hasName "Value Performance Metric" .
+
+hi2:appliesTo a owl:ObjectProperty ;
+    rdfs:label "appliesTo" ;
+    rdfs:domain hi2:Evaluation ;
+    rdfs:range hi2:Task .
+
+hi2:basedOn a owl:ObjectProperty ;
+    rdfs:label "basedOn" ;
+    rdfs:domain hi2:Scenario ;
+    rdfs:range hi2:ResearchPaper .
+
+hi2:describedIn a owl:ObjectProperty ;
+    rdfs:label "describedIn" ;
+    rdfs:range hi2:ResearchPaper .
+
+hi2:evaluatedWith a owl:ObjectProperty ;
+    rdfs:label "evaluatedWith" ;
+    rdfs:domain hi2:Agent ;
+    rdfs:range hi2:Evaluation .
+
+hi2:hasAuthor a owl:DatatypeProperty ;
+    rdfs:label "hasAuthor" ;
+    rdfs:domain hi2:ResearchPaper ;
+    rdfs:range xsd:string .
+
+hi2:hasDOI a owl:DatatypeProperty ;
+    rdfs:label "hasDOI" ;
+    rdfs:domain hi2:ResearchPaper ;
+    rdfs:range xsd:string .
+
+hi2:hasDescription a owl:DatatypeProperty ;
+    rdfs:label "hasDescription" ;
+    rdfs:range xsd:string .
+
+hi2:hasName a owl:DatatypeProperty ;
+    rdfs:label "hasName" ;
+    rdfs:range xsd:string .
+
+hi2:hasResult a owl:ObjectProperty ;
+    rdfs:label "hasResult" ;
+    rdfs:domain hi2:Evaluation ;
+    rdfs:range hi2:Score .
+
+hi2:hasTitle a owl:DatatypeProperty ;
+    rdfs:label "hasTitle" ;
+    rdfs:domain hi2:ResearchPaper ;
+    rdfs:range xsd:string .
+
+hi2:hasValue a owl:DatatypeProperty ;
+    rdfs:label "hasValue" ;
+    rdfs:domain hi2:Score ;
+    rdfs:range xsd:float .
+
+hi2:hasVenue a owl:AnnotationProperty .
+
+hi2:hasYear a owl:DatatypeProperty ;
+    rdfs:label "hasYear" ;
+    rdfs:domain hi2:ResearchPaper ;
+    rdfs:range xsd:integer .
+
+hi2:influences a owl:ObjectProperty ;
+    rdfs:label "influences" .
+
+hi2:interactsWith a owl:ObjectProperty ;
+    rdfs:label "interactsWith" ;
+    rdfs:domain hi2:Human_Agent ;
+    rdfs:range hi2:AI_Agent .
+
+hi2:measuredIn a owl:AnnotationProperty .
+
+hi2:negativelyCorrelatedWith a owl:ObjectProperty ;
+    rdfs:label "negativelyCorrelatedWith" .
+
+hi2:oppositeOf a owl:AnnotationProperty .
+
+hi2:partOf a owl:ObjectProperty ;
+    rdfs:label "partOf" ;
+    rdfs:domain hi2:Task ;
+    rdfs:range hi2:Scenario .
+
+hi2:performsTask a owl:ObjectProperty ;
+    rdfs:label "performsTask" ;
+    rdfs:domain hi2:Agent ;
+    rdfs:range hi2:Task .
+
+hi2:positivelyCorrelatedWith a owl:ObjectProperty ;
+    rdfs:label "positivelyCorrelatedWith" .
+
+hi2:prevents a owl:ObjectProperty ;
+    rdfs:label "prevents" .
+
+hi2:relatedTo a owl:AnnotationProperty .
+
+hi2:subClassOf a owl:AnnotationProperty .
+
+hi2:usedIn a owl:AnnotationProperty .
+
+hi2:uses a owl:ObjectProperty ;
+    rdfs:label "uses" .
+
+<http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51> a owl:Ontology .
+
+:ArtificialAgent1 a hi:ArtificialAgent,
+        owl:NamedIndividual .
+
+:BridgingPreferenceParadox a :UseOfArtificialAgent,
+        owl:NamedIndividual .
+
+:ChatGPT a :LargeLanguageModel,
+        owl:NamedIndividual .
+
+:Co-evolution a :Co-Learning,
+        owl:NamedIndividual .
+
+:ConversationWithLLM a :UseOfArtificialAgent,
+        owl:NamedIndividual .
+
+:ConvolutionalNeuralNetwork a :DeepNeuralNetworks,
+        owl:NamedIndividual .
+
+:CorrectResponsesOnExam a :Correctness,
+        owl:NamedIndividual .
+
+:DecisionProcess a :Explain,
+        owl:NamedIndividual .
+
+:EEG a :Science,
+        owl:NamedIndividual .
+
+:Expert a hi:Human,
+        owl:NamedIndividual .
+
+:ExplainingDecisionTrees a :ExplainableAI,
+        owl:NamedIndividual .
+
+:FirstResponse a :EmergencyResponse,
+        owl:NamedIndividual .
+
+:GPT3.5 a :Model,
+        owl:NamedIndividual .
+
+:GeneratingAudioResponses a :Answering,
+        owl:NamedIndividual .
+
+:GeneratingTextualResponses a :Answering,
+        owl:NamedIndividual .
+
+:GoogleSearchEngine a :SearchEngine,
+        owl:NamedIndividual .
+
+:HighScoreOnExam a :Correctness,
+        owl:NamedIndividual .
+
+:HumanAgent1 a hi:Human,
+        owl:NamedIndividual .
+
+:InTheSamePatternAs a :AnswerQuestion,
+        owl:NamedIndividual .
+
+:LLaMa a :LargeLanguageModel,
+        owl:NamedIndividual .
+
+:LanguageToLanguageTranslation a :Translation,
+        owl:NamedIndividual .
+
+:MachineLearning a owl:Class ;
+    rdfs:subClassOf :AI .
+
+:Negotiation a [ a owl:Restriction ;
+            owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onClass hi:Actor ;
+            owl:onProperty :influences ],
+        [ a owl:Restriction ;
+            owl:maxQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+            owl:onClass hi:Actor ;
+            owl:onProperty :influences ],
+        owl:NamedIndividual .
+
+:Neuroscience a :Science,
+        owl:NamedIndividual .
+
+:NonExpertUsers a hi:Human,
+        owl:NamedIndividual .
+
+:Physics a :Science,
+        owl:NamedIndividual .
+
+:PhysicsExercises a :AnswerQuestion,
+        owl:NamedIndividual .
+
+:PhysicsStudent a hi:Human,
+        owl:NamedIndividual .
+
+:ProcessingAudioInput a :Listening,
+        owl:NamedIndividual .
+
+:ProcessingTextInput a :Reading,
+        owl:NamedIndividual .
+
+:ProcessingVisualInput a :Reading,
+        owl:NamedIndividual .
+
+:RandomForest a :DecisionTrees,
+        owl:NamedIndividual .
+
+:Recommending a :Answering,
+        owl:NamedIndividual .
+
+:Responsibility a owl:Class ;
+    rdfs:subClassOf :Reasoning .
+
+:ServiceTechnician a hi:Human,
+        owl:NamedIndividual .
+
+:StrictlyPromptQuestion a :AnswerQuestion,
+        owl:NamedIndividual .
+
+:TextToNumbersTranslation a :Translation,
+        owl:NamedIndividual .
+
+:UnmannedAerialVehicle a :UnmannedVehicles,
+        owl:NamedIndividual .
+
+:UnmannedGroundVehicle a :UnmannedVehicles,
+        owl:NamedIndividual .
+
+:UsingLLMToAnswerPhysicsQuestions a :UseOfArtificialAgent,
+        owl:NamedIndividual .
+
+:UsingNon-TechnicalTerms a :Explain,
+        owl:NamedIndividual .
+
+:VPEIntoNumericalUncertainty a :Transform,
+        owl:NamedIndividual .
+
+:ValidExplanationOfDecisionProcess a :Explainability,
+        owl:NamedIndividual .
+
+:capabilityTypicalFor a owl:ObjectProperty ;
+    rdfs:domain hi:Capability ;
+    rdfs:range hi:Actor ;
+    owl:inverseOf hi:isCapableOf .
+
+:hasContextFrom a owl:ObjectProperty ;
+    rdfs:domain hi:Domain ;
+    rdfs:range hi:Context ;
+    owl:inverseOf :isContextFrom .
+
+:imageProcessing a hi:InformationProcessing,
+        owl:NamedIndividual .
+
+:isEndGoalFromDomain a owl:ObjectProperty ;
+    rdfs:domain hi:Endgoal ;
+    rdfs:range hi:Domain ;
+    owl:inverseOf hi:hasEndgoal .
+
+:speechRecognition a hi:InformationProcessing,
+        owl:NamedIndividual .
+
+:textUnderstanding a hi:InformationProcessing,
+        owl:NamedIndividual .
+
+hi:ADAM a hi:ArtificialAgent,
+        owl:NamedIndividual .
+
+hi:AIApplication a hi:ArtificialAgent,
+        owl:NamedIndividual ;
+    rdfs:label "AI Application (Paper3)" ;
+    hi:inScenario hi:HumanAIDevelopmentScenario .
+
+hi:AIAssistedLearning a hi:InformationProcessing,
+        owl:NamedIndividual .
+
+hi:AIAssistedWriting a hi:Scenario,
+        owl:NamedIndividual ;
+    rdfs:label "AI-Assisted Writing" ;
+    hi:context hi:AcademicResearch ;
+    hi:domain hi:HigherEducation ;
+    hi:endgoal hi:QualityImprovement ;
+    hi:hasInteraction hi:PromptBasedInteraction .
+
+hi:AICDSS a hi:ArtificialAgent ;
+    hi:evaluatedBy hi:CareInterventionEvaluation ;
+    hi:hasEndgoal hi:AssistingMedicalProfessionals,
+        hi:ImprovingCareQuality ;
+    hi:isCapableOf hi:DecisionSupport,
+        hi:Recommendation ;
+    hi:participatesIn hi:ProvideFeedbackForImprovement,
+        hi:ReviewRecommendations ;
+    hi:processingTask hi:CareRecommendationGeneration,
+        hi:ExtractingPatientInsights ;
+    hi:requiresHumanExpertise hi:HealthcareProfessional .
+
+hi:AIMonitoring a hi:Domain .
+
+hi:AIPractioner a hi:Human,
+        owl:NamedIndividual ;
+    rdfs:label "AI Practitioner" ;
+    hi:inScenario hi:HumanAIDevelopmentScenario .
+
+hi:AIWordAssociation a hi:WordAssociation,
+        owl:NamedIndividual .
+
+hi:AI_Based_ADM a hi:ArtificialAgent ;
+    hi:evaluatedBy hi:VignetteBasedFairnessEvaluation ;
+    hi:hasEndgoal hi:ResponsibleDesign ;
+    hi:isCapableOf hi:DecisionMaking,
+        hi:FairnessEvaluation ;
+    hi:participatesIn hi:HumanFairnessJudgment ;
+    hi:processingTask hi:FairnessPerceptionEvaluation ;
+    hi:requiresHumanExpertise hi:HumanDecisionMakers .
+
+hi:AR a hi:Context,
+        owl:NamedIndividual ;
+    rdfs:label "Augmented Reality" .
+
+hi:ActiveLearning a hi:InteractiveML,
+        owl:NamedIndividual .
+
+hi:Adult a hi:Human,
+        owl:NamedIndividual ;
+    hi:hasBias hi:GenderBias ;
+    hi:hasCognitiveEffect hi:ConcretenessEffect .
+
+hi:AgentAllocator a hi:ArtificialAgent,
+        owl:NamedIndividual ;
+    hi:allocatesTask hi:IdentifyEvent,
+        hi:IdentifyLandmark,
+        hi:IdentifyLanguage,
+        hi:SolveWordGrid .
+
+hi:AlgorithmDesign a hi:Context ;
+    hi:hasDomain hi:AIEthics4,
+        hi:ApplicationDesign ;
+    hi:hasEthicalConsideration hi:Accountability,
+        hi:Autonomy,
+        hi:Diversity,
+        hi:Equality,
+        hi:GenderBias,
+        hi:ImplicitBias,
+        hi:Stereotypes .
+
+hi:AllAtOnce a hi:InteractionMethod .
+
+hi:AmbientAssistedLiving a hi:ProcessingMethod,
+        owl:NamedIndividual .
+
+hi:ArDlvkPlanningSystem a hi:ArtificialAgent,
+        owl:NamedIndividual ;
+    rdfs:label "AR-based DLVK Planning System" ;
+    hi:capability hi:SituationalAwarenessEnhancement ;
+    hi:processingInformation hi:TacticalPlanning ;
+    hi:processingTask hi:InformationTransfer .
+
+hi:ArgSystem_Justice2023 a hi:ArgumentationSystem ;
+    hi:providesExplanation hi:Explanation_Contrastive ;
+    hi:sourcePaper "10.3233/FAIA230098" ;
+    hi:trustScore "0.85"^^xsd:float ;
+    hi:usedInScenario hi:Scenario_LegalAid .
+
+hi:ArgumentMining a hi:ProcessingMethod,
+        owl:NamedIndividual .
+
+hi:AssistanceBlockWorld a hi:Scenario,
+        owl:NamedIndividual .
+
+hi:Asymmetrical_Dependence a hi:DependenceRelation,
+        owl:NamedIndividual ;
+    rdfs:comment "one agent is significantly more dependent on the other" .
+
+hi:AuditoryFeedback a hi:Feedback,
+        owl:NamedIndividual .
+
+hi:AugmentedReality a hi:ProcessingMethod .
+
+hi:AutoSystem_CoPilot2022 a hi:ArtificialAgent ;
+    hi:capability hi:Collaborativeness ;
+    hi:sourcePaper "10.3233/FAIA220190" ;
+    hi:usedInScenario hi:Scenario_AVUrban .
+
+hi:AutonomousDriving a hi:Context ;
+    hi:hasDomain hi:HybridIntelligence,
+        hi:MultiAgentSystems .
+
+hi:AutonomousDriving2 a hi:Context ;
+    hi:hasDomain hi:AIEthics4,
+        hi:ApplicationDesign ;
+    hi:hasEthicalConsideration hi:Accountability,
+        hi:Autonomy .
+
+hi:AutonomousRobot a hi:Robot,
+        owl:NamedIndividual .
+
+hi:BA_BRM a hi:MachineLearningMethod,
+        hi:StatisticalMethod .
+
+hi:BDI a hi:Capability,
+        owl:NamedIndividual .
+
+hi:Bilateral_Coordination a hi:AnticipatoryCoordination,
+        hi:PositiveCoordination,
+        owl:NamedIndividual ;
+    rdfs:comment "both agents adjust actions for mutual benefit" .
+
+hi:Bilateral_Delegation a hi:Delegation,
+        owl:NamedIndividual ;
+    rdfs:comment "Both agents negotiate and agree on a delegated task" .
+
+hi:CaptureTacitKnowledge a hi:ProcessingTask ;
+    hi:usesProcessingMethod hi:Hybrid3 .
+
+hi:CarePlanningOptimization a hi:Context ;
+    hi:hasDomain hi:Healthcare2,
+        hi:ProfessionalCarePlanning ;
+    hi:hasEthicalConsideration hi:EnsureTransparancy3,
+        hi:EnsuringPrivacy4 .
+
+hi:Caregiver a hi:Human,
+        owl:NamedIndividual ;
+    rdfs:label "Caregiver for Dementia User" ;
+    hi:inScenario hi:DementiaCareScenario .
+
+hi:CategorizingAI a hi:ProcessingTask ;
+    hi:followsFramework hi:EASY_AI_Framework ;
+    hi:usesProcessingMethod hi:OntologicalTransformation .
+
+hi:ChatGPT a hi:ArtificialAgent,
+        hi:GenAI,
+        owl:NamedIndividual ;
+    rdfs:label "ChatGPT-3.5" ;
+    hi:capability hi:ExplanationGeneration ;
+    hi:processingInformation hi:NaturalLanguageExplanationGeneration .
+
+hi:Child a hi:Human,
+        owl:NamedIndividual .
+
+hi:Clarification a hi:CommunicationAction,
+        owl:NamedIndividual .
+
+hi:Close_Delegation a hi:Delegation,
+        owl:NamedIndividual ;
+    rdfs:comment "The delegating agent specifies a strict procedure to follow." .
+
+hi:ClosedLoopSystem a hi:ArtificialAgent,
+        owl:NamedIndividual ;
+    rdfs:label "Closed-loop System" ;
+    hi:informationMethod hi:Statistical ;
+    hi:processingInformation hi:TaskAllocation ;
+    hi:processingTask hi:Learning .
+
+hi:Clustering a hi:ProcessingTask,
+        owl:NamedIndividual .
+
+hi:CoactiveTeamDesign a owl:Class ;
+    rdfs:subClassOf hi:System .
+
+hi:Coercive_Action a hi:InfluencingAction,
+        owl:NamedIndividual ;
+    rdfs:comment "an agent applies power to force compliance." .
+
+hi:CognitiveUserModel a hi:UserModel,
+        owl:NamedIndividual .
+
+hi:Collaboration a hi:InteractionTask ;
+    hi:usesInteractionMethod hi:Non-cooperative2 .
+
+hi:CollaborativePursuitOfGoal a hi:Endgoal .
+
+hi:Collaborative_Coordination a [ a owl:Restriction ;
+            owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+            owl:onClass hi:Actor ;
+            owl:onProperty :coordinatesWith ],
+        hi:AnticipatoryCoordination,
+        hi:PositiveCoordination,
+        owl:NamedIndividual ;
+    rdfs:comment "an agent actively helps another achieve their goal." .
+
+hi:Confidence a hi:CognitiveEffect,
+        owl:NamedIndividual .
+
+hi:ConflictAvoidance a hi:NegativeCoordination,
+        owl:NamedIndividual .
+
+hi:Control a hi:Capability,
+        owl:NamedIndividual .
+
+hi:CooperativeOptimization a hi:PositiveCoordination,
+        owl:NamedIndividual .
+
+hi:CreateSharedKnowledgeEnvironment a hi:Endgoal .
+
+hi:CreationBeforeManipulation a hi:InteractionMethod .
+
+hi:Creativity a hi:Capability,
+        owl:NamedIndividual .
+
+hi:CriminalJustice a hi:Context ;
+    hi:hasDomain hi:MachineLearningFairness,
+        hi:PredictiveDecisionMaking ;
+    hi:hasEthicalConsideration hi:EnsuringPrivacy3,
+        hi:EnsuringTransparency .
+
+hi:DataScientist a hi:Human ;
+    hi:hasEndgoal hi:AlgorithmicJustice,
+        hi:EnsureFairness3,
+        hi:EnsureTransparancy7 ;
+    hi:isCapableOf hi:DecisionMaking5,
+        hi:Prepare,
+        hi:Reflection2 ;
+    hi:participatesIn hi:CriticalThinking,
+        hi:Ideate,
+        hi:Refine .
+
+hi:DatasetBiasInvestigation a hi:Context ;
+    hi:hasDomain hi:HumanComputerInteraction ;
+    hi:hasEthicalConsideration hi:EnsureFairness,
+        hi:EnsureTransparancy2 .
+
+hi:Deceptive_Action a hi:InfluencingAction,
+        owl:NamedIndividual ;
+    rdfs:comment "an agent misleads another to achieve an influence goal" .
+
+hi:DecisionMaking4 a hi:Capability .
+
+hi:DecisionMakingContexts a hi:Context ;
+    hi:hasDomain hi:AIEthics3,
+        hi:FairnessInAI2,
+        hi:HumanAITust ;
+    hi:hasEthicalConsideration hi:AvoidBias4,
+        hi:EnsureFairness2,
+        hi:EnsureHumanOversight,
+        hi:EnsureTransparancy6 .
+
+hi:DecisionSupport2 a hi:InteractionTask ;
+    hi:usesInteractionMethod hi:Non-cooperative2 .
+
+hi:DecisionSupportSystem2 a hi:Domain .
+
+hi:DeckOfCards a hi:Tool .
+
+hi:Designer a hi:Human,
+        owl:NamedIndividual ;
+    hi:hasEndgoal hi:EnhanceUserControl2,
+        hi:EnsureFairness3,
+        hi:EnsureTransparancy7,
+        hi:ResponsibleDesign2 ;
+    hi:isCapableOf hi:DecisionMaking5,
+        hi:Prepare,
+        hi:Reflection2 ;
+    hi:participatesIn hi:CriticalThinking,
+        hi:Ideate,
+        hi:Refine .
+
+hi:DigitalBehaviorAnalysis a hi:Scenario,
+        owl:NamedIndividual ;
+    rdfs:label "Digital Behavior Analysis" ;
+    hi:context hi:DigitalWorld ;
+    hi:domain hi:DigitalEthics ;
+    hi:hasEthicalConsideration hi:CopyrightInfringement,
+        hi:PrivacyViolation ;
+    hi:hasInteraction hi:MediatedInteraction .
+
+hi:DirectIntervention a hi:StrongSocialAction,
+        owl:NamedIndividual .
+
+hi:EVE a hi:ArtificialAgent,
+        owl:NamedIndividual .
+
+hi:Economic_Power a hi:PowerRelation,
+        owl:NamedIndividual ;
+    rdfs:comment "an agent influences others via resource control." .
+
+hi:EducationalAdmissions a hi:Context ;
+    hi:hasDomain hi:MachineLearningFairness,
+        hi:PredictiveDecisionMaking ;
+    hi:hasEthicalConsideration hi:EnsuringPrivacy3,
+        hi:EnsuringTransparency .
+
+hi:EnergyManagement a hi:InteractionTask,
+        owl:NamedIndividual .
+
+hi:Engineer a hi:Human ;
+    hi:hasEndgoal hi:EnsureTransparancy7,
+        hi:ResponsibleDesign2 ;
+    hi:isCapableOf hi:DecisionMaking5,
+        hi:Prepare,
+        hi:Reflection2 ;
+    hi:participatesIn hi:CriticalThinking,
+        hi:Ideate,
+        hi:Refine .
+
+hi:EnhanceHumanPerformance a hi:Endgoal .
+
+hi:EnhancingCollaborativeDecisionMaking2 a hi:Endgoal .
+
+hi:EnhancingHumanUnderstanding a hi:Endgoal .
+
+hi:EnsuringEquitableAccess a hi:Endgoal .
+
+hi:EnsuringEquitableUtilization a hi:Endgoal .
+
+hi:EquityScoringAlgorithm a hi:EvaluationMethod .
+
+hi:Exosoul a hi:ArtificialAgent,
+        owl:NamedIndividual ;
+    rdfs:label "Exosoul System" ;
+    hi:capability hi:Responsibility,
+        hi:Transparency ;
+    hi:processingInformation hi:EthicalProfiling .
+
+hi:ExpectationDrivenAction a hi:AnticipatoryCoordination,
+        owl:NamedIndividual .
+
+hi:ExpertAnnotator a hi:Human ;
+    hi:evaluatedBy hi:BiasAssessmentInLabeling ;
+    hi:hasEndgoal hi:ImprovingAlgorithmicFairness ;
+    hi:isCapableOf hi:BiasAwareness,
+        hi:FairnessEvaluation ;
+    hi:participatesIn hi:ComparativeAnnotation ;
+    hi:processingTask hi:SubjectiveBiasMeasurement .
+
+hi:Explainability a hi:Capability,
+        hi:InteractionTask,
+        owl:NamedIndividual .
+
+hi:ExplainingAI a hi:ProcessingTask ;
+    hi:followsFramework hi:EASY_AI_Framework ;
+    hi:usesProcessingMethod hi:DataTransformation .
+
+hi:ExplanationDialogueModel a hi:InteractionMethod,
+        owl:NamedIndividual .
+
+hi:FacialAnnotation a hi:Context ;
+    hi:hasDomain hi:MLAnnotationBias ;
+    hi:hasEthicalConsideration hi:AvoidBias2 .
+
+hi:FairnessMonitoringFL a hi:Context ;
+    hi:hasDomain hi:AIEthics,
+        hi:FairnessInAI,
+        hi:FederatedLearningDomain,
+        hi:PrivacyPreservingAI ;
+    hi:hasEthicalConsideration hi:AvoidBias3,
+        hi:EnsuringPrivacy5 .
+
+hi:ForecastedAdjustment a hi:AnticipatoryCoordination,
+        owl:NamedIndividual .
+
+hi:Generating a hi:ProcessingTask,
+        owl:NamedIndividual .
+
+hi:GestureRecognition a hi:Capability ;
+    hi:usesTool hi:MetaInteractionSDK .
+
+hi:GoalAlignment a hi:GoalAdoption,
+        owl:NamedIndividual .
+
+hi:HOLDA a hi:ArtificialAgent ;
+    hi:evaluatedBy hi:DemographicParity,
+        hi:EqualOpportunity,
+        hi:EqualizedOdds,
+        hi:FairnessEvaluationMetrics ;
+    hi:hasEndgoal hi:BalancingPerformanceFairness,
+        hi:BiasPrevention,
+        hi:ImprovingFLFairness ;
+    hi:isCapableOf hi:FairnessMonitoring ;
+    hi:participatesIn hi:BiasPropagationEvaluation,
+        hi:FairModelValidation ;
+    hi:processingTask hi:BiasTracking,
+        hi:DecentralizedModelTraining .
+
+hi:HapticFeedback a hi:Feedback,
+        owl:NamedIndividual .
+
+hi:HarmfulContent a hi:EthicalConsideration,
+        owl:NamedIndividual .
+
+hi:Harmonization a hi:NegativeCoordination,
+        owl:NamedIndividual .
+
+hi:HealthcareMonitoring a hi:InteractionTask,
+        owl:NamedIndividual .
+
+hi:Hierarchical_Power a hi:PowerRelation,
+        owl:NamedIndividual ;
+    rdfs:comment "an agent has formal authority over another." .
+
+hi:Hiring a hi:Context ;
+    hi:hasDomain hi:MachineLearningFairness,
+        hi:PredictiveDecisionMaking ;
+    hi:hasEthicalConsideration hi:EnsuringPrivacy3,
+        hi:EnsuringTransparency .
+
+hi:HumanAgent a hi:Human ;
+    hi:collaboratesWith hi:AISystem ;
+    hi:isCapableOf hi:AllowAction,
+        hi:DecisionMaking2,
+        hi:DefiningExpectations,
+        hi:MonitoringAI,
+        hi:OverrideAction ;
+    hi:participatesIn hi:OutputComparison .
+
+hi:HumanAgentDialogue a hi:Scenario,
+        owl:NamedIndividual ;
+    rdfs:label "Human-Agent Collaboration Through Dialogue" ;
+    hi:context hi:PersonalWellbeing ;
+    hi:domain hi:Healthcare ;
+    hi:hasEthicalConsideration hi:GoalConflict ;
+    hi:hasInteraction hi:AlignmentDialogue .
+
+hi:HumanAllocator a hi:Human,
+        owl:NamedIndividual ;
+    hi:allocatesTask hi:IdentifyEvent,
+        hi:IdentifyLandmark,
+        hi:IdentifyLanguage,
+        hi:SolveWordGrid .
+
+hi:HumanCenteredObjectRecognition a hi:Context ;
+    hi:hasDomain hi:ComputerVision,
+        hi:HierarchicalClassification,
+        hi:HumanCenteredAI,
+        hi:VisualSemantics .
+
+hi:HumanExpert a hi:Human,
+        owl:NamedIndividual ;
+    rdfs:label "Human Expert" ;
+    hi:inScenario hi:ValueBasedHybridScenario .
+
+hi:HumanLabeler a hi:Human ;
+    hi:evaluatedBy hi:BiasAssessmentInLabeling ;
+    hi:hasEndgoal hi:LabelerBias,
+        hi:UnbiasedDatasetCreation ;
+    hi:isCapableOf hi:FacialAttributeAssessment ;
+    hi:participatesIn hi:LabelerPerceptionAssessment ;
+    hi:processingTask hi:FacialImageAnnotation .
+
+hi:HumanOperator a hi:Human,
+        owl:NamedIndividual ;
+    hi:collaboratesWith hi:UAVs ;
+    hi:evaluatedBy hi:BehavioralEvaluation,
+        hi:PhysiologicalEvaluation,
+        hi:SubjectiveEvaluation ;
+    hi:isCapableOf hi:PerformanceMonitoring ;
+    hi:participatesIn hi:AdjustingInteraction,
+        hi:TaskDelegation2 ;
+    hi:processingTask hi:BehavioralMonitoring,
+        hi:ModelHCIDynamics,
+        hi:OfflineLearning .
+
+hi:HumanOperator1 a hi:Human,
+        owl:NamedIndividual ;
+    rdfs:label "Human Pilot Operator" ;
+    hi:inScenario hi:AdaptivePOMDPScenario ;
+    hi:processingInformation hi:POMPDModel .
+
+hi:HumanWordAssociation a hi:WordAssociation,
+        owl:NamedIndividual .
+
+hi:HyEnAProcess a hi:InformationProcessing ;
+    hi:informationMethod hi:HyEnA ;
+    hi:processingTask hi:KeyArgumentAnnotation,
+        hi:KeyArgumentConsolidation .
+
+hi:Hybrid a hi:ProcessingMethod,
+        owl:NamedIndividual .
+
+hi:HybridAgent a hi:ArtificialAgent ;
+    hi:collaboratesWith hi:DomainExpert ;
+    hi:evaluatedBy hi:AssessingEffectiveness,
+        hi:AssessingEfficiency,
+        hi:AssessingTrustworthiness,
+        hi:ParticipatoryEvaluation ;
+    hi:hasEndgoal hi:ImproveDecisionAccuracy ;
+    hi:isCapableOf hi:DataProcessing,
+        hi:KnowledgeAggregation,
+        hi:SolutionGeneration ;
+    hi:participatesIn hi:DecisionSupport ;
+    hi:processingInformation hi:CaseKnowledgeGraph,
+        hi:DomainKnowledgeGraph ;
+    hi:processingTask hi:KnowledgeEngineering .
+
+hi:HybridCentaur a hi:ArtificialAgent ;
+    hi:collaboratesWith hi:HumanAgent2 ;
+    hi:evaluatedBy hi:OverestimationOfProbabilities,
+        hi:TimeInconsistentPreferences ;
+    hi:followsFramework hi:HuMaCe ;
+    hi:isCapableOf hi:DecisionSupport5,
+        hi:GoalDetection ;
+    hi:participatesIn hi:TaskDelegation,
+        hi:TaskExecutionWithOverrides ;
+    hi:processingTask hi:ParticleMaintenance,
+        hi:Perturbation,
+        hi:Recursion,
+        hi:ReinvigoratingParticleSets,
+        hi:SolvingSTMs,
+        hi:TrainingNeuralNetworks .
+
+hi:HybridIntelligenceCollaboration a hi:Context ;
+    hi:hasDomain hi:AIEthics2,
+        hi:ComputationalTheoryOfMind,
+        hi:HumanAIInteraction ;
+    hi:hasEthicalConsideration hi:EnsureTransparancy5 .
+
+hi:HybridIntelligenceCollaboration2 a hi:Context ;
+    hi:hasDomain hi:HybridIntelligence,
+        hi:MultiAgentSystems .
+
+hi:HybridIntelligenceSystem a hi:ArtificialAgent,
+        hi:InformationProcessing,
+        owl:NamedIndividual ;
+    rdfs:label "Value-Based Hybrid Intelligence System" ;
+    hi:inScenario hi:ValueBasedHybridScenario ;
+    hi:processingTask hi:ValueMetric .
+
+hi:ImplicitExpectation a hi:WeakSocialAction,
+        owl:NamedIndividual .
+
+hi:ImproveDecisionEfficiency a hi:Endgoal .
+
+hi:ImproveProductivity a hi:Endgoal .
+
+hi:ImprovedHumanMachineAlignment2 a hi:Endgoal .
+
+hi:ImprovingAIInterpretability2 a hi:EndGoal .
+
+hi:Incentivizing_Action a hi:InfluencingAction,
+        owl:NamedIndividual ;
+    rdfs:comment "an agent offers rewards to influence another" .
+
+hi:IndoorPoliceIntervention a hi:Scenario,
+        owl:NamedIndividual ;
+    rdfs:label "Indoor Police Intervention" ;
+    hi:context hi:TacticalIntervention ;
+    hi:domain hi:LawEnforcement ;
+    hi:hasEthicalConsideration hi:DataSafety,
+        hi:PrivacyConcerns ;
+    hi:hasInteraction hi:ARInformationPresentation .
+
+hi:InstantAdjustment a hi:ReactiveCoordination,
+        owl:NamedIndividual .
+
+hi:Instruction a hi:CommunicationAction,
+        owl:NamedIndividual .
+
+hi:IntentAdoption a hi:GoalAdoption,
+        owl:NamedIndividual .
+
+hi:IntentionalGuidance a owl:NamedIndividual .
+
+hi:InterferenceMinimization a hi:NegativeCoordination,
+        owl:NamedIndividual .
+
+hi:InterpersonalActivityGraph a hi:KnowledgeGraphs .
+
+hi:IntuitiveVisualLanguage a hi:Context ;
+    hi:hasDomain hi:AIExplainability,
+        hi:HumanAIInteraction,
+        hi:Ontologies,
+        hi:SemanticTechnologies ;
+    hi:hasEthicalConsideration hi:EnsureTransparancy4 .
+
+hi:IsCommittedTo a owl:ObjectProperty ;
+    rdfs:domain hi:Actor ;
+    rdfs:range hi:Actor ;
+    rdfs:subPropertyOf owl:topObjectProperty ;
+    owl:propertyChainAxiom ( hi:hasSocialCommitment ) .
+
+hi:JobMatching a hi:Context ;
+    hi:hasDomain hi:HumanResources,
+        hi:JobVacancySelection,
+        hi:Recruitment ;
+    hi:hasEthicalConsideration hi:EnsuringPrivacy2,
+        hi:UnbiasedSystem .
+
+hi:JobMatchingAI a hi:ArtificialAgent ;
+    hi:evaluatedBy hi:FeedbackQuestionnaire ;
+    hi:hasEndgoal hi:ImproveJobMatching ;
+    hi:isCapableOf hi:EvaluateSkillsAndValues,
+        hi:MatchJobToJobseeker ;
+    hi:participatesIn hi:Evaluation,
+        hi:ProvideFeedback ;
+    hi:processingTask hi:CalculateMatchScores,
+        hi:CosineSimilarity,
+        hi:ParetoOptimality .
+
+hi:KeyPointAnalysis a hi:ProcessingTask,
+        owl:NamedIndividual .
+
+hi:KnowledgeGraphManagement a hi:Context ;
+    hi:hasDomain hi:Business,
+        hi:Education,
+        hi:Healthcare ;
+    hi:hasEthicalConsideration hi:EnsuringPrivacy .
+
+hi:KnowledgeRepresentation a hi:Domain .
+
+hi:Knowledge_Power a hi:PowerRelation,
+        owl:NamedIndividual ;
+    rdfs:comment "an agent influences others by controlling information" .
+
+hi:LexicalNetwork a hi:Scenario,
+        owl:NamedIndividual .
+
+hi:LiveVideoMonitoringScenario a hi:Scenario,
+        owl:NamedIndividual ;
+    hi:context hi:LiveVideoStream ;
+    hi:hasInteraction hi:OperatorFeedbackInteraction .
+
+hi:LlmModelExplanation a hi:Scenario,
+        owl:NamedIndividual ;
+    rdfs:label "LLM Model Explanation" ;
+    hi:context hi:UserComprehension ;
+    hi:domain hi:ExplainableAI ;
+    hi:hasEthicalConsideration hi:IncorrectExplanation,
+        hi:Trust ;
+    hi:hasInteraction hi:PromptBasedInteraction .
+
+hi:LoanApproval a hi:Context ;
+    hi:hasDomain hi:MachineLearningFairness,
+        hi:PredictiveDecisionMaking ;
+    hi:hasEthicalConsideration hi:EnsuringPrivacy3,
+        hi:EnsuringTransparency .
+
+hi:MLClassifier a hi:InformationProcessing,
+        owl:NamedIndividual .
+
+hi:MUM_T_Missions a hi:Context ;
+    hi:hasDomain hi:AIMonitoring2,
+        hi:Aviation,
+        hi:HumanRobotInteraction .
+
+hi:MachineTeaching a hi:InteractiveML,
+        owl:NamedIndividual .
+
+hi:MedicalHarmScenario a hi:Scenario,
+        owl:NamedIndividual ;
+    hi:hasEthicalConsideration hi:Fabrication .
+
+hi:MiroDigitalCollaborationPlatform a hi:Tool .
+
+hi:Misalignment a hi:CognitiveEffect,
+        owl:NamedIndividual .
+
+hi:MistralModel a hi:ArtificialAgent,
+        owl:NamedIndividual .
+
+hi:Motivation a hi:Capability,
+        owl:NamedIndividual .
+
+hi:MultimodalFeedback a hi:Feedback,
+        owl:NamedIndividual .
+
+hi:MutualBenefitAlignment a hi:PositiveCoordination,
+        owl:NamedIndividual .
+
+hi:Mutual_Dependence a hi:DependenceRelation,
+        owl:NamedIndividual ;
+    rdfs:comment "two agents depend on each other for achieving the same goal" .
+
+hi:NormMonitoring a hi:Capability .
+
+hi:Normative_Commitment a hi:SocialCommitment,
+        owl:NamedIndividual ;
+    rdfs:comment "social norms dictate commitment" .
+
+hi:ObjectGeneration a hi:Capability .
+
+hi:Obligation_Commitment a hi:SocialCommitment,
+        owl:NamedIndividual ;
+    rdfs:comment "agent is bound to perform an action for another" .
+
+hi:ObstacleAvoidance a hi:ProcessingTask,
+        owl:NamedIndividual .
+
+hi:OpenEndedDecisionMaking a hi:Context ;
+    hi:hasDomain hi:ClimateChangeAdaptation,
+        hi:ClimateChangeRiskManagement,
+        hi:MedicalDiagnostics ;
+    hi:hasEthicalConsideration hi:AvoidBias,
+        hi:EnsureTransparancy .
+
+hi:Open_Delegation a hi:Delegation,
+        owl:NamedIndividual ;
+    rdfs:comment "The receiving agent has autonomy to decide how to achieve the goal" .
+
+hi:OrganizationalManagement a hi:Context ;
+    hi:hasDomain hi:Business,
+        hi:Education,
+        hi:Healthcare ;
+    hi:hasEthicalConsideration hi:EnsuringPrivacy .
+
+hi:ParadigmaticRelation a hi:WordAssociation,
+        owl:NamedIndividual .
+
+hi:Participants a hi:Human,
+        owl:NamedIndividual ;
+    hi:inScenario hi:InteractiveMLExperiment .
+
+hi:ParticipatoryValueEvaluation a hi:ProcessingMethod,
+        owl:NamedIndividual .
+
+hi:PassiveAdaptation a hi:WeakSocialAction,
+        owl:NamedIndividual .
+
+hi:PedagogicSimulation a hi:Scenario,
+        owl:NamedIndividual ;
+    hi:hasInteraction hi:SimulationBasedInteraction .
+
+hi:PersonalizationPrivacyTradeoff a hi:EthicalConsideration,
+        owl:NamedIndividual .
+
+hi:Persuasion a hi:InfluencingAction,
+        owl:NamedIndividual .
+
+hi:Persuasive_Action a hi:InfluencingAction,
+        owl:NamedIndividual ;
+    rdfs:comment "an agent uses argumentation to influence another" .
+
+hi:PowerGridAIAssistant a hi:ArtificialAgent ;
+    hi:evaluatedBy hi:PerformanceTest ;
+    hi:hasEndgoal hi:EnhanceDecisionMaking,
+        hi:ImproveSituationalAwareness ;
+    hi:isCapableOf hi:DataProcessing2,
+        hi:Recommendation ;
+    hi:participatesIn hi:DecisionSupport3 ;
+    hi:processingTask hi:AssistDecisionMaking,
+        hi:IdentifyingIssues,
+        hi:Monitoring,
+        hi:ProvidePredictiveInsights,
+        hi:SuggestingActions .
+
+hi:PowerGridManagement a hi:Context ;
+    hi:hasDomain hi:DecisionSupportSystem,
+        hi:HumanCenteredAI2,
+        hi:HumanMachineInteraction ;
+    hi:hasEthicalConsideration hi:AvoidingOverReliance,
+        hi:Deskilling,
+        hi:UnbiasedSystem2 .
+
+hi:PredictiveAdjustment a hi:WeakSocialAction,
+        owl:NamedIndividual .
+
+hi:ProactiveAssistance a hi:StrongSocialAction,
+        owl:NamedIndividual .
+
+hi:PublicSafety a hi:Domain,
+        owl:NamedIndividual ;
+    rdfs:label "Public Safety" .
+
+hi:Question-Answering a hi:InteractionTask,
+        owl:NamedIndividual .
+
+hi:RealTimeResponse a hi:ReactiveCoordination,
+        owl:NamedIndividual .
+
+hi:Reciprocal_Commitment a hi:SocialCommitment,
+        owl:NamedIndividual ;
+    rdfs:comment "two agents commit to supporting each other" .
+
+hi:Reciprocal_Dependence a hi:DependenceRelation,
+        owl:NamedIndividual ;
+    rdfs:comment "two agents depend on each other but for different goals" .
+
+hi:Researcher a hi:Human ;
+    hi:hasEndgoal hi:AlgorithmicJustice,
+        hi:Explicability,
+        hi:ResponsibleDesign2 ;
+    hi:isCapableOf hi:DecisionMaking5,
+        hi:Prepare,
+        hi:Reflection2 ;
+    hi:participatesIn hi:CriticalThinking,
+        hi:Ideate,
+        hi:Refine .
+
+hi:Resource_Dependence a hi:DependenceRelation,
+        owl:NamedIndividual ;
+    rdfs:comment "an agent depends on another for access to resources" .
+
+hi:ResponsibilityTransfer a hi:Delegation,
+        owl:NamedIndividual .
+
+hi:Scenario_AIGovernance a hi:EthicallyAwareScenario,
+        hi:Scenario ;
+    hi:context hi:Context_MultiStakeholder ;
+    hi:endgoal hi:Goal_Accountability ;
+    hi:hasEthicalConsideration hi:Norm_RespectPrivacy ;
+    hi:sourcePaper "10.3233/FAIA240204" ;
+    hi:usesFramework hi:Framework_ResponsibleAI .
+
+hi:Scenario_BiasWorkshop a hi:EthicallyAwareScenario,
+        hi:Scenario ;
+    hi:context hi:Context_MiniCoDeEthics ;
+    hi:employsStrategy hi:Strategy_PreAudit ;
+    hi:endgoal hi:Goal_BiasAwareness ;
+    hi:hasEthicalConsideration hi:Norm_RespectPrivacy ;
+    hi:sourcePaper "hhai-2022_paper_58" .
+
+hi:Scenario_ElderCareEthics a hi:Scenario ;
+    hi:context hi:Context_ElderCare ;
+    hi:endgoal hi:Goal_EthicalSupport ;
+    hi:sourcePaper "10.3233/FAIA230076" ;
+    hi:usesFramework hi:Framework_EthicsVSD .
+
+hi:Scenario_JusticeWorkshop a hi:Scenario ;
+    hi:context hi:Context_TransparencyDesign ;
+    hi:endgoal hi:Goal_CitizenTrust ;
+    hi:sourcePaper "10.3233/FAIA230082" .
+
+hi:SearchAndRescue_Missions a hi:Context ;
+    hi:hasDomain hi:AIMonitoring2,
+        hi:Aviation,
+        hi:HumanRobotInteraction .
+
+hi:SelectiveClassifier a hi:ArtificialAgent,
+        owl:NamedIndividual ;
+    rdfs:label "Selective Classifier (Cost-Sensitive)" ;
+    hi:inScenario hi:ValueAwareActiveLearningScenario ;
+    hi:processingInformation hi:ActiveLearningMethod .
+
+hi:SelfRegulatedLearning a hi:Capability,
+        owl:NamedIndividual ;
+    rdfs:label "Self-regulated Learning" .
+
+hi:Selfish_Coordination a hi:NegativeCoordination,
+        hi:ReactiveCoordination,
+        owl:NamedIndividual ;
+    rdfs:comment "an agent optimizes only its own success" .
+
+hi:SemanticGlyphs a hi:Capability .
+
+hi:SemiAutomatedDecisionMaking a hi:ArtificialAgent ;
+    hi:evaluatedBy hi:VignetteBasedFairnessEvaluation ;
+    hi:hasEndgoal hi:ResponsibleDesign ;
+    hi:isCapableOf hi:DecisionMaking,
+        hi:FairnessEvaluation ;
+    hi:participatesIn hi:HumanFairnessJudgment ;
+    hi:processingTask hi:FairnessPerceptionEvaluation .
+
+hi:SharedObjective a hi:GoalAdoption,
+        owl:NamedIndividual .
+
+hi:SituationalAdaptation a hi:ReactiveCoordination,
+        owl:NamedIndividual .
+
+hi:SituationalAwareness a hi:ProcessingTask,
+        owl:NamedIndividual .
+
+hi:Situational_Power a hi:PowerRelation,
+        owl:NamedIndividual ;
+    rdfs:comment "power is context-dependent" .
+
+hi:SmartHome a hi:Scenario,
+        owl:NamedIndividual .
+
+hi:SocioTechnical a hi:Domain .
+
+hi:SpeechRecognition a hi:Capability ;
+    hi:usesTool hi:WitAI .
+
+hi:StepByStep a hi:InteractionMethod .
+
+hi:StoryboardingTemplate a hi:Tool .
+
+hi:StrategicPlanning a hi:AnticipatoryCoordination,
+        owl:NamedIndividual .
+
+hi:Student a hi:Human,
+        owl:NamedIndividual .
+
+hi:StudentBehaviorModeling a hi:InformationProcessing,
+        owl:NamedIndividual .
+
+hi:StudentSimulator a hi:ArtificialAgent,
+        owl:NamedIndividual .
+
+hi:SubjectMatterExpert a hi:Human ;
+    hi:collaboratesWith hi:AIDecisionTool ;
+    hi:isCapableOf hi:AnalogicalThinking,
+        hi:DecisionMaking3,
+        hi:Reflection ;
+    hi:participatesIn hi:Adjunction,
+        hi:AnalyticalOutputInteraction .
+
+hi:Suggestion a hi:InfluencingAction,
+        owl:NamedIndividual .
+
+hi:SupportAgent a hi:ArtificialAgent,
+        owl:NamedIndividual ;
+    rdfs:label "Behaviour Support Agent",
+        "Support Agent (Personal Values)" ;
+    hi:capability hi:Adaptiveness,
+        hi:Communication ;
+    hi:inScenario hi:PersonalValueScenario ;
+    hi:processingInformation hi:UserModeling .
+
+hi:SymbolicRepresentation a hi:InteractionTask ;
+    hi:usesInteractionMethod hi:SymbolicGraphicalInterface .
+
+hi:SymbolicRepresentationEvaluation a hi:EvaluationMethod .
+
+hi:SynergisticAction a hi:PositiveCoordination,
+        owl:NamedIndividual .
+
+hi:SyntagmaticRelation a hi:WordAssociation,
+        owl:NamedIndividual .
+
+hi:System_CobotLine a hi:Intelligent_System ;
+    hi:sharesControlWith hi:Operator_Anna ;
+    hi:sourcePaper "10.3233/FAIA240203" ;
+    hi:usedInScenario hi:Scenario_FactoryAssist .
+
+hi:System_ExplainMed a hi:Intelligent_System ;
+    hi:customizesExplanationFor hi:Role_Doctor ;
+    hi:providesExplanation hi:Explanation_Contrastive ;
+    hi:sourcePaper "10.3233/FAIA240202" ;
+    hi:usedInScenario hi:Scenario_ClinicalAid ;
+    owl:sameAs [ a hi:TeachingAgent ;
+            hi:receivesFeedback hi:Feedback_EduSession1 ] .
+
+hi:System_FireResponseAI a hi:Intelligent_System ;
+    hi:buildsAwarenessFrom hi:Sensor_BuildingSmoke ;
+    hi:sourcePaper "hhai-2021_paper_96" ;
+    hi:usedInScenario hi:Scenario_FireAlert .
+
+hi:System_HomeBot a hi:EmbodiedAgent ;
+    hi:perceivesAffordance hi:Affordance_Graspable ;
+    hi:sourcePaper "10.3389/frobt.2023.1152595" ;
+    hi:usedInScenario hi:Scenario_DailyAssistance .
+
+hi:System_IMLTutor a hi:Intelligent_System ;
+    hi:providesExplanation hi:Explanation_ProgressiveHinting ;
+    hi:receivesFeedback hi:Feedback_EduSession1 ;
+    hi:sourcePaper "10.3233/FAIA230079" ;
+    hi:usedInScenario hi:Scenario_EduFeedback .
+
+hi:System_NegotiatorX a hi:Intelligent_System ;
+    hi:appliesNorm hi:Norm_RespectPrivacy ;
+    hi:sourcePaper "10.3233/FAIA230091" ;
+    hi:usedInScenario hi:Scenario_UnionTalks .
+
+hi:System_TrustBot a hi:Intelligent_System,
+        hi:TrustCalibratingSystem ;
+    hi:capability hi:Adaptiveness ;
+    hi:sourcePaper "10.3233/FAIA230088" ;
+    hi:usedInScenario hi:Scenario_TrustCalFlight ;
+    owl:sameAs [ a hi:Intelligent_System ;
+            hi:buildsAwarenessFrom hi:Context_Biometric ;
+            hi:capability hi:Adaptiveness ;
+            hi:usedInScenario hi:Scenario_TrustCalFlight ] .
+
+hi:TaskAssignment a hi:Delegation,
+        hi:Scenario,
+        owl:NamedIndividual ;
+    rdfs:label "Task Assignment" ;
+    hi:domain hi:Crowdsourcing ;
+    hi:hasEthicalConsideration hi:BiasMitigation ;
+    hi:hasInteraction hi:CommitteeVoting .
+
+hi:Task_Dependence a hi:DependenceRelation,
+        owl:NamedIndividual ;
+    rdfs:comment "an agent depends on another for executing a task" .
+
+hi:Teacher a hi:Human,
+        owl:NamedIndividual .
+
+hi:TeacherSimulator a hi:ArtificialAgent,
+        owl:NamedIndividual .
+
+hi:TeamPerformance a hi:Scenario,
+        owl:NamedIndividual .
+
+hi:Team_Hybrid2023 a hi:HybridTeam ;
+    hi:capability hi:Collaboration-based ;
+    hi:inScenario hi:Scenario_TeamCrowdResearch ;
+    hi:sourcePaper "10.3233/FAIA220207" .
+
+hi:TextGeneration a hi:ProcessingTask,
+        owl:NamedIndividual .
+
+hi:ToMAgent a hi:ArtificialAgent ;
+    hi:evaluatedBy hi:ToMBasedEvaluation ;
+    hi:hasEndgoal hi:EnhancingCollaborativeDecisionMaking,
+        hi:ImprovingHumanAIAlignment ;
+    hi:isCapableOf hi:DecisionMaking,
+        hi:Reasoning ;
+    hi:participatesIn hi:ConsensusBuilding,
+        hi:DisagreementResolution,
+        hi:HumanAgentCollaboration ;
+    hi:processingTask hi:AdaptiveDecisionMaking,
+        hi:ExplainingHumanBehavior,
+        hi:PredictingHumanDecisions .
+
+hi:Tool_ExplainPanel a hi:TransparencyTool ;
+    rdfs:label "Explainability Panel" ;
+    hi:sourcePaper "10.3233/FAIA230082" .
+
+hi:TopicAssignment a hi:ProcessingTask,
+        owl:NamedIndividual .
+
+hi:Transforming a hi:ProcessingTask,
+        owl:NamedIndividual .
+
+hi:TrustCalibrationModel a owl:Class ;
+    rdfs:subClassOf hi:System .
+
+hi:UAVTeam a hi:ArtificialAgent,
+        owl:NamedIndividual ;
+    rdfs:label "Autonomous UAV Team" ;
+    hi:inScenario hi:AdaptivePOMDPScenario .
+
+hi:Unilateral_Coordination a hi:NegativeCoordination,
+        hi:ReactiveCoordination,
+        owl:NamedIndividual ;
+    rdfs:comment "only one agent adjusts actions based on another." .
+
+hi:Unilateral_Delegation a hi:Delegation,
+        owl:NamedIndividual ;
+    rdfs:comment "One agent delegates a task without input from the other" .
+
+hi:User a hi:Human ;
+    hi:participatesIn hi:ObjectCreationManagement,
+        hi:SpatialManagement ;
+    hi:usesTool hi:HandController,
+        hi:HybridWandTabletInterface,
+        hi:Keyboard .
+
+hi:User2 a hi:Human,
+        owl:NamedIndividual ;
+    rdfs:label "User (Paper2)" ;
+    hi:inScenario hi:PersonalValueScenario .
+
+hi:VRApplication a hi:ArtificialAgent ;
+    hi:hasEndgoal hi:EnhanceControlFlow,
+        hi:EnhanceUserControl ;
+    hi:participatesIn hi:ObjectCreationManagement,
+        hi:SpatialManagement ;
+    hi:processingTask hi:GenerateMeshes,
+        hi:GenerateObjects,
+        hi:GraphGeneration,
+        hi:TranslatingVoiceCommands ;
+    hi:usesTool hi:MetaInteractionSDK,
+        hi:WitAI .
+
+hi:ValueSensitiveDesign a owl:Class ;
+    rdfs:subClassOf hi:Context .
+
+hi:VerbalExplanationRequest a hi:ExplanationRequest,
+        owl:NamedIndividual .
+
+hi:VideoGames a hi:Context ;
+    hi:hasDomain hi:GenerativeAI,
+        hi:VirtualRealityApplications .
+
+hi:VirtualGardenDesign a hi:Context ;
+    hi:hasDomain hi:GenerativeAI,
+        hi:VirtualRealityApplications .
+
+hi:VirtualInteriorDesign a hi:Context ;
+    hi:hasDomain hi:GenerativeAI,
+        hi:VirtualRealityApplications .
+
+hi:VirtualRealityTeleoperation a hi:Scenario,
+        owl:NamedIndividual ;
+    hi:context hi:VirtualLab ;
+    hi:hasInteraction hi:Teleoperation .
+
+hi:VirtualUrbanPlanningDesign a hi:Context ;
+    hi:hasDomain hi:GenerativeAI,
+        hi:VirtualRealityApplications .
+
+hi:VisualRecognition a hi:Context ;
+    hi:hasDomain hi:ComputerVision,
+        hi:HierarchicalClassification,
+        hi:HumanCenteredAI,
+        hi:VisualSemantics .
+
+hi:VisualRecognitionSystem a hi:ArtificialAgent ;
+    hi:evaluatedBy hi:AssessingEffectiveness2,
+        hi:MeasuringUserMachineAlginment ;
+    hi:hasEndgoal hi:ImprovedHumanMachineAlignment,
+        hi:ReducingSemanticGaps ;
+    hi:isCapableOf hi:HierarchicalObjectRecognition,
+        hi:UserAlignedRecognition ;
+    hi:participatesIn hi:IncrementalLearning ;
+    hi:processingTask hi:Categorizing,
+        hi:FeedbackProcessing,
+        hi:Identifying .
+
+hi:VisualizingAI a hi:ProcessingTask ;
+    hi:followsFramework hi:EASY_AI_Framework ;
+    hi:usesProcessingMethod hi:BoxologyPatterns .
+
+hi:Warning a hi:CommunicationAction,
+        owl:NamedIndividual .
+
+hi:WorkloadDistribution a hi:Delegation,
+        owl:NamedIndividual .
+
+hi:adaptationType a owl:DatatypeProperty ;
+    rdfs:domain hi:AdaptationStrategy ;
+    rdfs:range xsd:string .
+
+hi:allocatesTask a owl:ObjectProperty ;
+    rdfs:domain hi:Actor ;
+    rdfs:range hi:AllocatedTask .
+
+hi:appliesNorm a owl:ObjectProperty ;
+    rdfs:domain hi:System ;
+    rdfs:range hi:EthicalNorm .
+
+hi:collaboratesWith a owl:ObjectProperty,
+        owl:SymmetricProperty ;
+    rdfs:domain hi:Actor ;
+    rdfs:range hi:Actor .
+
+hi:controlLevel a owl:DatatypeProperty ;
+    rdfs:domain hi:ControlMode ;
+    rdfs:range xsd:string .
+
+hi:customizesExplanationFor a owl:InverseFunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:domain hi:System ;
+    rdfs:range hi:UserRole .
+
+hi:domain a owl:ObjectProperty ;
+    rdfs:domain hi:Scenario ;
+    rdfs:range hi:Domain .
+
+hi:employsStrategy a owl:ObjectProperty ;
+    rdfs:domain hi:Scenario ;
+    rdfs:range hi:BiasMitigationStrategy .
+
+hi:evaluatedBy a owl:ObjectProperty ;
+    rdfs:domain hi:Actor ;
+    rdfs:range hi:EvaluationMethod .
+
+hi:explanationType a owl:DatatypeProperty ;
+    rdfs:domain hi:ExplanationStrategy ;
+    rdfs:range xsd:string .
+
+hi:feedbackContent a owl:DatatypeProperty ;
+    rdfs:domain hi:EducationalFeedback ;
+    rdfs:range xsd:string .
+
+hi:followsFramework a owl:ObjectProperty ;
+    rdfs:range hi:Framework .
+
+hi:hasBias a owl:ObjectProperty ;
+    rdfs:domain hi:Actor ;
+    rdfs:range hi:Bias .
+
+hi:hasCognitiveEffect a owl:ObjectProperty ;
+    rdfs:domain hi:Actor ;
+    rdfs:range hi:CognitiveEffect .
+
+hi:hasContext a owl:ObjectProperty ;
+    rdfs:domain hi:Scenario ;
+    rdfs:range hi:Context .
+
+hi:hasDomain a owl:ObjectProperty ;
+    rdfs:domain hi:Context,
+        hi:Scenario ;
+    rdfs:range hi:Domain .
+
+hi:hasGoal a owl:ObjectProperty ;
+    rdfs:domain hi:ArtificialAgent ;
+    rdfs:range hi:Endgoal ;
+    owl:inverseOf <http://www.iri.upc.edu/groups/perception/OCRA/ont/ocra.owl#isGoalOf> .
+
+hi:hasRelationalModel a owl:ObjectProperty ;
+    rdfs:domain hi:Scenario ;
+    rdfs:range hi:RelationalModel .
+
+hi:hasTeamingStrategy a owl:ObjectProperty ;
+    rdfs:domain hi:Scenario ;
+    rdfs:range hi:TeamingStrategy .
+
+hi:informationMethod a owl:ObjectProperty ;
+    rdfs:domain hi:InformationProcessing ;
+    rdfs:range hi:ProcessingMethod .
+
+hi:interactingAgent a owl:ObjectProperty ;
+    rdfs:domain hi:Interaction ;
+    rdfs:range hi:Actor ;
+    owl:inverseOf hi:inScenario .
+
+hi:interactionMethod a owl:ObjectProperty ;
+    rdfs:domain hi:Interaction ;
+    rdfs:range hi:InteractionMethod .
+
+hi:interactionTask a owl:ObjectProperty ;
+    rdfs:domain hi:Interaction ;
+    rdfs:range hi:InteractionTask .
+
+hi:normLabel a owl:DatatypeProperty ;
+    rdfs:domain hi:EthicalNorm ;
+    rdfs:range xsd:string .
+
+hi:participatesIn a owl:ObjectProperty ;
+    rdfs:domain hi:Actor ;
+    rdfs:range hi:InteractionTask .
+
+hi:processingTask a owl:ObjectProperty ;
+    rdfs:domain hi:Actor,
+        hi:InformationProcessing ;
+    rdfs:range hi:ProcessingTask .
+
+hi:requestsExplanation a owl:ObjectProperty ;
+    rdfs:domain hi:Human ;
+    rdfs:range hi:ExplanationRequest .
+
+hi:requiresHumanExpertise a owl:ObjectProperty ;
+    rdfs:domain hi:ArtificialAgent ;
+    rdfs:range hi:Human .
+
+hi:roleName a owl:DatatypeProperty ;
+    rdfs:domain hi:UserRole ;
+    rdfs:range xsd:string .
+
+hi:sharesControlWith a owl:ObjectProperty,
+        owl:SymmetricProperty ;
+    rdfs:domain hi:System ;
+    rdfs:range hi:Human .
+
+hi:sourcePaper a owl:AnnotationProperty .
+
+hi:trustScore a owl:DatatypeProperty ;
+    rdfs:domain hi:Context ;
+    rdfs:range xsd:float .
+
+hi:usesFramework a owl:ObjectProperty ;
+    rdfs:domain hi:Scenario ;
+    rdfs:range hi:EthicalFramework .
+
+hi:usesInteractionMethod a owl:ObjectProperty ;
+    rdfs:domain hi:InteractionTask ;
+    rdfs:range hi:InteractionMethod .
+
+hi:usesKG a owl:TransitiveProperty ;
+    rdfs:domain hi:ProcessingTask ;
+    rdfs:range hi:KnowledgeGraphs .
+
+hi:usesMetric a owl:ObjectProperty ;
+    rdfs:domain hi:EvaluationMethod ;
+    rdfs:range hi:Metric .
+
+hi:usesProcessingMethod a owl:ObjectProperty ;
+    rdfs:domain hi:ProcessingTask ;
+    rdfs:range hi:ProcessingMethod .
+
+hi:usesTool a owl:ObjectProperty ;
+    rdfs:range hi:Tool .
+
+mod:createdWith a owl:AnnotationProperty .
+
+ns1:R7EdzGFV5LjYcLBwMjvuBX a owl:Class ;
+    rdfs:label "Generalization"@en .
+
+ns1:R83sQEGoISKKTq0Qqbt0921 a owl:Class ;
+    rdfs:label "Settings"@en .
+
+ns1:RDq1ITXxRilqlyh1HVfW6az a owl:Class ;
+    rdfs:label "HumanCalibration"@en .
+
+ns1:RXkgCia5v1alxR8D7bBem3 a ns1:RCTj2GYfzj9eiGHTj3Bx2gN,
+        owl:NamedIndividual ;
+    rdfs:label "Neural_Network"@en .
+
+ns1:RcBYlApBcbGhmcXc0b6LTz a hi:InteractionMethod,
+        owl:NamedIndividual ;
+    rdfs:label "Multi-agent"@en .
+
+hi1:Accountability a hi1:EthicalMetric,
+        owl:NamedIndividual .
+
+hi1:ActionSuggestion a hi1:InteractionTask,
+        owl:NamedIndividual .
+
+hi1:AdaptableDecisionBoundary a hi1:InteractionMethod,
+        owl:NamedIndividual .
+
+hi1:AddExpertData a hi1:Scenario,
+        owl:NamedIndividual ;
+    hi1:context hi1:ComparedToSelfExploreOnly ;
+    hi1:domain hi1:Gaming ;
+    rdfs:comment "From the paper: \"Learning to Cooperate with Human Evaluative Feedback and Demonstrations\"" .
+
+hi1:AddPositiveFeedback a hi1:Scenario,
+        owl:NamedIndividual ;
+    hi1:context hi1:ComparedToSelfExploreOnly ;
+    hi1:domain hi1:Gaming ;
+    hi1:hasInteraction hi1:EvaluativeFeedback ;
+    rdfs:comment "From the paper: \"Learning to Cooperate with Human Evaluative Feedback and Demonstrations\"" .
+
+hi1:AlgorithmAppreciation a hi1:UserAttitude,
+        owl:NamedIndividual .
+
+hi1:AlgorithmAversion a hi1:UserAttitude,
+        owl:NamedIndividual .
+
+hi1:AssistantAssisting a hi1:Scenario,
+        owl:NamedIndividual ;
+    hi1:context hi1:IntelligentVirtualAssistants ;
+    hi1:domain hi1:CustomerSupport ;
+    hi1:endgoal hi1:InteractionTimeReduction,
+        hi1:ServiceQualityImprovement ;
+    rdfs:comment "From the paper: \"Assisting the Assistant: A Cobot for Voice Customer Support\"" .
+
+hi1:Autonomy a hi1:EthicalMetric,
+        owl:NamedIndividual .
+
+hi1:BalancingStrategy a hi1:ProcessingMethod,
+        owl:NamedIndividual .
+
+hi1:BestModelMaintenance a hi1:Capability,
+        owl:NamedIndividual .
+
+hi1:CNN a hi1:ProcessingMethod,
+        owl:NamedIndividual .
+
+hi1:Cobot a hi1:ArtificialAgent,
+        owl:NamedIndividual ;
+    hi1:capability hi1:Communication,
+        hi1:VoiceEnabled ;
+    hi1:inScenario hi1:AssistantAssisting ;
+    hi1:processingInformation hi1:UserUtterance .
+
+hi1:CommonGround a hi1:InteractionTask,
+        owl:NamedIndividual .
+
+hi1:Communication a hi1:Capability,
+        owl:NamedIndividual .
+
+hi1:Contestability a hi1:DemocraticApproach,
+        hi1:EthicalMetric,
+        owl:NamedIndividual .
+
+hi1:Cooperation a hi1:Capability,
+        owl:NamedIndividual .
+
+hi1:Cooperativeness a hi1:Capability,
+        owl:NamedIndividual .
+
+hi1:CostSensitivity a hi1:EthicalMetric,
+        owl:NamedIndividual .
+
+hi1:CounterfactualEvaluation a hi1:ProcessingTask,
+        owl:NamedIndividual .
+
+hi1:CountingGame a hi1:Context,
+        owl:NamedIndividual .
+
+hi1:CriminalAnalysis a hi1:Scenario,
+        owl:NamedIndividual ;
+    hi1:domain hi1:Legal ;
+    hi1:endgoal hi1:RecidivismPrediction ;
+    hi1:hasEthicalConsideration hi1:Discrimination ;
+    rdfs:comment "From the paper: \"Legitimacy of What?: A Call for Democratic AI Design\"" .
+
+hi1:CriminalRecords a hi1:InformationProcessing,
+        owl:NamedIndividual ;
+    hi1:informationMethod hi1:StatisticalSimilarity ;
+    hi1:processingTask hi1:Prediction .
+
+hi1:CrossDevice a hi1:ProcessingMethod,
+        owl:NamedIndividual .
+
+hi1:CrossSilo a hi1:ProcessingMethod,
+        owl:NamedIndividual .
+
+hi1:CustomerSupport a hi1:Domain,
+        owl:NamedIndividual .
+
+hi1:DataDistribution a hi1:Domain,
+        owl:NamedIndividual .
+
+hi1:DataScientist a hi1:Human,
+        owl:NamedIndividual .
+
+hi1:DecisionPath a hi1:InteractionMethod,
+        owl:NamedIndividual .
+
+hi1:DecisionTrees a hi1:ProcessingMethod,
+        owl:NamedIndividual .
+
+hi1:DeepInteractRL a hi1:ArtificialAgent,
+        owl:NamedIndividual ;
+    hi1:inScenario hi1:AddPositiveFeedback .
+
+hi1:Discrimination a hi1:EthicalConsideration,
+        owl:NamedIndividual ;
+    hi1:lacks hi1:Fairness .
+
+hi1:Diversity a hi1:EthicalMetric,
+        owl:NamedIndividual .
+
+hi1:Eagerness a hi1:Capability,
+        owl:NamedIndividual .
+
+hi1:EffectOnModelPerFeature a hi1:InformationProcessing,
+        owl:NamedIndividual ;
+    hi1:informationMethod hi1:GridEvaluation ;
+    hi1:processingTask hi1:Prediction .
+
+hi1:EvaluativeFeedback a hi1:Interaction,
+        owl:NamedIndividual ;
+    hi1:interactingAgent hi1:DeepInteractRL,
+        hi1:HumanObserver ;
+    hi1:interactionMethod hi1:PositiveReward ;
+    hi1:interactionTask hi1:ImproveAgentLearning .
+
+hi1:Fairness a hi1:EthicalMetric,
+        owl:NamedIndividual .
+
+hi1:FeatureSpaceNavigator a hi1:ArtificialAgent,
+        owl:NamedIndividual ;
+    hi1:ensures hi1:Autonomy ;
+    hi1:hasTargetUser hi1:UserLimitTechKnowledge ;
+    hi1:inScenario hi1:CounterfactualScenario ;
+    hi1:processingInformation hi1:EffectOnModelPerFeature .
+
+hi1:FedaratingData a hi1:Scenario,
+        owl:NamedIndividual ;
+    hi1:context hi1:ModelFairness ;
+    hi1:domain hi1:DataDistribution ;
+    hi1:endgoal hi1:MonitoringFairness ;
+    rdfs:comment "From the paper: \"Monitoring Fairness in HOLDA\"" .
+
+hi1:FederatedLearning a hi1:InformationProcessing,
+        owl:NamedIndividual ;
+    hi1:informationMethod hi1:CrossDevice,
+        hi1:CrossSilo ;
+    hi1:processingTask hi1:Learning .
+
+hi1:FinancialMarket a hi1:Domain,
+        owl:NamedIndividual .
+
+hi1:FormalizingValue a hi1:Endgoal,
+        owl:NamedIndividual .
+
+hi1:GamePlayer a hi1:ArtificialAgent,
+        owl:NamedIndividual ;
+    hi1:capability hi1:Cooperation,
+        hi1:Cooperativeness,
+        hi1:Eagerness,
+        hi1:SelfBenefit ;
+    hi1:inScenario hi1:TheGame ;
+    hi1:processingInformation hi1:MutualSelfReflection .
+
+hi1:GlobalExplanation a hi1:Capability,
+        owl:NamedIndividual .
+
+hi1:GridEvaluation a hi1:ProcessingMethod,
+        owl:NamedIndividual .
+
+hi1:HealthAnalysis a hi1:Scenario,
+        owl:NamedIndividual ;
+    hi1:domain hi1:Medical ;
+    hi1:endgoal hi1:OverdosePrediction ;
+    rdfs:comment "From the paper: \"Legitimacy of What?: A Call for Democratic AI Design\"" .
+
+hi1:HumanObserver a hi1:Human,
+        owl:NamedIndividual .
+
+hi1:HybridIntelligence a hi1:Domain,
+        owl:NamedIndividual .
+
+hi1:ImageRecognition a hi1:ProcessingTask,
+        owl:NamedIndividual .
+
+hi1:Images a hi1:InformationProcessing,
+        owl:NamedIndividual ;
+    hi1:informationMethod hi1:CNN,
+        hi1:DecisionTrees ;
+    hi1:processingTask hi1:ImageRecognition .
+
+hi1:ImproveAgentLearning a hi1:InteractionTask,
+        owl:NamedIndividual .
+
+hi1:InformationProvision a hi1:InteractionTask,
+        owl:NamedIndividual .
+
+hi1:IntelligentVirtualAssistants a hi1:Context,
+        owl:NamedIndividual .
+
+hi1:InteractionTimeReduction a hi1:Endgoal,
+        owl:NamedIndividual .
+
+hi1:Interpretability a hi1:Endgoal,
+        owl:NamedIndividual .
+
+hi1:InterpretableImageRecognition a hi1:Context,
+        owl:NamedIndividual .
+
+hi1:KnowledgeGraphs a hi1:ProcessingMethod,
+        owl:NamedIndividual .
+
+hi1:Legal a hi1:Domain,
+        owl:NamedIndividual .
+
+hi1:MLmodel a hi1:InformationProcessing,
+        owl:NamedIndividual ;
+    hi1:informationMethod hi1:ValueEmbedding ;
+    hi1:processingTask hi1:ValueAnalysis .
+
+hi1:Medical a hi1:Domain,
+        owl:NamedIndividual .
+
+hi1:ModelFairness a hi1:Context,
+        owl:NamedIndividual .
+
+hi1:ModifiedFeatures a hi1:InformationProcessing,
+        owl:NamedIndividual ;
+    hi1:informationMethod hi1:PartialDependencePlot ;
+    hi1:processingTask hi1:CounterfactualGeneration .
+
+hi1:MonitoringFairness a hi1:Endgoal,
+        owl:NamedIndividual .
+
+hi1:MutualSelfReflection a hi1:InformationProcessing,
+        owl:NamedIndividual ;
+    hi1:informationMethod hi1:BalancingStrategy ;
+    hi1:processingTask hi1:Learning .
+
+hi1:NaturalLanguageProcessing a hi1:ProcessingMethod,
+        owl:NamedIndividual .
+
+hi1:NeuralPrototypeTrees a hi1:Scenario,
+        owl:NamedIndividual ;
+    hi1:context hi1:InterpretableImageRecognition ;
+    hi1:domain hi1:ExplainableAI ;
+    hi1:endgoal hi1:Interpretability ;
+    rdfs:comment "From the paper: \"Neural Prototype Trees for Interpretable Fine-grained Image Recognition\"" .
+
+hi1:OutcomePrediction a hi1:Endgoal,
+        owl:NamedIndividual .
+
+hi1:OverdosePrediction a hi1:Endgoal,
+        owl:NamedIndividual .
+
+hi1:PartialDependencePlot a hi1:ProcessingMethod,
+        owl:NamedIndividual .
+
+hi1:PerceivedRisk a hi1:EthicalMetric,
+        owl:NamedIndividual ;
+    hi1:influences hi1:PerceivedUsefulness,
+        hi1:UserTrust .
+
+hi1:Plausibility a hi1:EthicalMetric,
+        owl:NamedIndividual .
+
+hi1:PositiveReward a hi1:InteractionMethod,
+        owl:NamedIndividual .
+
+hi1:PredictionMarket a hi1:Context,
+        owl:NamedIndividual .
+
+hi1:PredictionModelFeatures a hi1:InformationProcessing,
+        owl:NamedIndividual ;
+    hi1:processingTask hi1:CounterfactualEvaluation,
+        hi1:CounterfactualGeneration .
+
+hi1:Prospector a hi1:ArtificialAgent,
+        owl:NamedIndividual ;
+    hi1:hasTargetUser hi1:DataScientist ;
+    hi1:inScenario hi1:CounterfactualScenario ;
+    hi1:processingInformation hi1:ModifiedFeatures .
+
+hi1:ProtoTree a hi1:ArtificialAgent,
+        owl:NamedIndividual ;
+    hi1:capability hi1:GlobalExplanation ;
+    hi1:inScenario hi1:NeuralPrototypeTrees ;
+    hi1:processingInformation hi1:Images .
+
+hi1:RecidivismPrediction a hi1:Endgoal,
+        owl:NamedIndividual .
+
+hi1:SelfBenefit a hi1:Capability,
+        owl:NamedIndividual .
+
+hi1:ServiceQualityImprovement a hi1:Endgoal,
+        owl:NamedIndividual .
+
+hi1:Similarity a hi1:EthicalMetric,
+        owl:NamedIndividual .
+
+hi1:SimulationTheoryOfMind a hi1:InteractionMethod,
+        owl:NamedIndividual .
+
+hi1:SpeculativeTrading a hi1:Capability,
+        owl:NamedIndividual .
+
+hi1:SpeechRecognition a hi1:ProcessingTask,
+        owl:NamedIndividual .
+
+hi1:StatisticalSimilarity a hi1:ProcessingMethod,
+        owl:NamedIndividual .
+
+hi1:TheGame a hi1:Scenario,
+        owl:NamedIndividual ;
+    hi1:context hi1:CountingGame ;
+    hi1:domain hi1:Gaming ;
+    hi1:endgoal hi1:AgentCooperation ;
+    rdfs:comment "From the paper: \"Common Ground Provides a Mental Shortcut in Agent-Agent Interaction\"" .
+
+hi1:Trader a hi1:Human,
+        owl:NamedIndividual .
+
+hi1:Trading a hi1:Scenario,
+        owl:NamedIndividual ;
+    hi1:context hi1:PredictionMarket ;
+    hi1:domain hi1:FinancialMarket ;
+    hi1:endgoal hi1:AgentCooperation,
+        hi1:OutcomePrediction ;
+    rdfs:comment "From the paper: \"A Prototype Hybrid Prediction Market for Estimating Replicability of Published Work\"" .
+
+hi1:Transparency a hi1:EthicalMetric,
+        owl:NamedIndividual .
+
+hi1:TrustAnalysis a hi1:Scenario,
+        owl:NamedIndividual ;
+    hi1:endgoal hi1:AgentCooperation ;
+    rdfs:comment "From the paper: \"Trust in AI Chatbots: The Perceived Expertise of ChatGPT in Subjective and Objective Tasks\"" .
+
+hi1:UserEmpowerment a hi1:Endgoal,
+        owl:NamedIndividual .
+
+hi1:UserUtterance a hi1:InformationProcessing,
+        owl:NamedIndividual ;
+    hi1:informationMethod hi1:KnowledgeGraphs,
+        hi1:NaturalLanguageProcessing ;
+    hi1:processingTask hi1:SpeechRecognition .
+
+hi1:ValueAnalysis a hi1:ProcessingTask,
+        owl:NamedIndividual .
+
+hi1:ValueBased a hi1:Scenario,
+        owl:NamedIndividual ;
+    hi1:domain hi1:HybridIntelligence ;
+    hi1:endgoal hi1:FormalizingValue ;
+    rdfs:comment "From the paper: \"Value-based Hybrid Intelligence\"" .
+
+hi1:ValueEmbedding a hi1:ProcessingMethod,
+        owl:NamedIndividual .
+
+hi1:VoiceEnabled a hi1:Capability,
+        owl:NamedIndividual .
+
+hi2:AIAssistedDecisionMakingScenario a hi2:Scenario,
+        owl:NamedIndividual ;
+    hi2:basedOn hi2:AIAssistedDecisionMakingReliance ;
+    hi2:describedIn hi2:AIAssistedDecisionMakingReliance ;
+    hi2:hasDescription "A scenario exploring the interdependence between human reliance behavior and decision-making accuracy in AI-assisted decision-making" ;
+    hi2:hasName "AI-Assisted Decision-Making Reliance Scenario" .
+
+hi2:AIInterpretabilityTask a hi2:Task,
+        owl:NamedIndividual ;
+    hi2:describedIn hi2:LandmarksCaseBasedReasoning ;
+    hi2:hasDescription "The task of elucidating the decision making process of machine learning systems" ;
+    hi2:hasName "AI Interpretability" ;
+    hi2:partOf hi2:CaseBasedReasoningScenario .
+
+hi2:AgentCapability a <http://www.co-ode.org/ontologies/ont.owl#AI_Decision_Learning>,
+        owl:NamedIndividual ;
+    hi2:describedIn hi2:TrustInterventionsHumanAI ;
+    hi2:hasDescription "The agent's ability to act as a decision aid, reflecting partial alignment between what the agent optimizes for and the user's goals" ;
+    hi2:hasName "Agent Capability" ;
+    hi2:influences hi2:InterventionFrequency,
+        hi2:Trust .
+
+hi2:ConsistencyEvaluation a hi2:Evaluation,
+        owl:NamedIndividual ;
+    hi2:appliesTo hi2:CaseAnalysisTask ;
+    hi2:describedIn hi2:LandmarksCaseBasedReasoning ;
+    hi2:hasDescription "Evaluation of the degree to which training data obeys the precedent set by other examples" ;
+    hi2:hasName "Consistency Evaluation" ;
+    hi2:hasResult hi2:COMPASConsistencyScore .
+
+hi2:ContextualMultiArmedBandit a <http://www.co-ode.org/ontologies/ont.owl#AI_Decision_Learning>,
+        owl:NamedIndividual ;
+    hi2:describedIn hi2:HumanCenteredAIDementiaCare ;
+    hi2:hasDescription "Formulation to address unknown preferences of people with dementia in mealtime interventions" ;
+    hi2:hasName "Contextual Multi-Armed Bandit" ;
+    hi2:partOf hi2:ReinforcementLearningDementiaCare .
+
+hi2:ContinualLearningLoops a hi2:AI_Concept,
+        owl:NamedIndividual ;
+    hi2:describedIn hi2:HybridIntelligenceGenerativeDesign ;
+    hi2:hasDescription "Human-centered design principles to seamlessly integrate AI training into the expert's task workflow" ;
+    hi2:hasName "Continual Learning Loops" .
+
+hi2:CostFactor a hi2:AI_Concept,
+        owl:NamedIndividual ;
+    hi2:hasDescription "A parameter representing the relative cost of errors compared to correct predictions" ;
+    hi2:hasName "Cost Factor" .
+
+hi2:DementiaCareSystemEvaluation a hi2:Evaluation,
+        owl:NamedIndividual ;
+    hi2:appliesTo hi2:EatingReminderTask ;
+    hi2:describedIn hi2:HumanCenteredAIDementiaCare ;
+    hi2:hasDescription "Evaluation of the AI system's effectiveness in adapting to diverse user preferences and behaviors" ;
+    hi2:hasName "Dementia Care System Evaluation" ;
+    hi2:hasResult hi2:SimulationScore .
+
+hi2:DiaryConstructionTask a hi2:Task,
+        owl:NamedIndividual ;
+    hi2:describedIn hi2:ConversationalAgentDiaryConstruction ;
+    hi2:hasDescription "Creating a structured diary through conversation" ;
+    hi2:hasName "Diary Construction" ;
+    hi2:partOf hi2:DiaryConstructionScenario .
+
+hi2:EmpathicAI a <http://www.co-ode.org/ontologies/ont.owl#AI_Decision_Learning>,
+        owl:NamedIndividual ;
+    hi2:describedIn hi2:HumanCenteredAIDementiaCare ;
+    hi2:hasDescription "AI designed to be perceived as empathic by users with cognitive impairments, improving acceptability and usability" ;
+    hi2:hasName "Empathic AI" .
+
+hi2:EpisodicKnowledgeGraph a hi2:AI_Concept,
+        owl:NamedIndividual ;
+    hi2:describedIn hi2:ConversationalAgentDiaryConstruction ;
+    hi2:hasDescription "A timeline of events represented as a knowledge graph" ;
+    hi2:hasName "Episodic Knowledge Graph" .
+
+hi2:ExosoulProject a hi2:AI_Concept,
+        owl:NamedIndividual ;
+    hi2:describedIn hi2:ExosoulEthicalProfiling ;
+    hi2:hasDescription "Project aiming to develop a personalized software exoskeleton to protect and support citizen's ethics and privacy" ;
+    hi2:hasName "Exosoul Project" .
+
+hi2:GRaSPFramework a hi2:AI_Concept,
+        owl:NamedIndividual ;
+    hi2:describedIn hi2:ConversationalAgentDiaryConstruction ;
+    hi2:hasDescription "Framework to represent mentions of events in conversation" ;
+    hi2:hasName "GRaSP Framework" .
+
+hi2:GenerativeDesignAssistant a hi2:AI_Agent,
+        owl:NamedIndividual ;
+    hi2:describedIn hi2:HybridIntelligenceGenerativeDesign ;
+    hi2:hasDescription "AI system trained to assist human experts by generating design solutions based on their inputs and preferences" ;
+    hi2:hasName "Generative Design Assistant" ;
+    hi2:performsTask hi2:FloorPlanDesignTask ;
+    hi2:uses hi2:ContinualLearningLoops,
+        hi2:ProgrammableCommonLanguage .
+
+hi2:GoalAlignment a <http://www.co-ode.org/ontologies/ont.owl#AI_Trust_Ethics>,
+        owl:NamedIndividual ;
+    hi2:describedIn hi2:TrustInterventionsHumanAI ;
+    hi2:hasDescription "The degree to which the human's goal matches the AI's programmed goal" ;
+    hi2:hasName "Goal Alignment" .
+
+hi2:HITAM_Evaluation a hi2:Evaluation,
+        owl:NamedIndividual ;
+    hi2:appliesTo hi2:GenerativeDesignTrainingTask ;
+    hi2:describedIn hi2:HybridIntelligenceGenerativeDesign ;
+    hi2:hasDescription "Evaluation of human experts' willingness to build partnership with generative design assistants" ;
+    hi2:hasName "HI-TAM Evaluation" ;
+    hi2:hasResult hi2:PartnershipScore .
+
+hi2:Human a owl:Class ;
+    rdfs:label "Human" ;
+    rdfs:comment "General class representing human beings" .
+
+hi2:HybridIntelligenceAgent a hi2:AI_Agent,
+        owl:NamedIndividual ;
+    hi2:describedIn hi2:ConversationalAgentDiaryConstruction ;
+    hi2:hasDescription "An agent that constructs a personal diary through conversation" ;
+    hi2:hasName "Hybrid Intelligence Conversational Agent" ;
+    hi2:performsTask hi2:DiaryConstructionTask,
+        hi2:TimelineReconstructionTask,
+        hi2:WellBeingMonitoringTask ;
+    hi2:uses hi2:EpisodicKnowledgeGraph,
+        hi2:GRaSPFramework,
+        hi2:PerspectiveDrivenIntent,
+        hi2:PropertyDrivenIntent,
+        hi2:SimpleEventModel,
+        hi2:TimelineDrivenIntent .
+
+hi2:Idealism a hi2:AI_Concept,
+        owl:NamedIndividual ;
+    hi2:describedIn hi2:ExosoulEthicalProfiling ;
+    hi2:hasDescription "Reflects absolute moral principles, oriented to truth, benevolence and avoiding harming others" ;
+    hi2:hasName "Idealism" ;
+    hi2:partOf hi2:EthicsPositionTheory ;
+    hi2:positivelyCorrelatedWith hi2:HonestyHumility .
+
+hi2:JITAI_Concept a <http://www.co-ode.org/ontologies/ont.owl#AI_Decision_Learning>,
+        owl:NamedIndividual ;
+    hi2:describedIn hi2:HumanCenteredAIDementiaCare ;
+    hi2:hasDescription "Design concept aiming at adapting to an individual's changing internal and contextual state to provide the right type and amount of support" ;
+    hi2:hasName "Just-in-Time Adaptive Intervention" .
+
+hi2:LegalistProfile a hi2:AI_Concept,
+        owl:NamedIndividual ;
+    hi2:describedIn hi2:ExosoulEthicalProfiling ;
+    hi2:hasDescription "Ethical profile with moderate idealism and relativism, and high normativism" ;
+    hi2:hasName "Legalist Profile" .
+
+hi2:MDPFormulationConcept a <http://www.co-ode.org/ontologies/ont.owl#AI_Decision_Learning>,
+        owl:NamedIndividual ;
+    hi2:describedIn hi2:RLHumanInLoopPaper ;
+    hi2:hasDescription "Careful construction of action sets, state variables, and reward functions to enable effective agent learning" ;
+    hi2:hasName "Markov Decision Process Formulation" ;
+    hi2:influences hi2:RLLearningPhaseConcept .
+
+hi2:MiscalibratedTrust a <http://www.co-ode.org/ontologies/ont.owl#AI_Trust_Ethics>,
+        owl:NamedIndividual ;
+    hi2:describedIn hi2:TrustInterventionsHumanAI ;
+    hi2:hasDescription "When trust level doesn't match the actual capabilities of the system, leading to misuse or disuse" ;
+    hi2:hasName "Miscalibrated Trust" ;
+    hi2:subClassOf hi2:Trust .
+
+hi2:NavigationAI a hi2:AI_Agent,
+        owl:NamedIndividual ;
+    hi2:describedIn hi2:TrustInterventionsHumanAI ;
+    hi2:hasDescription "AI agent that optimizes for either distance or time in a route planning task" ;
+    hi2:hasName "Navigation AI" ;
+    hi2:performsTask hi2:NavigationTask ;
+    hi2:uses hi2:AgentCapability .
+
+hi2:OpportunistProfile a <http://www.co-ode.org/ontologies/ont.owl#AI_Human_Factors>,
+        owl:NamedIndividual ;
+    hi2:describedIn hi2:ExosoulEthicalProfiling ;
+    hi2:hasDescription "Ethical profile with low idealism, honesty/humility, conscientiousness and high relativism, Machiavellianism and narcissism" ;
+    hi2:hasName "Opportunist Profile" ;
+    hi2:influences hi2:CopyrightInfringement,
+        hi2:PrivacyViolation ;
+    hi2:prevents hi2:Caution .
+
+hi2:PerceivedPartnership a <http://www.co-ode.org/ontologies/ont.owl#AI_Human_Factors>,
+        owl:NamedIndividual ;
+    hi2:describedIn hi2:HybridIntelligenceGenerativeDesign ;
+    hi2:hasDescription "User's subjective perception of the degree to which an AI is perceived as a collaborative partner in the interaction" ;
+    hi2:hasName "Perceived Partnership" .
+
+hi2:PerspectiveDrivenIntent a <http://www.co-ode.org/ontologies/ont.owl#AI_Decision_Learning>,
+        owl:NamedIndividual ;
+    hi2:describedIn hi2:ConversationalAgentDiaryConstruction ;
+    hi2:hasDescription "Low-level intents driven by possible and likely perspectives" ;
+    hi2:hasName "Perspective-Driven Intent" .
+
+hi2:ProgrammableCommonLanguage a hi2:AI_Concept,
+        owl:NamedIndividual ;
+    hi2:describedIn hi2:HybridIntelligenceGenerativeDesign ;
+    hi2:hasDescription "A grammar-based method for constructing common language between humans and algorithms allowing for the explicitation of individual experts' design goals" ;
+    hi2:hasName "Programmable Common Language" .
+
+hi2:PropertyDrivenIntent a <http://www.co-ode.org/ontologies/ont.owl#AI_Decision_Learning>,
+        owl:NamedIndividual ;
+    hi2:describedIn hi2:ConversationalAgentDiaryConstruction ;
+    hi2:hasDescription "Mid-level intents driven by necessary/possible/probable properties in the ontology" ;
+    hi2:hasName "Property-Driven Intent" .
+
+hi2:RLDeploymentDecisionConcept a hi2:AI_Concept,
+        owl:NamedIndividual ;
+    hi2:describedIn hi2:RLHumanInLoopPaper ;
+    hi2:hasDescription "Critical evaluation of whether an RL agent is ready to be deployed in a real-world environment, considering performance and potential risks" ;
+    hi2:hasName "RL Deployment Decision" ;
+    hi2:influences hi2:RLSystemMaintenanceConcept .
+
+hi2:RLLearningPhaseConcept a <http://www.co-ode.org/ontologies/ont.owl#AI_Decision_Learning>,
+        owl:NamedIndividual ;
+    hi2:describedIn hi2:RLHumanInLoopPaper ;
+    hi2:hasDescription "The process of agent learning, including decisions about data, simulators, learning approaches, and hyperparameter tuning" ;
+    hi2:hasName "RL Learning Phase" ;
+    hi2:influences hi2:RLDeploymentDecisionConcept .
+
+hi2:RLOptimizationTask a hi2:Task,
+        owl:NamedIndividual ;
+    hi2:describedIn hi2:HumanCenteredAIDementiaCare ;
+    hi2:hasDescription "Optimizing signal combinations based on user behavior and preferences using reinforcement learning" ;
+    hi2:hasName "RL Signal Optimization" ;
+    hi2:partOf hi2:DementiaCareScenario .
+
+hi2:RLSystemMaintenanceConcept a <http://www.co-ode.org/ontologies/ont.owl#AI_Decision_Learning>,
+        owl:NamedIndividual ;
+    hi2:describedIn hi2:RLHumanInLoopPaper ;
+    hi2:hasDescription "Ongoing process of monitoring, updating, and potentially retraining the RL system as environmental conditions change" ;
+    hi2:hasName "RL System Maintenance" .
+
+hi2:Relativism a hi2:AI_Concept,
+        owl:NamedIndividual ;
+    hi2:describedIn hi2:ExosoulEthicalProfiling ;
+    hi2:hasDescription "Relies on evaluations of situations, contexts and consequences, reflecting that harm may be necessary for good" ;
+    hi2:hasName "Relativism" ;
+    hi2:negativelyCorrelatedWith hi2:HonestyHumility ;
+    hi2:partOf hi2:EthicsPositionTheory .
+
+hi2:SensibleProfile a <http://www.co-ode.org/ontologies/ont.owl#AI_Human_Factors>,
+        owl:NamedIndividual ;
+    hi2:describedIn hi2:ExosoulEthicalProfiling ;
+    hi2:hasDescription "Ethical profile with moderate idealism, low relativism, and high honesty/humility" ;
+    hi2:hasName "Sensible Profile" .
+
+hi2:SignalCombinations a hi2:AI_Concept,
+        owl:NamedIndividual ;
+    hi2:describedIn hi2:HumanCenteredAIDementiaCare ;
+    hi2:hasDescription "Combinations of low to high intensity signals including scent, music, light, image, voice, and video to nudge users" ;
+    hi2:hasName "Multimodal Signal Combinations" .
+
+hi2:SimpleEventModel a hi2:AI_Concept,
+        owl:NamedIndividual ;
+    hi2:describedIn hi2:ConversationalAgentDiaryConstruction ;
+    hi2:hasDescription "Formal model for defining events in someone's life" ;
+    hi2:hasName "Simple Event Model" .
+
+hi2:TimelineDrivenIntent a hi2:AI_Concept,
+        owl:NamedIndividual ;
+    hi2:describedIn hi2:ConversationalAgentDiaryConstruction ;
+    hi2:hasDescription "High-level intents driven by the timeline, e.g., verifying expected events" ;
+    hi2:hasName "Timeline-Driven Intent" .
+
+hi2:TimelineReconstructionTask a hi2:Task,
+        owl:NamedIndividual ;
+    hi2:describedIn hi2:ConversationalAgentDiaryConstruction ;
+    hi2:hasDescription "Reconstructing a timeline of events through conversation" ;
+    hi2:hasName "Timeline Reconstruction" ;
+    hi2:partOf hi2:DiaryConstructionScenario .
+
+hi2:TrustInClinicalAI a hi2:ResearchPaper,
+        owl:NamedIndividual ;
+    hi2:hasAuthor "Jacob T. Browne, Saskia Bakker, Bin Yu, Peter Lloyd, Somaya Ben Allouch" ;
+    hi2:hasDOI "10.3233/FAIA220192" ;
+    hi2:hasTitle "Trust in Clinical AI: Expanding the Unit of Analysis" ;
+    hi2:hasVenue "HHAI2022: Augmenting Human Intellect" ;
+    hi2:hasYear 2022 .
+
+hi2:TrustInterventionsScenario a hi2:Scenario,
+        owl:NamedIndividual ;
+    hi2:basedOn hi2:TrustInterventionsHumanAI ;
+    hi2:describedIn hi2:TrustInterventionsHumanAI ;
+    hi2:hasDescription "A scenario exploring interventions as trust indicators in human-AI collaborative tasks with misaligned goals" ;
+    hi2:hasName "Trust Interventions in Human-AI Collaboration" .
+
+hi2:UserControl a <http://www.co-ode.org/ontologies/ont.owl#AI_Human_Factors>,
+        owl:NamedIndividual ;
+    hi2:describedIn hi2:HybridIntelligenceGenerativeDesign ;
+    hi2:hasDescription "The level of control and autonomy the user feels they have over the AI tool" ;
+    hi2:hasName "User Control" ;
+    hi2:positivelyCorrelatedWith hi2:PerceivedPartnership .
+
+hi2:VirtuousProfile a <http://www.co-ode.org/ontologies/ont.owl#AI_Human_Factors>,
+        owl:NamedIndividual ;
+    hi2:describedIn hi2:ExosoulEthicalProfiling ;
+    hi2:hasDescription "Ethical profile with high idealism, honesty/humility, conscientiousness and low relativism, Machiavellianism and narcissism" ;
+    hi2:hasName "Virtuous Profile" ;
+    hi2:influences hi2:Caution ;
+    hi2:prevents hi2:CopyrightInfringement,
+        hi2:PrivacyViolation .
+
+hi2:WellBeingMonitoringTask a hi2:Task,
+        owl:NamedIndividual ;
+    hi2:describedIn hi2:ConversationalAgentDiaryConstruction ;
+    hi2:hasDescription "Monitoring physical, social and mental functioning through conversation" ;
+    hi2:hasName "Well-Being Monitoring" ;
+    hi2:partOf hi2:DiaryConstructionScenario .
+
+hi2:WhoTakesCareAI a hi2:AI_Agent,
+        owl:NamedIndividual ;
+    hi2:achievesScore hi2:SimulationScore ;
+    hi2:describedIn hi2:HumanCenteredAIDementiaCare ;
+    hi2:evaluatedWith hi2:DementiaCareSystemEvaluation ;
+    hi2:hasDescription "Personalized AI system that adapts to individual behaviors and provides suitable signals to nudge eating behavior" ;
+    hi2:hasName "Who Takes Care AI System" ;
+    hi2:performsTask hi2:EatingReminderTask,
+        hi2:RLOptimizationTask ;
+    hi2:uses hi2:ContextualMultiArmedBandit,
+        hi2:EmpathicAI,
+        hi2:JITAI_Concept,
+        hi2:ReinforcementLearningDementiaCare,
+        hi2:SignalCombinations .
+
+hi2:achievesScore a owl:ObjectProperty ;
+    rdfs:label "achievesScore" ;
+    rdfs:domain hi2:Agent ;
+    rdfs:range hi2:Score .
+
+:Co-Learning a owl:Class ;
+    rdfs:subClassOf :KnowledgeEngineering .
+
+:DecisionTrees a owl:Class ;
+    rdfs:subClassOf hi:ArtificialAgent .
+
+:DeepNeuralNetworks a owl:Class ;
+    rdfs:subClassOf hi:ArtificialAgent .
+
+:EmergencyResponse a owl:Class ;
+    rdfs:subClassOf hi:Domain .
+
+:Explainability a owl:Class ;
+    rdfs:subClassOf hi:Endgoal .
+
+:ExplainableAI a owl:Class ;
+    rdfs:subClassOf :AI .
+
+:KnowledgeEngineering a owl:Class ;
+    rdfs:subClassOf hi:Domain .
+
+:Listening a owl:Class ;
+    rdfs:subClassOf :Collaboration .
+
+:Model a owl:Class ;
+    rdfs:subClassOf hi:ProcessingMethod .
+
+:SearchEngine a owl:Class ;
+    rdfs:subClassOf hi:ArtificialAgent .
+
+:Transform a owl:Class ;
+    rdfs:subClassOf hi:InteractionTask .
+
+:adoptsGoal a owl:ObjectProperty ;
+    rdfs:subPropertyOf owl:topObjectProperty .
+
+:coordinatesWith a owl:ObjectProperty ;
+    rdfs:subPropertyOf owl:topObjectProperty .
+
+:delegatesTask a owl:ObjectProperty ;
+    rdfs:subPropertyOf owl:topObjectProperty .
+
+:isContextFrom a owl:ObjectProperty ;
+    rdfs:domain hi:Context ;
+    rdfs:range hi:Domain .
+
+hi:AIDecisionTool a hi:ArtificialAgent ;
+    hi:evaluatedBy hi:SimilarityMatching ;
+    hi:hasEndgoal hi:ConstructiveDistrust,
+        hi:CostEffectiveness,
+        hi:ImprovedSatisfaction,
+        hi:ImprovedSustainability,
+        hi:ImprovedUsability,
+        hi:StandardizedHCIProtocols ;
+    hi:isCapableOf hi:Caution,
+        hi:Continuity,
+        hi:DecisionSupport4,
+        hi:Multiplicity,
+        hi:Reflectiveness,
+        hi:Vagueness ;
+    hi:participatesIn hi:Adjunction,
+        hi:AnalyticalOutputInteraction ;
+    hi:processingTask hi:AdaptiveLearning,
+        hi:CounterFactualReasoning .
+
+hi:AIEthics a hi:SocialAI .
+
+hi:AIEthics2 a hi:SocialAI .
+
+hi:AIEthics3 a hi:SocialAI .
+
+hi:AIExplainability a hi:Domain .
+
+hi:AISystem a hi:ArtificialAgent ;
+    hi:collaboratesWith hi:MonitoringSystem ;
+    hi:followsFramework hi:MonitoringFramework ;
+    hi:processingTask hi:DataTransformation,
+        hi:DeductiveReasoning .
+
+hi:AIUserInteraction a hi:Interaction,
+        owl:NamedIndividual ;
+    hi:interactionTask hi:ValueImpact .
+
+hi:ARInformationPresentation a hi:InteractionMethod,
+        owl:NamedIndividual ;
+    rdfs:label "AR Information Presentation" .
+
+hi:AbstractionBasedToM a hi:ProcessingMethod .
+
+hi:AcademicResearch a hi:Context,
+        owl:NamedIndividual ;
+    rdfs:label "Academic Research" .
+
+hi:AcademicWriting a hi:ProcessingTask,
+        owl:NamedIndividual ;
+    rdfs:label "Academic Writing" .
+
+hi:ActiveLearningMethod a hi:ProcessingMethod,
+        owl:NamedIndividual .
+
+hi:AdaptationStrategy a owl:Class ;
+    rdfs:subClassOf hi:Context .
+
+hi:AdaptiveDecisionMaking a hi:ProcessingTask ;
+    hi:usesProcessingMethod hi:HeuristicReasoning .
+
+hi:AdaptiveInteractionControl a hi:Capability .
+
+hi:AdaptiveLearning a hi:LearningTask ;
+    hi:usesProcessingMethod hi:CorrelativeModelling,
+        hi:EnsembleLearning .
+
+hi:AlgorithmicLabelCorrection a hi:ProcessingMethod .
+
+hi:AlignmentDialogue a hi:InteractionMethod,
+        owl:NamedIndividual ;
+    rdfs:label "Alignment Dialogue" .
+
+hi:AllowAction a hi:Capability .
+
+hi:AnalogicalThinking a hi:Capability .
+
+hi:Annotation a hi:InteractionTask,
+        owl:NamedIndividual .
+
+hi:AnnotationTask a hi:Interaction,
+        owl:NamedIndividual ;
+    hi:interactionTask hi:Annotation .
+
+hi:ArgumentationSystem a owl:Class ;
+    rdfs:subClassOf hi:ArtificialAgent .
+
+hi:AssessingEffectiveness a hi:EvaluationMethod .
+
+hi:AssessingEffectiveness2 a hi:EvaluationMethod .
+
+hi:AssessingEfficiency a hi:EvaluationMethod .
+
+hi:AssessingTrustworthiness a hi:EvaluationMethod .
+
+hi:AssistDecisionMaking a hi:ProcessingTask ;
+    hi:usesProcessingMethod hi:Hybrid5 .
+
+hi:AssistingMedicalProfessionals a hi:Endgoal .
+
+hi:AvoidBias a hi:EthicalConsideration .
+
+hi:AvoidBias2 a hi:EthicalConsideration .
+
+hi:AvoidBias3 a hi:EthicalConsideration .
+
+hi:AvoidBias4 a hi:EthicalConsideration .
+
+hi:AvoidingOverReliance a hi:EthicalConsideration .
+
+hi:BalancingPerformanceFairness a hi:Endgoal .
+
+hi:BehavioralEvaluation a hi:EvaluationMethod ;
+    hi:usesMetric hi:PerformanceScore .
+
+hi:BeliefAlignment a hi:InteractionMethod .
+
+hi:BiasAwareness a hi:Capability .
+
+hi:BiasMitigation a hi:EthicalConsideration,
+        owl:NamedIndividual ;
+    rdfs:label "Bias Mitigation" .
+
+hi:BiasPrevention a hi:Endgoal .
+
+hi:BiasPropagationEvaluation a hi:InteractionTask ;
+    hi:usesInteractionMethod hi:FairnessAssessment .
+
+hi:BiasTracking a hi:ProcessingTask ;
+    hi:usesProcessingMethod hi:SyntheticDataAugmentation .
+
+hi:BiometricSignal a owl:Class ;
+    rdfs:subClassOf hi:Context .
+
+hi:BoxologyPatterns a hi:ProcessingMethod .
+
+hi:CalculateMatchScores a hi:ProcessingTask ;
+    hi:usesProcessingMethod hi:Hybrid4 .
+
+hi:CareInterventionEvaluation a hi:EvaluationMethod .
+
+hi:CareRecommendationGeneration a hi:ProcessingTask ;
+    hi:usesProcessingMethod hi:NLP .
+
+hi:Categorizing a hi:ProcessingTask ;
+    hi:usesProcessingMethod hi:Hybrid3 .
+
+hi:Caution a hi:Capability .
+
+hi:ClimateChangeAdaptation a hi:Domain .
+
+hi:ClimateChangeRiskManagement a hi:Domain .
+
+hi:CognitiveForcingFunctions a hi:InteractionMethod .
+
+hi:Collaboration-based2 a hi:InteractionMethod .
+
+hi:Collaboration-based3 a hi:InteractionMethod .
+
+hi:CommitteeVoting a hi:InteractionMethod,
+        owl:NamedIndividual ;
+    rdfs:label "Committee Voting" .
+
+hi:ComparativeAnnotation a hi:InteractionTask ;
+    hi:usesInteractionMethod hi:OnlineSurveyAnnotation .
+
+hi:ComputationalRationality a hi:ProcessingMethod .
+
+hi:ComputationalTheoryOfMind a hi:Domain .
+
+hi:ConcretenessEffect a hi:CognitiveEffect,
+        owl:NamedIndividual .
+
+hi:ConformalPrediction a hi:StatisticalMethod .
+
+hi:ConsensusBuilding a hi:InteractionTask ;
+    hi:usesInteractionMethod hi:ToMEnabledReasoning .
+
+hi:ConstructiveDistrust a hi:Endgoal .
+
+hi:Context_ElderCare a hi:Context ;
+    rdfs:label "Care environments for the elderly" ;
+    hi:sourcePaper "10.3233/FAIA230076" .
+
+hi:Context_FireResponse a hi:Context ;
+    rdfs:label "AI for emergency awareness" ;
+    hi:sourcePaper "hhai-2021_paper_96" .
+
+hi:Context_HospitalCare a hi:Context ;
+    rdfs:label "AI in hospital-based decision-making" ;
+    hi:sourcePaper "10.3233/FAIA240202" .
+
+hi:Context_LaborNegotiation a hi:Context ;
+    rdfs:label "Union negotiation scenario" ;
+    hi:sourcePaper "10.3233/FAIA230091" .
+
+hi:Context_LanguageLearning a hi:Context ;
+    rdfs:label "Language learning through adaptive systems" ;
+    hi:sourcePaper "10.3233/FAIA230079" .
+
+hi:Context_MiniCoDeEthics a hi:Context ;
+    rdfs:label "Roleplay-based ethics workshop" ;
+    hi:sourcePaper "hhai-2022_paper_58" .
+
+hi:Context_MultiStakeholder a hi:Context ;
+    rdfs:label "Governance by multiple stakeholders" ;
+    hi:sourcePaper "10.3233/FAIA240204" .
+
+hi:Context_TransparencyDesign a hi:Context ;
+    rdfs:label "Participatory design context with stakeholders" ;
+    hi:sourcePaper "10.3233/FAIA230082" .
+
+hi:Continuity a hi:Capability .
+
+hi:Contribution-based a hi:InteractionMethod,
+        owl:NamedIndividual .
+
+hi:Contribution-based2 a hi:InteractionMethod .
+
+hi:ControlMode_Mixed a hi:ControlMode ;
+    hi:controlLevel "semi-autonomous" ;
+    hi:sourcePaper "10.3233/FAIA240203" .
+
+hi:CopyrightInfringement a hi:EthicalConsideration,
+        owl:NamedIndividual ;
+    rdfs:label "Copyright Infringement" .
+
+hi:CosineSimilarity a hi:ProcessingTask ;
+    hi:usesProcessingMethod hi:Hybrid4 .
+
+hi:CostEffectiveness a hi:Endgoal .
+
+hi:CounterFactualReasoning a hi:ReasoningTask ;
+    hi:usesProcessingMethod hi:ConformalPrediction,
+        hi:CorrelativeModelling .
+
+hi:CrowdsourcedLabelling a hi:ProcessingMethod .
+
+hi:Crowdsourcing a hi:Domain,
+        owl:NamedIndividual ;
+    rdfs:label "Crowdsourcing" .
+
+hi:DataProcessing a hi:Capability ;
+    owl:sameAs dbr:Data_processing .
+
+hi:DataProcessing2 a hi:Capability .
+
+hi:DataSafety a hi:EthicalConsideration,
+        owl:NamedIndividual ;
+    rdfs:label "Data Safety" .
+
+hi:DecentralizedModelTraining a hi:ProcessingTask ;
+    hi:usesProcessingMethod hi:FederatedLearning2 .
+
+hi:DecisionComparison a hi:ProcessingMethod .
+
+hi:DecisionMaking2 a hi:Capability .
+
+hi:DecisionMaking3 a hi:capability .
+
+hi:DecisionSupport3 a hi:InteractionTask ;
+    hi:usesInteractionMethod hi:Collaboration-based4 .
+
+hi:DecisionSupport4 a hi:capability .
+
+hi:DecisionSupport5 a hi:Capability .
+
+hi:DecisionSupportSystem a hi:Domain .
+
+hi:DeductiveReasoning a hi:ReasoningTask ;
+    hi:usesProcessingMethod hi:SemanticModelling .
+
+hi:DefiningExpectations a hi:Capability .
+
+hi:DementiaUser a hi:Human,
+        owl:NamedIndividual ;
+    rdfs:label "User with Early-Stage Dementia" ;
+    hi:inScenario hi:DementiaCareScenario .
+
+hi:DemographicParity a hi:FairnessEvaluation .
+
+hi:DesignFictionToolkit a hi:Framework .
+
+hi:Deskilling a hi:EthicalConsideration .
+
+hi:Diffusion a hi:ProcessingMethod .
+
+hi:DigitalEthics a hi:Domain,
+        owl:NamedIndividual ;
+    rdfs:label "Digital Ethics" .
+
+hi:DigitalWorld a hi:Context,
+        owl:NamedIndividual ;
+    rdfs:label "Digital World" .
+
+hi:DisagreementResolution a hi:InteractionTask ;
+    hi:usesInteractionMethod hi:ToMEnabledReasoning .
+
+hi:Diversity a hi:EthicalConsideration .
+
+hi:DomainExpert a hi:Human,
+        foaf:Person .
+
+hi:ECGMonitoring a hi:ProcessingTask,
+        owl:NamedIndividual .
+
+hi:EngagementScale a hi:Metric .
+
+hi:EnhanceControlFlow a hi:Endgoal .
+
+hi:EnhanceDecisionMaking a hi:Endgoal .
+
+hi:EnhanceUserControl a hi:Endgoal .
+
+hi:EnhancingCollaborativeDecisionMaking a hi:Endgoal .
+
+hi:EnsembleLearning a hi:MachineLearningMethod .
+
+hi:EnsureFairness a hi:EthicalConsideration .
+
+hi:EnsureFairness2 a hi:EthicalConsideration .
+
+hi:EnsureHumanOversight a hi:EthicalConsideration .
+
+hi:EnsureTransparancy a hi:EthicalConsideration .
+
+hi:EnsureTransparancy2 a hi:EthicalConsideration .
+
+hi:EnsureTransparancy3 a hi:EthicalConsideration .
+
+hi:EnsureTransparancy4 a hi:EthicalConsideration .
+
+hi:EnsureTransparancy5 a hi:EthicalConsideration .
+
+hi:EnsureTransparancy6 a hi:EthicalConsideration .
+
+hi:EnsuringPrivacy2 a hi:EthicalConsideration .
+
+hi:EnsuringPrivacy4 a hi:EthicalConsideration .
+
+hi:EnsuringPrivacy5 a hi:EthicalConsideration .
+
+hi:EqualOpportunity a hi:FairnessEvaluation .
+
+hi:Equality a hi:EthicalConsideration .
+
+hi:EqualizedOdds a hi:FairnessEvaluation .
+
+hi:ErrorCostAnalysis a hi:EthicalConsideration,
+        owl:NamedIndividual .
+
+hi:EthicalProfiling a hi:ProcessingTask,
+        owl:NamedIndividual ;
+    rdfs:label "Ethical Profiling" .
+
+hi:EthicalReasoning a hi:Capability .
+
+hi:EvaluateSkillsAndValues a hi:Capability .
+
+hi:Evaluation a hi:InteractionTask ;
+    hi:usesInteractionMethod hi:Contribution-based3 .
+
+hi:ExplainableAI a hi:Domain,
+        hi:ProcessingMethod,
+        owl:NamedIndividual ;
+    rdfs:label "Explainable AI" .
+
+hi:ExplainingHumanBehavior a hi:ProcessingTask ;
+    hi:usesProcessingMethod hi:SocialRoleModeling .
+
+hi:ExplanationGeneration a hi:Capability,
+        owl:NamedIndividual ;
+    rdfs:label "Explanation Generation" .
+
+hi:Explanation_ProgressiveHinting a hi:ExplanationStrategy ;
+    hi:explanationType "step-wise hints" ;
+    hi:sourcePaper "10.3233/FAIA230079" .
+
+hi:Explicability a hi:EndGoal .
+
+hi:Fabrication a hi:EthicalConsideration,
+        owl:NamedIndividual .
+
+hi:FacialAttributeAssessment a hi:Capability .
+
+hi:FacialImageAnnotation a hi:ProcessingTask ;
+    hi:usesProcessingMethod hi:CrowdsourcedLabelling .
+
+hi:FairModelValidation a hi:InteractionTask ;
+    hi:usesInteractionMethod hi:FairnessAssessment .
+
+hi:FairnessEvaluationMetrics a hi:FairnessEvaluation .
+
+hi:FairnessInAI a hi:SocialAI .
+
+hi:FairnessInAI2 a hi:SocialAI .
+
+hi:FairnessMonitoring a hi:Capability .
+
+hi:FederatedLearning a hi:ProcessingMethod .
+
+hi:FederatedLearning2 a hi:ProcessingMethod .
+
+hi:FederatedLearningDomain a hi:Domain .
+
+hi:FeedbackProcessing a hi:ProcessingTask ;
+    hi:usesProcessingMethod hi:Hybrid3 .
+
+hi:FeedbackQuestionnaire a hi:EvaluationMethod .
+
+hi:Flagging a hi:ProcessingTask ;
+    hi:usesProcessingMethod hi:StatisticalModelling .
+
+hi:Framework_EthicsVSD a hi:EthicalFramework ;
+    rdfs:label "Ethics in Value Sensitive Design" ;
+    hi:sourcePaper "10.3233/FAIA230076" .
+
+hi:Framework_ResponsibleAI a hi:GovernanceFramework ;
+    rdfs:label "Responsible AI Policy Framework" ;
+    hi:sourcePaper "10.3233/FAIA240204" .
+
+hi:GANs a hi:MachineLearningMethod .
+
+hi:GenAI a owl:Class ;
+    rdfs:subClassOf hi:ProcessingMethod .
+
+hi:GenerateMeshes a hi:ProcessingTask ;
+    hi:usesProcessingMethod hi:Diffusion .
+
+hi:GenerateObjects a hi:GenerationTask ;
+    hi:usesProcessingMethod hi:GANs .
+
+hi:GoalConflict a hi:EthicalConsideration,
+        owl:NamedIndividual ;
+    rdfs:label "Short-term vs Long-term Goal Conflict" .
+
+hi:GoalDetection a hi:Capability .
+
+hi:Goal_Accountability a hi:Endgoal ;
+    rdfs:label "Ensure accountability in decision making" ;
+    hi:sourcePaper "10.3233/FAIA240204" .
+
+hi:Goal_Agreement a hi:Endgoal ;
+    rdfs:label "Reach ethical agreement between parties" ;
+    hi:sourcePaper "10.3233/FAIA230091" .
+
+hi:Goal_AutonomyHome a hi:Endgoal ;
+    rdfs:label "Enable autonomous living support" ;
+    hi:sourcePaper "10.3389/frobt.2023.1152595" .
+
+hi:Goal_BiasAwareness a hi:Endgoal ;
+    rdfs:label "Make stakeholders aware of algorithmic bias" ;
+    hi:sourcePaper "hhai-2022_paper_58" .
+
+hi:Goal_CitizenTrust a hi:Endgoal ;
+    rdfs:label "Increase citizen trust in justice AI" ;
+    hi:sourcePaper "10.3233/FAIA230082" .
+
+hi:Goal_CrowdInsight a hi:Endgoal ;
+    rdfs:label "Extract knowledge from human-AI discussions" ;
+    hi:sourcePaper "10.3233/FAIA220207" .
+
+hi:Goal_EfficientAssembly a hi:Endgoal ;
+    rdfs:label "Boost assembly efficiency and safety" ;
+    hi:sourcePaper "10.3233/FAIA240203" .
+
+hi:Goal_EthicalSupport a hi:Endgoal ;
+    rdfs:label "Provide ethical decision support" ;
+    hi:sourcePaper "10.3233/FAIA230076" .
+
+hi:Goal_EvacuationSafety a hi:Endgoal ;
+    rdfs:label "Evacuate building efficiently" ;
+    hi:sourcePaper "hhai-2021_paper_96" .
+
+hi:Goal_ExplainDecision a hi:Endgoal ;
+    rdfs:label "Explain automated medical decisions" ;
+    hi:sourcePaper "10.3233/FAIA240202" .
+
+hi:Goal_KnowledgeGain a hi:Endgoal ;
+    rdfs:label "Improve learner understanding" ;
+    hi:sourcePaper "10.3233/FAIA230079" .
+
+hi:Goal_SafeNavigation a hi:Endgoal ;
+    rdfs:label "Safe and collaborative driving" ;
+    hi:sourcePaper "10.3233/FAIA220190" .
+
+hi:Goal_TrustAlignment a hi:Endgoal ;
+    rdfs:label "Align trust levels via calibration model" ;
+    hi:sourcePaper "10.3233/FAIA230088" .
+
+hi:Goal_TrustworthyAdvice a hi:Endgoal ;
+    rdfs:label "User receives trustworthy legal advice" ;
+    hi:sourcePaper "10.3233/FAIA230098" .
+
+hi:GovernanceFramework a owl:Class ;
+    rdfs:subClassOf hi:Context .
+
+hi:GraphGeneration a hi:GenerationTask ;
+    hi:usesKG hi:SemanticSceneGraph ;
+    hi:usesProcessingMethod hi:VirtualReality ;
+    hi:usesTool hi:MetaInteractionSDK .
+
+hi:HandController a hi:Tool .
+
+hi:Healthcare2 a hi:Domain .
+
+hi:HealthcareProfessional a hi:Human ;
+    hi:participatesIn hi:ProvideFeedbackForImprovement,
+        hi:ReviewRecommendations ;
+    hi:processingTask hi:ExtractingPatientInsights .
+
+hi:HeartRate a hi:Metric .
+
+hi:HeartRateVariability a hi:Metric .
+
+hi:HeuristicReasoning a hi:ProcessingMethod .
+
+hi:HierarchicalObjectRecognition a hi:Capability .
+
+hi:HigherEducation a hi:Domain,
+        owl:NamedIndividual ;
+    rdfs:label "Higher Education" .
+
+hi:HuMaCe a hi:Framework .
+
+hi:HumanAITust a hi:SocialAI .
+
+hi:HumanAgent2 a hi:Human ;
+    hi:participatesIn hi:TaskDelegation,
+        hi:TaskExecutionWithOverrides ;
+    hi:processingTask hi:ParticleMaintenance,
+        hi:Perturbation,
+        hi:SolvingSTMs .
+
+hi:HumanAgentCollaboration a hi:InteractionTask ;
+    hi:usesInteractionMethod hi:ToMEnabledReasoning .
+
+hi:HumanCenteredAI2 a hi:Domain .
+
+hi:HumanComputerInteraction a hi:Domain .
+
+hi:HumanDecisionMakers a hi:Human ;
+    hi:evaluatedBy hi:VignetteBasedFairnessEvaluation ;
+    hi:hasEndgoal hi:ResponsibleDesign ;
+    hi:isCapableOf hi:DecisionMaking,
+        hi:EthicalReasoning,
+        hi:FairnessEvaluation ;
+    hi:participatesIn hi:HumanFairnessJudgment ;
+    hi:processingTask hi:FairnessPerceptionEvaluation .
+
+hi:HumanFeedback a hi:Feedback,
+        owl:NamedIndividual .
+
+hi:HumanMachineInteraction a hi:Domain ;
+    owl:sameAs dbr:Human-Computer_Interaction .
+
+hi:HumanResources a hi:Domain .
+
+hi:HyEnA a hi:ProcessingMethod,
+        owl:NamedIndividual .
+
+hi:Hybrid2 a hi:ProcessingMethod .
+
+hi:HybridIntelligenceInteraction a hi:Interaction,
+        owl:NamedIndividual .
+
+hi:HybridTeam a owl:Class ;
+    rdfs:subClassOf hi:Actor .
+
+hi:HybridWandTabletInterface a hi:tool .
+
+hi:ISA a hi:Metric .
+
+hi:Identifying a hi:ProcessingTask ;
+    hi:usesProcessingMethod hi:Hybrid3 .
+
+hi:IdentifyingIssues a hi:ProcessingTask ;
+    hi:usesProcessingMethod hi:Hybrid5 .
+
+hi:ImplicitBias a hi:EthicalConsideration .
+
+hi:ImproveDecisionAccuracy a hi:Endgoal .
+
+hi:ImproveJobMatching a hi:Endgoal .
+
+hi:ImproveSituationalAwareness a hi:Endgoal .
+
+hi:ImprovedHumanMachineAlignment a hi:Endgoal .
+
+hi:ImprovedSatisfaction a hi:Endgoal .
+
+hi:ImprovedSustainability a hi:Endgoal .
+
+hi:ImprovedUsability a hi:Endgoal .
+
+hi:ImprovingAIInterpretability a hi:Endgoal .
+
+hi:ImprovingAlgorithmicFairness a hi:Endgoal .
+
+hi:ImprovingCareQuality a hi:Endgoal .
+
+hi:ImprovingFLFairness a hi:Endgoal .
+
+hi:ImprovingHumanAIAlignment a hi:Endgoal .
+
+hi:IncorrectExplanation a hi:EthicalConsideration,
+        owl:NamedIndividual ;
+    rdfs:label "Incorrect Explanation" .
+
+hi:IncrementalLearning a hi:InteractionTask ;
+    hi:usesInteractionMethod hi:Collaboration-based3,
+        hi:Contribution-based2 .
+
+hi:InformationTransfer a hi:ProcessingTask,
+        owl:NamedIndividual ;
+    rdfs:label "Information Transfer" .
+
+hi:InteractiveMLExperiment a hi:Scenario,
+        owl:NamedIndividual ;
+    hi:hasInteraction hi:AnnotationInteraction,
+        hi:AnnotationTask .
+
+hi:InterventionRLModule a hi:InformationProcessing,
+        owl:NamedIndividual ;
+    hi:informationMethod hi:ReinforcementLearning ;
+    hi:processingTask hi:PersonalizedIntervention .
+
+hi:JobVacancySelection a hi:Domain .
+
+hi:KeyArgumentAnnotation a hi:ProcessingTask,
+        owl:NamedIndividual .
+
+hi:KeyArgumentConsolidation a hi:ProcessingTask,
+        owl:NamedIndividual .
+
+hi:Keyboard a hi:Tool .
+
+hi:KnowledgeAggregation a hi:Capability .
+
+hi:KnowledgeEngineering a hi:ProcessingTask ;
+    hi:usesKG hi:CaseKnowledgeGraph,
+        hi:DomainKnowledgeGraph ;
+    hi:usesProcessingMethod hi:Hybrid2 .
+
+hi:LabelerBias a hi:Endgoal .
+
+hi:LabelerPerceptionAssessment a hi:InteractionTask ;
+    hi:usesInteractionMethod hi:OnlineSurveyAnnotation .
+
+hi:LawEnforcement a hi:Domain,
+        owl:NamedIndividual ;
+    rdfs:label "Law Enforcement" .
+
+hi:Learning a hi:ProcessingTask,
+        owl:NamedIndividual .
+
+hi:LiveVideoStream a hi:Context,
+        owl:NamedIndividual .
+
+hi:MLAnnotationBias a hi:Domain .
+
+hi:MachineLearningClassifiers a hi:MachineLearningMethod .
+
+hi:MarkovModels a hi:StatisticalMethod .
+
+hi:MatchJobToJobseeker a hi:Capability .
+
+hi:MeasuringUserMachineAlginment a hi:EvaluationMethod .
+
+hi:MediatedInteraction a hi:InteractionMethod,
+        owl:NamedIndividual ;
+    rdfs:label "Mediated Interaction" .
+
+hi:MedicalDiagnostics a hi:Domain ;
+    owl:sameAs dbr:Medical_diagnosis .
+
+hi:MissionPhase a hi:Context,
+        owl:NamedIndividual .
+
+hi:MoH_Model a hi:InteractionMethod .
+
+hi:Monitoring a hi:ProcessingTask ;
+    hi:usesProcessingMethod hi:Hybrid5 .
+
+hi:MonitoringFramework a hi:Framework .
+
+hi:MonitoringSystem a hi:ArtificialAgent ;
+    hi:hasEndgoal hi:ImprovingAIInterpretability ;
+    hi:isCapableOf hi:MonitoringAI ;
+    hi:participatesIn hi:OutputComparison ;
+    hi:processingTask hi:Flagging .
+
+hi:MultiAgentModel a hi:InteractionMethod .
+
+hi:Multimodal a hi:InteractionMethod,
+        owl:NamedIndividual .
+
+hi:Multiplicity a hi:Capability .
+
+hi:NASA_TLX a hi:Metric .
+
+hi:NLP a hi:ProcessingMethod .
+
+hi:NaturalLanguageExplanationGeneration a hi:ProcessingTask,
+        owl:NamedIndividual ;
+    rdfs:label "Natural Language Explanation Generation" .
+
+hi:NeuralNetworkParameterization a hi:ProcessingMethod .
+
+hi:Neuro-symbolic a hi:ProcessingMethod,
+        owl:NamedIndividual .
+
+hi:Non-cooperative a hi:InteractionMethod,
+        owl:NamedIndividual .
+
+hi:Nudging a hi:Interaction,
+        owl:NamedIndividual ;
+    hi:interactingAgent hi:DementiaUser,
+        hi:WhoTakesCareSystem ;
+    hi:interactionTask hi:PersonalizedIntervention .
+
+hi:ObjectiveTaskModels a hi:SemanticMethod .
+
+hi:OfflineLearning a hi:LearningTask ;
+    hi:usesProcessingMethod hi:MachineLearningClassifiers .
+
+hi:OnlineLearning a hi:LearningTask ;
+    hi:usesProcessingMethod hi:MentalWorkloadEstimation,
+        hi:POMDPs2 .
+
+hi:OntologicalTransformation a hi:ProcessingMethod .
+
+hi:Ontologies a hi:Domain .
+
+hi:OperatorFeedbackInteraction a hi:Interaction,
+        owl:NamedIndividual .
+
+hi:Operator_Anna a hi:Human ;
+    rdfs:label "Line Operator Anna" ;
+    hi:sourcePaper "10.3233/FAIA240203" .
+
+hi:OverestimationOfProbabilities a hi:EvaluationMethod ;
+    hi:usesMetric hi:AvgSumOfRewards,
+        hi:InteractionCost .
+
+hi:OverrideAction a hi:Capability .
+
+hi:POMDPPolicy a hi:InteractionMethod .
+
+hi:POMDPs a hi:MachineLearningMethod,
+        hi:StatisticalMethod .
+
+hi:POMPDModel a hi:InformationProcessing,
+        owl:NamedIndividual ;
+    hi:processingTask hi:ECGMonitoring .
+
+hi:ParetoOptimality a hi:ProcessingTask ;
+    hi:usesProcessingMethod hi:Hybrid4 .
+
+hi:ParticipatoryEvaluation a hi:EvaluationMethod .
+
+hi:PerformanceScore a hi:Metric .
+
+hi:PerformanceTest a hi:EvaluationMethod .
+
+hi:PersonalWellbeing a hi:Context,
+        owl:NamedIndividual ;
+    rdfs:label "Personal Wellbeing" .
+
+hi:PhysiologicalEvaluation a hi:EvaluationMethod ;
+    hi:usesMetric hi:HeartRate,
+        hi:HeartRateVariability .
+
+hi:PhysiologicalMonitoring a hi:ProcessingTask ;
+    hi:usesProcessingMethod hi:MentalWorkloadEstimation,
+        hi:PhysiologicalComputing .
+
+hi:PredictingHumanDecisions a hi:ProcessingTask ;
+    hi:usesProcessingMethod hi:AbstractionBasedToM .
+
+hi:PrivacyConcerns a hi:EthicalConsideration,
+        owl:NamedIndividual ;
+    rdfs:label "Privacy Concerns" .
+
+hi:PrivacyPreservingAI a hi:SocialAI .
+
+hi:PrivacyViolation a hi:EthicalConsideration,
+        owl:NamedIndividual ;
+    rdfs:label "Privacy Violation" .
+
+hi:ProfessionalCarePlanning a hi:Domain .
+
+hi:ProvideFeedback a hi:InteractionTask ;
+    hi:usesInteractionMethod hi:Contribution-based3 .
+
+hi:ProvidePredictiveInsights a hi:ProcessingTask ;
+    hi:usesProcessingMethod hi:Hybrid5 .
+
+hi:PutThatThere a hi:InteractionMethod .
+
+hi:QualityImprovement a hi:Endgoal,
+        owl:NamedIndividual ;
+    rdfs:label "Quality Improvement" .
+
+hi:Reasoning a hi:Capability,
+        hi:ProcessingTask,
+        owl:NamedIndividual .
+
+hi:Recruitment a hi:Domain .
+
+hi:Recursion a hi:ProcessingTask ;
+    hi:usesProcessingMethod hi:ComputationalRationality .
+
+hi:ReducingSemanticGaps a hi:Endgoal .
+
+hi:Reflection a hi:Capability .
+
+hi:Reflectiveness a hi:capability .
+
+hi:ReinforcementLearning a hi:ProcessingMethod,
+        owl:NamedIndividual .
+
+hi:ReinvigoratingParticleSets a hi:ProcessingTask ;
+    hi:usesProcessingMethod hi:BA_POMDPs,
+        hi:BayesianReinforcementLearning .
+
+hi:Relational_Context_Discussion a hi:RelationalModel ;
+    rdfs:label "Relational context among hybrid team agents" ;
+    hi:sourcePaper "10.3233/FAIA220207" .
+
+hi:Responsibility a hi:Capability,
+        owl:NamedIndividual .
+
+hi:Robot a hi:ArtificialAgent,
+        owl:Class,
+        owl:NamedIndividual ;
+    rdfs:subClassOf hi:ArtificialAgent .
+
+hi:Role_Doctor a hi:StakeholderRole,
+        hi:UserRole ;
+    hi:roleName "Medical professional" ;
+    hi:sourcePaper "10.3233/FAIA240202",
+        "10.3233/FAIA240204" .
+
+hi:Scenario_AVUrban a hi:Scenario ;
+    hi:context hi:Teaming_Context_UrbanDriving ;
+    hi:endgoal hi:Goal_SafeNavigation ;
+    hi:hasTeamingStrategy hi:Strategy_MutualPredictability ;
+    hi:sourcePaper "10.3233/FAIA220190" .
+
+hi:Scenario_ClinicalAid a hi:Scenario ;
+    hi:context hi:Context_HospitalCare ;
+    hi:endgoal hi:Goal_ExplainDecision ;
+    hi:sourcePaper "10.3233/FAIA240202" .
+
+hi:Scenario_DailyAssistance a hi:Scenario ;
+    hi:context hi:Affordance_Graspable ;
+    hi:endgoal hi:Goal_AutonomyHome ;
+    hi:sourcePaper "10.3389/frobt.2023.1152595" .
+
+hi:Scenario_EduFeedback a hi:Scenario ;
+    hi:context hi:Context_LanguageLearning ;
+    hi:endgoal hi:Goal_KnowledgeGain ;
+    hi:sourcePaper "10.3233/FAIA230079" .
+
+hi:Scenario_FactoryAssist a hi:Scenario ;
+    hi:context hi:ControlMode_Mixed ;
+    hi:endgoal hi:Goal_EfficientAssembly ;
+    hi:sourcePaper "10.3233/FAIA240203" .
+
+hi:Scenario_FireAlert a hi:Scenario ;
+    hi:context hi:Context_FireResponse ;
+    hi:endgoal hi:Goal_EvacuationSafety ;
+    hi:sourcePaper "hhai-2021_paper_96" .
+
+hi:Scenario_LegalAid a hi:Scenario ;
+    hi:context hi:Trust_Context_Justice ;
+    hi:endgoal hi:Goal_TrustworthyAdvice ;
+    hi:sourcePaper "10.3233/FAIA230098" .
+
+hi:Scenario_TeamCrowdResearch a hi:Scenario ;
+    hi:context hi:Relational_Context_Discussion ;
+    hi:endgoal hi:Goal_CrowdInsight ;
+    hi:sourcePaper "10.3233/FAIA220207" .
+
+hi:Scenario_UnionTalks a hi:Scenario ;
+    hi:context hi:Context_LaborNegotiation ;
+    hi:endgoal hi:Goal_Agreement ;
+    hi:sourcePaper "10.3233/FAIA230091" .
+
+hi:SemanticModelling a hi:SemanticMethod .
+
+hi:SemanticSceneGraph a hi:KnowledgeGraphs .
+
+hi:SemanticTechnologies a hi:Domain .
+
+hi:Sensor_BuildingSmoke a hi:SensorData ;
+    rdfs:label "Smoke sensor from building system" ;
+    hi:sourcePaper "hhai-2021_paper_96" .
+
+hi:SimilarityMatching a hi:EvaluationMethod ;
+    hi:usesMetric hi:SimilarityScore .
+
+hi:SimilarityScore a hi:Metric .
+
+hi:SimulationBasedInteraction a hi:Interaction,
+        owl:NamedIndividual .
+
+hi:Single-agent a hi:InteractionMethod,
+        owl:NamedIndividual .
+
+hi:SituationalAwarenessEnhancement a hi:ProcessingTask,
+        owl:NamedIndividual ;
+    rdfs:label "Situational Awareness Enhancement" .
+
+hi:SocialRoleModeling a hi:ProcessingMethod .
+
+hi:SocialSituation a hi:Context,
+        owl:NamedIndividual .
+
+hi:SolutionGeneration a hi:Capability .
+
+hi:SpeechToText a hi:ProcessingMethod .
+
+hi:StakeholderRole a owl:Class ;
+    rdfs:subClassOf hi:Actor ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:unionOf ( hi:Human hi:ArtificialAgent ) ] .
+
+hi:StandardizedHCIProtocols a hi:Endgoal .
+
+hi:Statistical a hi:ProcessingMethod,
+        owl:NamedIndividual .
+
+hi:StatisticalAnalysis a hi:StatisticalMethod .
+
+hi:StatisticalModelling a hi:StatisticalMethod .
+
+hi:Stereotypes a hi:EthicalConsideration .
+
+hi:Strategy_MutualPredictability a hi:TeamingStrategy ;
+    rdfs:label "Mutual predictability in coactive team design" ;
+    hi:sourcePaper "10.3233/FAIA220190" .
+
+hi:Strategy_PreAudit a hi:BiasMitigationStrategy ;
+    rdfs:label "Pre-deployment audit for bias" ;
+    hi:sourcePaper "hhai-2022_paper_58" .
+
+hi:SubjectiveBiasMeasurement a hi:ProcessingTask ;
+    hi:usesProcessingMethod hi:AlgorithmicLabelCorrection .
+
+hi:SubjectiveEvaluation a hi:EvaluationMethod ;
+    hi:usesMetric hi:EngagementScale,
+        hi:ISA,
+        hi:NASA_TLX .
+
+hi:SubjectiveTaskModels a hi:SemanticMethod .
+
+hi:SuggestingActions a hi:ProcessingTask ;
+    hi:usesProcessingMethod hi:Hybrid5 .
+
+hi:SurveyExperiment a hi:InteractionMethod .
+
+hi:Symbolic a hi:ProcessingMethod,
+        owl:NamedIndividual .
+
+hi:SymbolicGraphicalInterface a hi:InteractionMethod .
+
+hi:SyntheticDataAugmentation a hi:ProcessingMethod .
+
+hi:TacticalIntervention a hi:Context,
+        owl:NamedIndividual ;
+    rdfs:label "Tactical Intervention" .
+
+hi:TacticalPlanning a hi:ProcessingTask,
+        owl:NamedIndividual ;
+    rdfs:label "Tactical Planning" .
+
+hi:TaskAllocation a hi:InteractionTask,
+        hi:ProcessingTask,
+        owl:NamedIndividual ;
+    rdfs:label "Task Allocation" .
+
+hi:TeachingAgent a owl:Class ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( hi:ArtificialAgent [ a owl:Restriction ;
+                        owl:onProperty hi:receivesFeedback ;
+                        owl:someValuesFrom hi:EducationalFeedback ] ) ] .
+
+hi:Teaming_Context_UrbanDriving a hi:Context ;
+    rdfs:label "Urban autonomous driving scenario" ;
+    hi:sourcePaper "10.3233/FAIA220190" .
+
+hi:TheoryOfAdjunction a hi:InteractionMethod .
+
+hi:TimeInconsistentPreferences a hi:EvaluationMethod ;
+    hi:usesMetric hi:AvgSumOfRewards,
+        hi:InteractionCost .
+
+hi:ToMBasedEvaluation a hi:EvaluationMethod .
+
+hi:TrainingInteraction a hi:Interaction,
+        owl:NamedIndividual .
+
+hi:TrainingNeuralNetworks a hi:LearningTask ;
+    hi:usesProcessingMethod hi:NeuralNetworkParameterization .
+
+hi:TranslatingVoiceCommands a hi:TransformationTask ;
+    hi:usesProcessingMethod hi:SpeechToText ;
+    hi:usesTool hi:WitAI .
+
+hi:Transparency a hi:Capability,
+        owl:NamedIndividual .
+
+hi:TransparencyTool a owl:Class ;
+    rdfs:subClassOf hi:System .
+
+hi:Trust a hi:EthicalConsideration,
+        owl:NamedIndividual ;
+    rdfs:label "Trustworthiness" .
+
+hi:TrustCalibratingSystem a owl:Class ;
+    rdfs:subClassOf hi:System ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( hi:System [ a owl:Restriction ;
+                        owl:onProperty hi:buildsAwarenessFrom ;
+                        owl:someValuesFrom hi:SensorData ] [ a owl:Restriction ;
+                        owl:hasValue hi:Adaptiveness ;
+                        owl:onProperty hi:capability ] ) ] .
+
+hi:TrustFactor1 a hi:EthicalConsideration,
+        owl:NamedIndividual .
+
+hi:TrustFactor2 a hi:EthicalConsideration,
+        owl:NamedIndividual .
+
+hi:TrustState a owl:Class ;
+    rdfs:subClassOf hi:Context .
+
+hi:Trust_Context_Justice a hi:TrustState ;
+    hi:sourcePaper "10.3233/FAIA230098" ;
+    hi:trustScore "0.85"^^xsd:float .
+
+hi:UAVInteraction a hi:Interaction,
+        owl:NamedIndividual .
+
+hi:UAVs a hi:ArtificialAgent ;
+    hi:hasEndgoal hi:EnhanceUserControl2 ;
+    hi:isCapableOf hi:AdaptiveInteractionControl,
+        hi:PerformanceMonitoring ;
+    hi:participatesIn hi:AdjustingInteraction,
+        hi:TaskDelegation2 ;
+    hi:processingTask hi:BehavioralMonitoring,
+        hi:ModelHCIDynamics,
+        hi:OnlineLearning,
+        hi:PhysiologicalMonitoring .
+
+hi:UnbiasedDatasetCreation a hi:Endgoal .
+
+hi:UnbiasedSystem a hi:EthicalConsideration .
+
+hi:UnbiasedSystem2 a hi:EthicalConsideration .
+
+hi:UserAlignedRecognition a hi:Capability .
+
+hi:UserComprehension a hi:Context,
+        owl:NamedIndividual ;
+    rdfs:label "User Comprehension" .
+
+hi:UserControlledGeneration a hi:InteractionMethod .
+
+hi:UserExplanationNeed a hi:Context,
+        owl:NamedIndividual .
+
+hi:UserModel a owl:Class ;
+    rdfs:subClassOf hi:InformationProcessing .
+
+hi:UserModeling a hi:ProcessingTask,
+        owl:NamedIndividual ;
+    rdfs:label "User Modeling" .
+
+hi:Vagueness a hi:Capability .
+
+hi:ValueAwareActiveLearningScenario a hi:Scenario,
+        owl:NamedIndividual ;
+    rdfs:label "Value-Aware Active Learning Scenario" ;
+    hi:hasEthicalConsideration hi:ErrorCostAnalysis ;
+    hi:hasInteraction hi:TrainingInteraction .
+
+hi:ValueImpact a hi:InteractionTask,
+        owl:NamedIndividual .
+
+hi:ValueMetric a hi:ProcessingTask,
+        owl:NamedIndividual .
+
+hi:VirtualEnvironment a owl:Class ;
+    rdfs:subClassOf hi:Context .
+
+hi:VirtualLab a hi:VirtualEnvironment,
+        owl:NamedIndividual .
+
+hi:VirtualReality a hi:ProcessingMethod ;
+    owl:sameAs dbr:Virtual_reality .
+
+hi:WhoTakesCareSystem a hi:ArtificialAgent,
+        owl:NamedIndividual ;
+    rdfs:label "Who-Takes-Care System" ;
+    hi:inScenario hi:DementiaCareScenario ;
+    hi:processingInformation hi:InterventionRLModule .
+
+hi:buildsAwarenessFrom a owl:ObjectProperty ;
+    rdfs:domain hi:System ;
+    rdfs:range hi:SensorData .
+
+hi:hasEndgoal a owl:ObjectProperty ;
+    rdfs:domain hi:Actor,
+        hi:Domain ;
+    rdfs:range hi:EndGoal,
+        hi:Endgoal .
+
+hi:hasInteraction a owl:ObjectProperty ;
+    rdfs:domain hi:Scenario ;
+    rdfs:range hi:Interaction ;
+    owl:inverseOf hi:partOfScenario .
+
+hi:hasSocialCommitment a owl:ObjectProperty ;
+    rdfs:domain hi:Actor ;
+    rdfs:range hi:SocialCommitment ;
+    rdfs:subPropertyOf owl:topObjectProperty .
+
+hi:inScenario a owl:ObjectProperty ;
+    rdfs:domain hi:Actor ;
+    rdfs:range hi:Scenario ;
+    rdfs:subPropertyOf owl:topObjectProperty .
+
+hi:isCapableOf a owl:ObjectProperty ;
+    rdfs:domain hi:Actor ;
+    rdfs:range hi:Capability .
+
+hi:perceivesAffordance a owl:ObjectProperty ;
+    rdfs:domain hi:EmbodiedAgent ;
+    rdfs:range hi:Context .
+
+hi:possessesCapability a owl:ObjectProperty ;
+    rdfs:domain hi:Capability ;
+    rdfs:range hi:Actor .
+
+hi:processingInformation a owl:ObjectProperty ;
+    rdfs:domain hi:Actor ;
+    rdfs:range hi:InformationProcessing .
+
+hi:providesExplanation a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:domain hi:System ;
+    rdfs:range hi:ExplanationStrategy .
+
+hi:receivesFeedback a owl:ObjectProperty ;
+    rdfs:domain hi:System ;
+    rdfs:range hi:EducationalFeedback .
+
+hi:usedInScenario a owl:ObjectProperty ;
+    rdfs:domain hi:System ;
+    rdfs:range hi:Scenario .
+
+ns1:R28UKpkU3djqDapS0PZmOg a owl:Class ;
+    rdfs:label "Mitigation"@en ;
+    rdfs:subClassOf hi:EthicalConsideration .
+
+ns1:R7WivB5O3CgSGkUWI5zHduF a hi:Domain,
+        owl:NamedIndividual ;
+    rdfs:label "Privacy_Management"@en ;
+    hi:domain ns1:R7WivB5O3CgSGkUWI5zHduF .
+
+ns1:R974KWLHbQiSe4BiDbpTZif a owl:Class ;
+    rdfs:label "HybridIntelligent"@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onClass hi:ArtificialAgent ;
+            owl:onProperty ns1:R9WgEN4qpLkvWgswO8jPyWR ],
+        [ a owl:Restriction ;
+            owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onClass hi:Human ;
+            owl:onProperty ns1:R9WgEN4qpLkvWgswO8jPyWR ],
+        hi:Actor .
+
+hi1:ComparedToSelfExploreOnly a hi1:Context,
+        owl:NamedIndividual .
+
+hi1:CounterfactualGeneration a hi1:ProcessingTask,
+        owl:NamedIndividual .
+
+hi1:ExplainableAI a hi1:Domain,
+        owl:NamedIndividual .
+
+hi1:FeatureExploration a hi1:InteractionMethod,
+        owl:NamedIndividual .
+
+hi1:Learning a hi1:ProcessingTask,
+        owl:NamedIndividual .
+
+hi1:Prediction a hi1:ProcessingTask,
+        owl:NamedIndividual .
+
+hi1:UserLimitTechKnowledge a hi1:Human,
+        owl:NamedIndividual .
+
+hi1:UserTrust a hi1:EthicalMetric,
+        owl:NamedIndividual ;
+    hi1:influences hi1:PerceivedUsefulness .
+
+hi2:COMPASConsistencyScore a hi2:Score,
+        owl:NamedIndividual ;
+    hi2:hasName "COMPAS Consistency Score" ;
+    hi2:hasValue "0.08"^^xsd:float .
+
+hi2:CaseAnalysisTask a hi2:Task,
+        owl:NamedIndividual ;
+    hi2:describedIn hi2:LandmarksCaseBasedReasoning ;
+    hi2:hasDescription "The task of analyzing case data to identify landmark cases and determine consistency with precedence" ;
+    hi2:hasName "Case Analysis" ;
+    hi2:partOf hi2:CaseBasedReasoningScenario .
+
+hi2:CaseBasedReasoningScenario a hi2:Scenario,
+        owl:NamedIndividual ;
+    hi2:basedOn hi2:LandmarksCaseBasedReasoning ;
+    hi2:describedIn hi2:LandmarksCaseBasedReasoning ;
+    hi2:hasDescription "A scenario for analyzing how machine learning systems draw on training data using theory of precedential constraint" ;
+    hi2:hasName "Case-Based Reasoning Scenario" .
+
+hi2:Caution a hi2:AI_Concept,
+        owl:NamedIndividual ;
+    hi2:describedIn hi2:ExosoulEthicalProfiling ;
+    hi2:hasDescription "Reading privacy policies and being cautious with personal information online" ;
+    hi2:hasName "Caution" .
+
+hi2:CopyrightInfringement a hi2:AI_Concept,
+        owl:NamedIndividual ;
+    hi2:describedIn hi2:ExosoulEthicalProfiling ;
+    hi2:hasDescription "Using software or content without owning a license" ;
+    hi2:hasName "Copyright Infringement" .
+
+hi2:DementiaCareScenario a hi2:Scenario,
+        owl:NamedIndividual ;
+    hi2:basedOn hi2:HumanCenteredAIDementiaCare ;
+    hi2:describedIn hi2:HumanCenteredAIDementiaCare ;
+    hi2:hasDescription "A scenario for providing personalized interventions to support people with early-stage dementia in managing their eating and drinking routines" ;
+    hi2:hasName "Dementia Care Eating and Drinking Scenario" .
+
+hi2:EatingReminderTask a hi2:Task,
+        owl:NamedIndividual ;
+    hi2:describedIn hi2:HumanCenteredAIDementiaCare ;
+    hi2:hasDescription "Task of reminding people with dementia to eat and drink at appropriate times" ;
+    hi2:hasName "Eating Reminder" ;
+    hi2:partOf hi2:DementiaCareScenario .
+
+hi2:EthicalProfilingScenario a hi2:Scenario,
+        owl:NamedIndividual ;
+    hi2:basedOn hi2:ExosoulEthicalProfiling ;
+    hi2:describedIn hi2:ExosoulEthicalProfiling ;
+    hi2:hasDescription "A scenario for creating ethical profiles of users to predict digital behaviors" ;
+    hi2:hasName "Ethical Profiling Scenario" .
+
+hi2:FloorPlanDesignTask a hi2:Task,
+        owl:NamedIndividual ;
+    hi2:describedIn hi2:HybridIntelligenceGenerativeDesign ;
+    hi2:hasDescription "Creating floor plan layouts of office buildings through co-creation with a generative design assistant" ;
+    hi2:hasName "Floor Plan Design" ;
+    hi2:partOf hi2:GenerativeDesignTrainingScenario .
+
+hi2:GenerativeDesignTrainingScenario a hi2:Scenario,
+        owl:NamedIndividual ;
+    hi2:basedOn hi2:HybridIntelligenceGenerativeDesign ;
+    hi2:describedIn hi2:HybridIntelligenceGenerativeDesign ;
+    hi2:hasDescription "A scenario for individual experts to train and personalize their generative design assistants on the fly" ;
+    hi2:hasName "Generative Design Training Scenario" .
+
+hi2:GenerativeDesignTrainingTask a hi2:Task,
+        owl:NamedIndividual ;
+    hi2:describedIn hi2:HybridIntelligenceGenerativeDesign ;
+    hi2:hasDescription "Task of training a generative design assistant through expressing design goals and providing feedback on designs" ;
+    hi2:hasName "Generative Design Training" ;
+    hi2:partOf hi2:GenerativeDesignTrainingScenario .
+
+hi2:HonestyHumility a hi2:AI_Concept,
+        owl:NamedIndividual ;
+    hi2:describedIn hi2:ExosoulEthicalProfiling ;
+    hi2:hasDescription "Personality trait reflecting sincerity, fairness, modesty, and lack of manipulation" ;
+    hi2:hasName "Honesty/Humility" .
+
+hi2:Intervention a <http://www.co-ode.org/ontologies/ont.owl#AI_Decision_Learning>,
+        owl:NamedIndividual ;
+    hi2:describedIn hi2:TrustInterventionsHumanAI ;
+    hi2:hasDescription "A human-initiated action to alter the agent's behavior, rejecting its decision and suggesting an alternative" ;
+    hi2:hasName "Intervention" .
+
+hi2:LandmarkCases a hi2:AI_Concept,
+        owl:NamedIndividual ;
+    hi2:describedIn hi2:LandmarksCaseBasedReasoning ;
+    hi2:hasDescription "Cases that are minimal with respect to the forcing relation, representing new legal ground and cases that set precedent" ;
+    hi2:hasName "Landmark Cases" ;
+    hi2:relatedTo hi2:PrecedentialConstraint .
+
+hi2:PartnershipScore a hi2:Score,
+        owl:NamedIndividual ;
+    hi2:hasName "Partnership Score" ;
+    hi2:hasValue "0.75"^^xsd:float .
+
+hi2:PrivacyViolation a hi2:AI_Concept,
+        owl:NamedIndividual ;
+    hi2:describedIn hi2:ExosoulEthicalProfiling ;
+    hi2:hasDescription "Using others' personal information without permission" ;
+    hi2:hasName "Privacy Violation" .
+
+hi2:RLHumanInLoopScenario a hi2:Scenario,
+        owl:NamedIndividual ;
+    hi2:basedOn hi2:RLHumanInLoopPaper ;
+    hi2:describedIn hi2:RLHumanInLoopPaper ;
+    hi2:hasDescription "A scenario exploring the critical role of humans throughout the reinforcement learning process" ;
+    hi2:hasName "Human-in-the-Loop Reinforcement Learning Scenario" .
+
+hi2:SimulationScore a hi2:Score,
+        owl:NamedIndividual ;
+    hi2:hasName "Simulation Performance Score" ;
+    hi2:hasValue "0.91"^^xsd:float .
+
+:AI a owl:Class ;
+    rdfs:subClassOf hi:Domain .
+
+:Correctness a owl:Class ;
+    rdfs:subClassOf hi:Endgoal .
+
+:Explain a owl:Class ;
+    rdfs:subClassOf hi:InteractionTask .
+
+:LargeLanguageModel a owl:Class ;
+    rdfs:subClassOf hi:ArtificialAgent .
+
+:Reading a owl:Class ;
+    rdfs:subClassOf :Collaboration .
+
+:Reasoning a owl:Class ;
+    rdfs:subClassOf hi:Capability .
+
+:Translation a owl:Class ;
+    rdfs:subClassOf :Reasoning .
+
+:UnmannedVehicles a owl:Class ;
+    rdfs:subClassOf hi:ArtificialAgent .
+
+hi:AIEthics4 a hi:Domain,
+        hi:SocialAI .
+
+hi:AIMonitoring2 a hi:Domain .
+
+hi:Accountability a hi:EthicalConsideration .
+
+hi:AdaptivePOMDPScenario a hi:Scenario,
+        owl:NamedIndividual ;
+    rdfs:label "Adaptive POMDP Scenario" ;
+    hi:context hi:MissionPhase ;
+    hi:hasInteraction hi:UAVInteraction .
+
+hi:Adjunction a hi:InteractionTask ;
+    hi:usesInteractionMethod hi:TheoryOfAdjunction .
+
+hi:AdjustingInteraction a hi:InteractionTask ;
+    hi:usesInteractionMethod hi:Multi-agent2,
+        hi:Teleoperation .
+
+hi:Affordance_Graspable a hi:Context ;
+    rdfs:label "Objects graspable by the robot" ;
+    hi:sourcePaper "10.3389/frobt.2023.1152595" ;
+    owl:deprecated false .
+
+hi:AlgorithmicJustice a hi:Endgoal .
+
+hi:AnalyticalOutputInteraction a hi:InteractionTask ;
+    hi:usesInteractionMethod hi:CognitiveForcingFunctions .
+
+hi:ApplicationDesign a hi:Domain .
+
+hi:Autonomy a hi:EthicalConsideration .
+
+hi:AvgSumOfRewards a hi:Metric .
+
+hi:Aviation a hi:Domain .
+
+hi:BA_POMDPs a hi:StatisticalMethod .
+
+hi:BayesianReinforcementLearning a hi:MachineLearningMethod,
+        hi:StatisticalMethod .
+
+hi:BehavioralMonitoring a hi:ProcessingTask ;
+    hi:usesProcessingMethod hi:PhysiologicalComputing,
+        hi:StatisticalAnalysis .
+
+hi:Bias a owl:Class ;
+    rdfs:subClassOf hi:EthicalConsideration .
+
+hi:BiasAssessmentInLabeling a hi:FairnessEvaluation .
+
+hi:BiasMitigationStrategy a owl:Class ;
+    rdfs:subClassOf hi:Context .
+
+hi:Business a hi:Domain .
+
+hi:CaseKnowledgeGraph a hi:KnowledgeGraphs .
+
+hi:Collaboration-based a hi:InteractionMethod,
+        owl:NamedIndividual .
+
+hi:Collaboration-based4 a hi:InteractionMethod .
+
+hi:Collaborativeness a hi:Capability,
+        owl:NamedIndividual .
+
+hi:Communication a hi:Capability,
+        owl:NamedIndividual .
+
+hi:ComputerVision a hi:Domain ;
+    owl:sameAs dbr:Computer_vision .
+
+hi:Context_Biometric a hi:BiometricSignal ;
+    rdfs:label "Real-time trust sensing via biometrics" ;
+    hi:sourcePaper "10.3233/FAIA230088",
+        "10.3233/FAIA240202" .
+
+hi:Contribution-based3 a hi:InteractionMethod .
+
+hi:ControlMode a owl:Class ;
+    rdfs:subClassOf hi:Context .
+
+hi:CorrelativeModelling a hi:ProcessingMethod .
+
+hi:DataTransformation a hi:ProcessingMethod,
+        hi:TransformationTask .
+
+hi:DecisionSupport a hi:Capability,
+        hi:InteractionTask ;
+    hi:usesInteractionMethod hi:Collaboration-based2 .
+
+hi:DomainKnowledgeGraph a hi:KnowledgeGraphs .
+
+hi:Education a hi:Domain .
+
+hi:EmbodiedAgent a owl:Class ;
+    rdfs:subClassOf hi:ArtificialAgent ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( hi:ArtificialAgent [ a owl:Restriction ;
+                        owl:onProperty hi:perceivesAffordance ;
+                        owl:someValuesFrom hi:Context ] ) ] .
+
+hi:EnhanceUserControl2 a hi:EndGoal .
+
+hi:EnsureFairness3 a hi:EndGoal .
+
+hi:EnsuringPrivacy a hi:EthicalConsideration .
+
+hi:EthicalFramework a owl:Class ;
+    rdfs:subClassOf hi:Context .
+
+hi:EthicallyAwareScenario a owl:Class ;
+    rdfs:subClassOf hi:Scenario ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( hi:Scenario [ a owl:Restriction ;
+                        owl:onProperty hi:hasEthicalConsideration ;
+                        owl:someValuesFrom hi:EthicalConsideration ] ) ] .
+
+hi:ExplanationRequest a owl:Class ;
+    rdfs:subClassOf hi:InteractionTask .
+
+hi:Explanation_Contrastive a hi:ExplanationStrategy ;
+    hi:explanationType "contrastive" ;
+    hi:sourcePaper "10.3233/FAIA230098",
+        "10.3233/FAIA230079" .
+
+hi:ExtractingPatientInsights a hi:ProcessingTask ;
+    hi:usesProcessingMethod hi:FederatedLearning .
+
+hi:FairnessAssessment a hi:InteractionMethod .
+
+hi:Feedback_EduSession1 a hi:EducationalFeedback ;
+    hi:feedbackContent "Needs more grammar support" ;
+    hi:sourcePaper "10.3233/FAIA230079" .
+
+hi:GenderBias a hi:Bias,
+        hi:EthicalConsideration,
+        owl:NamedIndividual .
+
+hi:GenerationTask a owl:Class ;
+    rdfs:subClassOf hi:ProcessingTask .
+
+hi:HierarchicalClassification a hi:Domain .
+
+hi:HumanAIDevelopmentScenario a hi:Scenario,
+        owl:NamedIndividual ;
+    rdfs:label "Human-AI Development Scenario" ;
+    hi:hasEthicalConsideration hi:TrustFactor1,
+        hi:TrustFactor2 .
+
+hi:HumanAIInteraction a hi:Domain .
+
+hi:HumanCenteredAI a hi:Domain .
+
+hi:HumanInTheLoop a hi:InteractionMethod,
+        hi:Scenario,
+        owl:NamedIndividual ;
+    hi:hasInteraction hi:HumanFeedback .
+
+hi:HumanRobotInteraction a hi:Domain,
+        hi:Scenario,
+        owl:NamedIndividual ;
+    hi:context hi:UserExplanationNeed ;
+    owl:sameAs dbr:Human-Computer_Interaction .
+
+hi:HybridIntelligence a hi:Domain .
+
+hi:IdentifyEvent a hi:AllocatedTask,
+        owl:NamedIndividual .
+
+hi:IdentifyLandmark a hi:AllocatedTask,
+        owl:NamedIndividual .
+
+hi:IdentifyLanguage a hi:AllocatedTask,
+        owl:NamedIndividual .
+
+hi:InteractionCost a hi:Metric .
+
+hi:InteractiveML a owl:Class ;
+    rdfs:subClassOf hi:ProcessingMethod .
+
+hi:MentalWorkloadEstimation a hi:ProcessingMethod .
+
+hi:ModelHCIDynamics a hi:ProcessingTask ;
+    hi:usesProcessingMethod hi:POMDPs2 .
+
+hi:MonitoringAI a hi:Capability .
+
+hi:Multi-agent2 a hi:InteractionMethod .
+
+hi:MultiAgentSystems a hi:Domain .
+
+hi:Multimodal2 a hi:InteractionMethod .
+
+hi:Non-cooperative2 a hi:InteractionMethod .
+
+hi:ObjectCreationManagement a hi:InteractionTask ;
+    hi:usesInteractionMethod hi:Multimodal2,
+        hi:UserControlledGeneration .
+
+hi:OnlineSurveyAnnotation a hi:InteractionMethod .
+
+hi:OutputComparison a hi:InteractionTask ;
+    hi:usesInteractionMethod hi:Collaboration-based4 .
+
+hi:POMDPs2 a hi:MachineLearningMethod .
+
+hi:ParticleMaintenance a hi:ProcessingTask ;
+    hi:usesProcessingMethod hi:BA_POMDPs,
+        hi:BayesianReinforcementLearning .
+
+hi:PerformanceMonitoring a hi:Capability .
+
+hi:PersonalValueScenario a hi:Scenario,
+        owl:NamedIndividual ;
+    rdfs:label "Personal Value Scenario" ;
+    hi:context hi:SocialSituation ;
+    hi:hasInteraction hi:AIUserInteraction .
+
+hi:PersonalizedIntervention a hi:InteractionTask,
+        owl:NamedIndividual .
+
+hi:Perturbation a hi:TransformationTask ;
+    hi:usesProcessingMethod hi:MarkovModels .
+
+hi:PhysiologicalComputing a hi:ProcessingMethod .
+
+hi:PromptBasedInteraction a hi:InteractionMethod,
+        owl:NamedIndividual ;
+    rdfs:label "Prompt-based Interaction" .
+
+hi:ProvideFeedbackForImprovement a hi:InteractionTask ;
+    hi:usesInteractionMethod hi:HumanInTheLoop .
+
+hi:ReasoningTask a owl:Class ;
+    rdfs:subClassOf hi:ProcessingTask .
+
+hi:Recommendation a hi:Capability,
+        hi:InfluencingAction,
+        hi:InteractionTask,
+        owl:NamedIndividual ;
+    owl:sameAs dbr:Recommender_system .
+
+hi:RelationalModel a owl:Class ;
+    rdfs:subClassOf hi:Context .
+
+hi:ReviewRecommendations a hi:InteractionTask ;
+    hi:usesInteractionMethod hi:HumanInTheLoop .
+
+hi:Scenario_TrustCalFlight a hi:Scenario ;
+    hi:context hi:Context_Biometric ;
+    hi:endgoal hi:Goal_TrustAlignment ;
+    hi:sourcePaper "10.3233/FAIA230088" .
+
+hi:SequentialGame a hi:InteractionMethod .
+
+hi:SolveWordGrid a hi:AllocatedTask,
+        owl:NamedIndividual .
+
+hi:SolvingSTMs a hi:ProcessingTask ;
+    hi:usesProcessingMethod hi:ObjectiveTaskModels,
+        hi:POMDPs,
+        hi:SubjectiveTaskModels .
+
+hi:SpatialManagement a hi:InteractionTask ;
+    hi:usesInteractionMethod hi:Multimodal2,
+        hi:PutThatThere .
+
+hi:StrongSocialAction a owl:Class ;
+    rdfs:comment "Goal-directed social action" ;
+    rdfs:subClassOf hi:SocialAction .
+
+hi:TaskDelegation a hi:InteractionTask ;
+    hi:usesInteractionMethod hi:MultiAgentModel,
+        hi:SequentialGame .
+
+hi:TaskDelegation2 a hi:InteractionTask ;
+    hi:usesInteractionMethod hi:Multi-agent2,
+        hi:POMDPPolicy .
+
+hi:TaskExecutionWithOverrides a hi:InteractionTask ;
+    hi:usesInteractionMethod hi:BeliefAlignment,
+        hi:MoH_Model,
+        hi:SequentialGame .
+
+hi:TeamingStrategy a owl:Class ;
+    rdfs:subClassOf hi:Context .
+
+hi:Teleoperation a hi:Interaction,
+        hi:InteractionMethod,
+        owl:NamedIndividual .
+
+hi:ValueBasedHybridScenario a hi:Scenario,
+        owl:NamedIndividual ;
+    rdfs:label "Value-Based Hybrid Intelligence Scenario" ;
+    hi:hasInteraction hi:HybridIntelligenceInteraction .
+
+hi:VisualSemantics a hi:Domain .
+
+hi:context a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:domain hi:Scenario ;
+    rdfs:range hi:Context .
+
+hi:endgoal a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:domain hi:Scenario ;
+    rdfs:range hi:Endgoal .
+
+ns1:RBX4tpiW9NTr9B05tfGd7xz a owl:Class ;
+    rdfs:label "Experiment"@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ns1:R9WgEN4qpLkvWgswO8jPyWR ;
+            owl:someValuesFrom hi:Actor ] .
+
+ns1:RBo1xAvYzFirAJHx2vQQvb a owl:Class ;
+    rdfs:label "Outcome"@en .
+
+hi1:AgentCooperation a hi1:Endgoal,
+        owl:NamedIndividual .
+
+hi1:DemocraticApproach a owl:Class ;
+    rdfs:label "Democratic Approach" ;
+    rdfs:subClassOf hi1:GovernanceApproach .
+
+hi1:FeatureExplainability a hi1:InteractionTask,
+        owl:NamedIndividual .
+
+hi1:Gaming a hi1:Domain,
+        owl:NamedIndividual .
+
+hi1:PerceivedUsefulness a hi1:EthicalMetric,
+        owl:NamedIndividual .
+
+hi1:UserAttitude a owl:Class ;
+    rdfs:label "User Attitude" .
+
+hi2:NavigationTask a hi2:Task,
+        owl:NamedIndividual ;
+    hi2:describedIn hi2:TrustInterventionsHumanAI ;
+    hi2:hasDescription "A route planning task where the human collaborates with an agent having partially aligned goals" ;
+    hi2:hasName "Navigation Task" ;
+    hi2:partOf hi2:TrustInterventionsScenario .
+
+hi2:RejectionThreshold a <http://www.co-ode.org/ontologies/ont.owl#AI_Optimization_Sampling>,
+        owl:NamedIndividual ;
+    hi2:hasDescription "A confidence threshold below which predictions are rejected" ;
+    hi2:hasName "Rejection Threshold" .
+
+hi2:Reliances_Behavior a hi2:AI_Concept,
+        owl:NamedIndividual ;
+    hi2:describedIn hi2:AIAssistedDecisionMakingReliance ;
+    hi2:hasDescription "Human's behavior of adhering to or overriding AI recommendations in decision-making" ;
+    hi2:hasName "Reliance Behavior" .
+
+:AnswerQuestion a owl:Class ;
+    rdfs:subClassOf hi:InteractionTask .
+
+:Answering a owl:Class ;
+    rdfs:subClassOf :Collaboration .
+
+:Collaboration a owl:Class ;
+    rdfs:subClassOf hi:Capability .
+
+:Science a owl:Class ;
+    rdfs:subClassOf hi:Domain .
+
+:UseOfArtificialAgent a owl:Class ;
+    rdfs:subClassOf hi:Context .
+
+hi:CommunicationAction a owl:Class ;
+    rdfs:comment "Specific action involving explicit messaging" ;
+    rdfs:subClassOf hi:SocialAction .
+
+hi:DementiaCareScenario a hi:Scenario,
+        owl:NamedIndividual ;
+    rdfs:label "Dementia Care Scenario" ;
+    hi:hasInteraction hi:Nudging .
+
+hi:DesignFiction a hi:InteractionMethod ;
+    hi:followsFramework hi:DesignFictionToolkit .
+
+hi:EASY_AI_Framework a hi:Framework .
+
+hi:EnsureTransparancy7 a hi:EndGoal .
+
+hi:EthicalNorm a owl:Class ;
+    rdfs:subClassOf hi:EthicalConsideration .
+
+hi:FairnessPerceptionEvaluation a hi:ProcessingTask ;
+    hi:usesProcessingMethod hi:DecisionComparison .
+
+hi:GoalAdoption a owl:Class ;
+    rdfs:comment "One agent adopts another’s goal" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :adoptsGoal ;
+            owl:someValuesFrom hi:Endgoal ],
+        hi:SocialAction .
+
+hi:Healthcare a hi:Domain,
+        owl:NamedIndividual ;
+    rdfs:label "Healthcare" .
+
+hi:HumanFairnessJudgment a hi:InteractionTask ;
+    hi:usesInteractionMethod hi:SurveyExperiment .
+
+hi:Hybrid4 a hi:ProcessingMethod .
+
+hi:MetaInteractionSDK a hi:Tool .
+
+hi:Norm_RespectPrivacy a hi:EthicalConsideration,
+        hi:EthicalNorm ;
+    hi:normLabel "Respect for personal data in labor disputes" ;
+    hi:sourcePaper "10.3233/FAIA230091",
+        "10.3233/FAIA240204" .
+
+hi:ResponsibleDesign a hi:Endgoal .
+
+hi:ResponsibleDesign2 a hi:Endgoal .
+
+hi:SemanticMethod a owl:Class ;
+    rdfs:subClassOf hi:ProcessingMethod .
+
+hi:SensorData a owl:Class ;
+    rdfs:subClassOf hi:Context .
+
+hi:ToMEnabledReasoning a hi:InteractionMethod .
+
+hi:TransformationTask a owl:Class ;
+    rdfs:subClassOf hi:ProcessingTask .
+
+hi:UserRole a owl:Class ;
+    rdfs:subClassOf hi:Context .
+
+hi:VignetteBasedFairnessEvaluation a hi:FairnessEvaluation .
+
+hi:WeakSocialAction a owl:Class ;
+    rdfs:comment "Belief-based social action" ;
+    rdfs:subClassOf hi:SocialAction .
+
+hi:WitAI a hi:tool .
+
+ns1:RCTj2GYfzj9eiGHTj3Bx2gN a owl:Class ;
+    rdfs:label "DecisionMakingComponent"@en ;
+    rdfs:subClassOf ns1:R7N8xlW48mWQqtwfhpbr4P3 .
+
+hi1:CounterfactualScenario a hi1:Scenario,
+        owl:NamedIndividual ;
+    hi1:domain hi1:ExplainableAI ;
+    hi1:endgoal hi1:UserEmpowerment ;
+    rdfs:comment "From the paper: \"An Interactive Interface For Feature Space Navigation\"" .
+
+hi2:AIAssistedDecisionMakingTask a hi2:Task,
+        owl:NamedIndividual ;
+    hi2:describedIn hi2:AIAssistedDecisionMakingReliance ;
+    hi2:hasDescription "Task of making decisions with assistance from an AI system, involving potential adherence or override of AI recommendations" ;
+    hi2:hasName "AI-Assisted Decision Making" ;
+    hi2:partOf hi2:AIAssistedDecisionMakingScenario .
+
+hi2:InterventionFrequency a hi2:AI_Concept,
+        owl:NamedIndividual ;
+    hi2:describedIn hi2:TrustInterventionsHumanAI ;
+    hi2:hasDescription "The rate at which humans intervene in an AI system's decisions, used as a behavioral measure of trust" ;
+    hi2:hasName "Intervention Frequency" ;
+    hi2:measuredIn hi2:NavigationTask ;
+    hi2:negativelyCorrelatedWith hi2:Trust ;
+    hi2:partOf hi2:Intervention .
+
+hi2:ReinforcementLearningDementiaCare a <http://www.co-ode.org/ontologies/ont.owl#AI_Decision_Learning>,
+        owl:NamedIndividual ;
+    hi2:describedIn hi2:HumanCenteredAIDementiaCare ;
+    hi2:hasDescription "Application of RL techniques to determine suitable mix of signals for individual users with early-stage dementia" ;
+    hi2:hasName "Reinforcement Learning for Personalized Interventions" .
+
+:influences a owl:ObjectProperty ;
+    rdfs:subPropertyOf owl:topObjectProperty .
+
+hi:Adaptiveness a hi:Capability,
+        owl:NamedIndividual .
+
+hi:CognitiveEffect a owl:Class ;
+    rdfs:subClassOf hi:Capability .
+
+hi:Coordination a owl:Class ;
+    rdfs:subClassOf hi:Interaction .
+
+hi:CriticalThinking a hi:InteractionTask ;
+    hi:usesInteractionMethod hi:DesignFiction .
+
+hi:DecisionMaking a hi:Capability,
+        hi:ProcessingMethod,
+        owl:NamedIndividual .
+
+hi:DecisionMaking5 a hi:Capability .
+
+hi:EducationalFeedback a owl:Class ;
+    rdfs:subClassOf hi:Interaction .
+
+hi:EnsuringPrivacy3 a hi:EthicalConsideration .
+
+hi:EnsuringTransparency a hi:EthicalConsideration .
+
+hi:Feedback a owl:Class ;
+    rdfs:subClassOf hi:Interaction .
+
+hi:GenerativeAI a hi:ArtificialAgent,
+        hi:Domain,
+        owl:NamedIndividual ;
+    rdfs:label "Generative AI" ;
+    hi:capability hi:Collaborativeness ;
+    hi:processingInformation hi:AcademicWriting .
+
+hi:Hybrid3 a hi:ProcessingMethod .
+
+hi:Ideate a hi:InteractionTask ;
+    hi:usesInteractionMethod hi:DesignFiction .
+
+hi:LearningTask a owl:Class ;
+    rdfs:subClassOf hi:ProcessingTask .
+
+hi:MachineLearningFairness a hi:Domain .
+
+hi:PowerRelation a owl:Class ;
+    rdfs:comment "Represents influence dynamics among agents" ;
+    rdfs:subClassOf hi:EthicalConsideration .
+
+hi:PredictiveDecisionMaking a hi:Domain ;
+    owl:sameAs dbr:Predictive_analytics .
+
+hi:Prepare a hi:Capability .
+
+hi:Refine a hi:InteractionTask ;
+    hi:usesInteractionMethod hi:DesignFiction .
+
+hi:Reflection2 a hi:Capability .
+
+hi:SocialCommitment a owl:Class ;
+    rdfs:subClassOf hi:EthicalConsideration .
+
+hi:VirtualRealityApplications a hi:Domain .
+
+hi:WordAssociation a owl:Class ;
+    rdfs:subClassOf hi:InteractionTask .
+
+hi:capability a owl:ObjectProperty ;
+    rdfs:domain hi:Actor ;
+    rdfs:range hi:Capability ;
+    owl:inverseOf hi:possessesCapability .
+
+hi:hasEthicalConsideration a owl:ObjectProperty ;
+    rdfs:domain hi:Context,
+        hi:Scenario ;
+    rdfs:range hi:EthicalConsideration .
+
+ns1:R7N8xlW48mWQqtwfhpbr4P3 a owl:Class ;
+    rdfs:label "AIComponent"@en ;
+    rdfs:subClassOf owl:Thing .
+
+ns1:RCUnyALP3vdjgbyXAktIoiv a owl:Class ;
+    rdfs:label "LearningComponent"@en ;
+    rdfs:subClassOf ns1:R7N8xlW48mWQqtwfhpbr4P3 .
+
+hi1:EthicalConsideration a owl:Class ;
+    rdfs:label "Ethical Consideration" .
+
+hi1:Human a owl:Class ;
+    rdfs:label "Human" ;
+    rdfs:subClassOf hi1:Actor .
+
+hi2:Agent a owl:Class ;
+    rdfs:label "Agent" .
+
+hi2:PrecedentialConstraint a hi2:AI_Concept,
+        owl:NamedIndividual ;
+    hi2:describedIn hi2:LandmarksCaseBasedReasoning ;
+    hi2:hasDescription "A formal framework developed to describe the a fortiori reasoning process underlying case law, analyzing how precedents constrain decisions in new cases" ;
+    hi2:hasName "Theory of Precedential Constraint" .
+
+hi2:ValueAwareActiveLearning a hi2:ResearchPaper,
+        owl:NamedIndividual ;
+    hi2:hasAuthor "Burcu Sayin, Jie Yang, Andrea Passerini, Fabio Casati" ;
+    hi2:hasDOI "10.3233/FAIA230085" ;
+    hi2:hasTitle "Value-Aware Active Learning" ;
+    hi2:hasVenue "HHAI 2023: Augmenting Human Intellect" ;
+    hi2:hasYear 2023 .
+
+hi:AllocatedTask a owl:Class ;
+    rdfs:subClassOf hi:ProcessingTask .
+
+hi:AnticipatoryCoordination a owl:Class ;
+    rdfs:comment "predicting another agent’s actions and adjusting proactively" ;
+    rdfs:subClassOf hi:Coordination .
+
+hi:DependenceRelation a owl:Class ;
+    rdfs:comment "Represents dependence structures between agents" ;
+    rdfs:subClassOf hi:InteractionMethod .
+
+hi:ExplanationStrategy a owl:Class ;
+    rdfs:subClassOf hi:InteractionTask .
+
+hi:Framework a owl:Class .
+
+hi:Hybrid5 a hi:ProcessingMethod .
+
+hi:KnowledgeGraphs rdfs:subClassOf hi:InformationProcessing .
+
+hi:NegativeCoordination a owl:Class ;
+    rdfs:comment "predicting another agent’s actions and adjusting proactively" ;
+    rdfs:subClassOf hi:Coordination .
+
+hi:PositiveCoordination a owl:Class ;
+    rdfs:comment "aligning actions for mutual benefit" ;
+    rdfs:subClassOf hi:Coordination .
+
+hi:ReactiveCoordination a owl:Class ;
+    rdfs:comment "adjusting in real-time to another agent’s actions" ;
+    rdfs:subClassOf hi:Coordination .
+
+ns1:R8s5V56zgX2LzaYacaq4k4r a owl:Class ;
+    rdfs:label "Evaluation"@en .
+
+hi1:Actor a owl:Class ;
+    rdfs:label "Actor" .
+
+hi1:GovernanceApproach a owl:Class ;
+    rdfs:label "Governance Approach" .
+
+hi1:InteractionMethod a owl:Class ;
+    rdfs:label "Interaction Method" .
+
+hi1:InteractionTask a owl:Class ;
+    rdfs:label "Interaction Task" .
+
+hi2:DiaryConstructionScenario a hi2:Scenario,
+        owl:NamedIndividual ;
+    hi2:basedOn hi2:ConversationalAgentDiaryConstruction ;
+    hi2:describedIn hi2:ConversationalAgentDiaryConstruction ;
+    hi2:hasName "Diary Construction Scenario" .
+
+hi2:EthicsPositionTheory a hi2:AI_Concept,
+        owl:NamedIndividual ;
+    hi2:describedIn hi2:ExosoulEthicalProfiling ;
+    hi2:hasDescription "Theory suggesting individuals' differences in moral judgments based on idealism and relativism" ;
+    hi2:hasName "Ethics Position Theory" .
+
+hi2:ValueAwareActiveLearningScenario a hi2:Scenario,
+        owl:NamedIndividual ;
+    hi2:basedOn hi2:ValueAwareActiveLearning ;
+    hi2:hasDescription "A scenario exploring active learning strategies that maximize model value in selective classification" ;
+    hi2:hasName "Value-Aware Active Learning Scenario" .
+
+hi:SocialAction a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ns1:R9WgEN4qpLkvWgswO8jPyWR ;
+            owl:someValuesFrom hi:Actor ],
+        hi:InteractionTask .
+
+ns1:R9WgEN4qpLkvWgswO8jPyWR a owl:ObjectProperty ;
+    rdfs:label "hasAgent"@en ;
+    rdfs:range hi:Actor .
+
+hi1:Context a owl:Class ;
+    rdfs:label "Context" .
+
+hi2:AI_Agent a owl:Class ;
+    rdfs:label "AI_Agent" ;
+    rdfs:comment "An artificial intelligence system acting as an agent" ;
+    rdfs:subClassOf hi2:Agent .
+
+hi2:Dataset a owl:Class .
+
+hi2:Evaluation a owl:Class ;
+    rdfs:label "Evaluation" .
+
+hi2:Human_Agent a owl:Class ;
+    rdfs:label "Human_Agent" ;
+    rdfs:comment "A human specifically acting as an agent in human-AI interaction" ;
+    rdfs:subClassOf hi2:Agent,
+        hi2:Human .
+
+hi2:NeuralNetworkVisualizationScenario a hi2:Scenario,
+        owl:NamedIndividual ;
+    hi2:basedOn hi2:TopographicActivationMaps ;
+    hi2:hasDescription "A scenario for creating topographic activation maps to understand neural network representations" ;
+    hi2:hasName "Neural Network Activation Visualization Scenario" .
+
+hi2:Score a owl:Class ;
+    rdfs:label "Score" .
+
+hi:Delegation a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :delegatesTask ;
+            owl:someValuesFrom hi:ProcessingTask ],
+        hi:SocialAction .
+
+hi:InfluencingAction a owl:Class ;
+    rdfs:comment "Where an agent modifies another’s beliefs/goals" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :influences ;
+            owl:someValuesFrom hi:Actor ],
+        [ a owl:Restriction ;
+            owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onClass hi:Actor ;
+            owl:onProperty :influences ],
+        hi:SocialAction .
+
+hi:Intelligent_System a hi:ArtificialAgent,
+        owl:NamedIndividual .
+
+hi:MachineLearningMethod a owl:Class ;
+    rdfs:subClassOf hi:ProcessingMethod .
+
+hi:Tool a owl:Class .
+
+hi2:TopographicActivationMaps a hi2:AI_Concept,
+        hi2:ResearchPaper,
+        owl:NamedIndividual ;
+    hi2:hasAuthor "Valerie Krug, Raihan Kabir Ratul, Christopher Olson, Sebastian Stober" ;
+    hi2:hasDOI "10.3233/FAIA230080" ;
+    hi2:hasDescription "A technique to visualize neuron activations in a two-dimensional space where neurons with similar activations are placed nearby" ;
+    hi2:hasName "TopographicActivationMaps" ;
+    hi2:hasTitle "Visualizing Deep Neural Networks with Topographic Activation Maps" ;
+    hi2:hasVenue "HHAI 2023: Augmenting Human Intellect" ;
+    hi2:hasYear 2023 ;
+    hi2:partOf hi2:NeuralNetworkVisualizationScenario .
+
+hi:SocialAI a owl:Class ;
+    rdfs:subClassOf hi:Domain .
+
+hi:StatisticalMethod a owl:Class ;
+    rdfs:subClassOf hi:ProcessingMethod .
+
+<http://www.co-ode.org/ontologies/ont.owl#AI_Human_Factors> a owl:Class ;
+    rdfs:subClassOf hi2:AI_Concept .
+
+<http://www.co-ode.org/ontologies/ont.owl#AI_Optimization_Sampling> a owl:Class ;
+    rdfs:subClassOf hi2:AI_Concept .
+
+hi1:Domain a owl:Class ;
+    rdfs:label "Domain" .
+
+hi2:AIAssistedDecisionMakingReliance a hi2:ResearchPaper,
+        owl:NamedIndividual ;
+    hi2:hasAuthor "Jakob Schoeffer, Johannes Jakubik, Michael Voessing, Niklas Kuehl, Gerhard Satzger" ;
+    hi2:hasDOI "10.3233/FAIA230098" ;
+    hi2:hasTitle "On the Interdependence of Reliance Behavior and Accuracy in AI-Assisted Decision-Making" ;
+    hi2:hasVenue "HHAI 2023: Augmenting Human Intellect" ;
+    hi2:hasYear 2023 .
+
+hi1:Capability a owl:Class ;
+    rdfs:label "Capability" .
+
+hi1:Interaction a owl:Class ;
+    rdfs:label "Interaction" .
+
+hi:FairnessEvaluation a hi:Capability,
+        owl:Class ;
+    rdfs:subClassOf hi:EvaluationMethod .
+
+hi:Metric a owl:Class .
+
+<http://www.co-ode.org/ontologies/ont.owl#AI_Modeling_Representation> a owl:Class ;
+    rdfs:subClassOf hi2:AI_Concept .
+
+hi1:Endgoal a owl:Class ;
+    rdfs:label "Endgoal" .
+
+hi1:ProcessingTask a owl:Class ;
+    rdfs:label "Processing Task" .
+
+hi2:LandmarksCaseBasedReasoning a hi2:ResearchPaper,
+        owl:NamedIndividual ;
+    hi2:hasAuthor "Wijnand van Woerkom, Davide Grossi, Henry Prakken, Bart Verheij" ;
+    hi2:hasDOI "10.3233/FAIA220200" ;
+    hi2:hasTitle "Landmarks in Case-Based Reasoning: From Theory to Data" ;
+    hi2:hasVenue "HHAI2022: Augmenting Human Intellect" ;
+    hi2:hasYear 2022 .
+
+hi2:RLHumanInLoopPaper a hi2:ResearchPaper,
+        owl:NamedIndividual ;
+    hi2:hasAuthor "Matthew E. Taylor" ;
+    hi2:hasDOI "10.3233/FAIA230098" ;
+    hi2:hasTitle "Reinforcement Learning Requires Human-in-the-Loop Framing and Approaches" ;
+    hi2:hasVenue "HHAI 2023: Augmenting Human Intellect" ;
+    hi2:hasYear 2023 .
+
+hi1:InformationProcessing a owl:Class ;
+    rdfs:label "Information Processing" .
+
+hi1:ProcessingMethod a owl:Class ;
+    rdfs:label "Processing Method" .
+
+<http://www.co-ode.org/ontologies/ont.owl#AI_Decision_Learning> a owl:Class ;
+    rdfs:subClassOf hi2:AI_Concept .
+
+hi2:HybridIntelligenceGenerativeDesign a hi2:ResearchPaper,
+        owl:NamedIndividual ;
+    hi2:hasAuthor "Yaoli Mao, Janet Rafner, Yi Wang, Jacob Sherson" ;
+    hi2:hasDOI "10.3233/FAIA230078" ;
+    hi2:hasTitle "A Hybrid Intelligence Approach to Training Generative Design Assistants: Partnership Between Human Experts and AI Enhanced Co-Creative Tools" ;
+    hi2:hasVenue "HHAI 2023: Augmenting Human Intellect" ;
+    hi2:hasYear 2023 .
+
+hi:System a owl:Class ;
+    owl:disjointWith hi:Interaction ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( [ a owl:Restriction ;
+                        owl:onProperty hi:usedInScenario ;
+                        owl:someValuesFrom hi:Scenario ] [ a owl:Restriction ;
+                        owl:onProperty hi:providesExplanation ;
+                        owl:someValuesFrom hi:ExplanationStrategy ] ) ] .
+
+<http://www.co-ode.org/ontologies/ont.owl#AI_Trust_Ethics> a owl:Class ;
+    rdfs:subClassOf hi2:AI_Concept .
+
+hi1:ArtificialAgent a owl:Class ;
+    rdfs:label "Artificial Agent" ;
+    rdfs:subClassOf hi1:Actor .
+
+hi2:TrustInterventionsHumanAI a hi2:ResearchPaper,
+        owl:NamedIndividual ;
+    hi2:hasAuthor "Sachini Weerawardhana, Michael Akintunde, Luc Moreau" ;
+    hi2:hasDOI "10.3233/FAIA240206" ;
+    hi2:hasTitle "Exploring the Dynamic Nature of Trust Using Interventions in a Human-AI Collaborative Task" ;
+    hi2:hasVenue "HHAI 2024: Hybrid Human AI Systems for the Social Good" ;
+    hi2:hasYear 2024 .
+
+hi1:EthicalMetric a owl:Class ;
+    rdfs:label "Ethical Metric" .
+
+hi2:ConversationalAgentDiaryConstruction a hi2:ResearchPaper,
+        owl:NamedIndividual ;
+    hi2:hasAuthor "Piek Vossen, Selene Báez Santamaría, Thomas Baier" ;
+    hi2:hasDOI "10.3233/FAIA240204" ;
+    hi2:hasTitle "A Conversational Agent for Structured Diary Construction Enabling Monitoring of Functioning & Well-Being" ;
+    hi2:hasVenue "Frontiers in Artificial Intelligence and Applications" ;
+    hi2:hasYear 2024 .
+
+hi2:HumanCenteredAIDementiaCare a hi2:ResearchPaper,
+        owl:NamedIndividual ;
+    hi2:hasAuthor "Wen-Tseng Chang, Shihan Wang, Stephanie Kramer, Michel Oey, Somaya Ben Allouch" ;
+    hi2:hasDOI "10.3233/FAIA240185" ;
+    hi2:hasTitle "Human-Centered AI for Dementia Care: Using Reinforcement Learning for Personalized Interventions Support in Eating and Drinking Scenarios" ;
+    hi2:hasVenue "HHAI 2024: Hybrid Human AI Systems for the Social Good" ;
+    hi2:hasYear 2024 .
+
+hi2:Scenario a owl:Class ;
+    rdfs:label "Scenario" .
+
+hi2:ResearchPaper a owl:Class ;
+    rdfs:label "ResearchPaper" .
+
+hi1:Scenario a owl:Class ;
+    rdfs:label "Scenario" .
+
+hi2:Trust a <http://www.co-ode.org/ontologies/ont.owl#AI_Trust_Ethics>,
+        owl:NamedIndividual ;
+    hi2:hasDescription "The attitude that an AI system will help achieve an individual's goals in a situation characterized by uncertainty and vulnerability",
+        "The attitude that an agent will help achieve an individual's goals in a situation characterized by uncertainty and vulnerability" ;
+    hi2:hasName "Trust",
+        "Trust in Clinical AI" .
+
+hi:InformationProcessing a owl:Class .
+
+hi:Interaction a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty hi:hasInteraction ;
+            owl:someValuesFrom hi:Actor ] ;
+    owl:disjointWith hi:Scenario .
+
+hi2:Task a owl:Class ;
+    rdfs:label "Task" .
+
+hi:EvaluationMethod a owl:Class .
+
+hi2:ExosoulEthicalProfiling a hi2:ResearchPaper,
+        owl:NamedIndividual ;
+    hi2:hasAuthor "Costanza Alfieri, Paola Inverardi, Patrizio Migliarini, Massimiliano Palmiero" ;
+    hi2:hasDOI "10.3233/FAIA220194" ;
+    hi2:hasTitle "Exosoul: Ethical Profiling in the Digital World" ;
+    hi2:hasVenue "HHAI2022: Augmenting Human Intellect" ;
+    hi2:hasYear 2022 .
+
+hi:Actor a owl:Class ;
+    owl:disjointWith [ a owl:Class ;
+            owl:unionOf ( hi:Context hi:System hi:Scenario ) ] .
+
+hi:Human a owl:Class ;
+    rdfs:subClassOf hi:Actor ;
+    owl:disjointWith hi:ArtificialAgent .
+
+hi:InteractionMethod a owl:Class ;
+    rdfs:subClassOf hi:Interaction .
+
+hi:ProcessingMethod a owl:Class ;
+    rdfs:subClassOf hi:InformationProcessing .
+
+hi:InteractionTask a owl:Class ;
+    rdfs:subClassOf hi:Interaction ;
+    owl:disjointWith hi:InteractionMethod .
+
+hi2:AI_Concept a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty hi2:achievesScore ;
+            owl:someValuesFrom hi2:Score ] .
+
+hi:EthicalConsideration a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty hi:hasEthicalConsideration ;
+            owl:someValuesFrom hi:Scenario ] .
+
+hi:ArtificialAgent a owl:Class ;
+    rdfs:subClassOf hi:Actor ;
+    owl:disjointWith hi:Human,
+        hi:System .
+
+hi:Scenario a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:maxQualifiedCardinality "3"^^xsd:nonNegativeInteger ;
+            owl:onClass hi:EthicalConsideration ;
+            owl:onProperty hi:hasEthicalConsideration ] ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( [ a owl:Restriction ;
+                        owl:onProperty hi:endgoal ;
+                        owl:someValuesFrom hi:Endgoal ] [ a owl:Restriction ;
+                        owl:onProperty hi:context ;
+                        owl:someValuesFrom hi:Context ] ) ],
+        [ a owl:Class ;
+            owl:intersectionOf ( [ a owl:Restriction ;
+                        owl:onClass hi:Endgoal ;
+                        owl:onProperty hi:endgoal ;
+                        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ] [ a owl:Restriction ;
+                        owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                        owl:onClass hi:Context ;
+                        owl:onProperty hi:context ] ) ] .
+
+hi:Capability a owl:Class .
+
+hi:Domain a owl:Class ;
+    rdfs:subClassOf hi:Scenario .
+
+hi:Endgoal a owl:Class ;
+    rdfs:subClassOf hi:Scenario .
+
+hi:ProcessingTask a owl:Class ;
+    rdfs:subClassOf hi:InformationProcessing ;
+    owl:disjointWith hi:ProcessingMethod .
+
+hi:Context a owl:Class ;
+    rdfs:subClassOf hi:Scenario ;
+    owl:disjointWith hi:Domain,
+        hi:Endgoal,
+        hi:EthicalConsideration .
+
+:Neuroscience
+    owl:sameAs dbr:Neuroscience ;
+    rdfs:comment "Neuroscience is linked to DBpedia's Neuroscience concept." .
+
+
+# Linking with external sources
+hi:Human
+    owl:equivalentClass schema:Person ;
+    owl:equivalentClass orkg:R162711 .
+
+
+hi2:TrustInterventionsHumanAI
+    owl:sameAs orkg:R644159 .
+
+hi:KnowledgeEngineering owl:equivalentClass wikidata:Q1540472 .
+
+hi:Role_Doctor owl:sameAs wikidata:Q66811410 .
+
+hi:collaboratesWith owl:equivalentProperty wikidata:Q1145523 .
+
+# some more... 
+
+hi:ArtificialAgent owl:sameAs <http://dbpedia.org/resource/Intelligent_agent> ;
+                   owl:sameAs <http://www.wikidata.org/entity/Q1142726> .
+
+hi:Human owl:sameAs <http://dbpedia.org/resource/Human> ;
+         owl:sameAs <http://www.wikidata.org/entity/Q5> .
+
+hi:Scenario owl:sameAs <http://dbpedia.org/resource/Scenario> ;
+            owl:sameAs <http://www.wikidata.org/entity/Q7430721> .
+
+hi:Context owl:sameAs <http://dbpedia.org/resource/Context> ;
+           owl:sameAs <http://www.wikidata.org/entity/Q196626> .
+
+hi:AdaptationStrategy owl:seeAlso <http://dbpedia.org/resource/Adaptation> ;
+                      owl:seeAlso <http://www.wikidata.org/entity/Q116364214> .
+
+hi:BiasMitigationStrategy owl:seeAlso <http://dbpedia.org/resource/Fairness_(machine_learning)> ;
+                          owl:seeAlso <http://www.wikidata.org/entity/Q123928114> .
+
+hi:BiometricSignal owl:sameAs <http://dbpedia.org/resource/Biometrics> ;
+                   owl:seeAlso <http://www.wikidata.org/entity/Q62040776> .
+
+hi:EthicalFramework owl:seeAlso <http://dbpedia.org/resource/Information_ethics> ;
+                    owl:sameAs <http://www.wikidata.org/entity/Q106671785> .
+
+hi:GovernanceFramework owl:sameAs <http://dbpedia.org/resource/Governance> .
+
+hi:Domain owl:sameAs <http://dbpedia.org/resource/Domain> ;
+          owl:seeAlso <http://www.wikidata.org/entity/Q146481> .
+
+hi:AI owl:sameAs <http://dbpedia.org/resource/Artificial_intelligence> ;
+      owl:sameAs <http://www.wikidata.org/entity/Q11660> .
+
+hi:EmergencyResponse owl:seeAlso <http://dbpedia.org/resource/Emergency_management> ;
+                     owl:sameAs <http://www.wikidata.org/entity/Q1460420> .
+
+hi:Science owl:sameAs <http://dbpedia.org/resource/Science> ;
+           owl:sameAs <http://www.wikidata.org/entity/Q336> .
+
+hi:Explainability owl:seeAlso <http://dbpedia.org/resource/Explainable_artificial_intelligence> ;
+                  owl:sameAs <http://www.wikidata.org/entity/Q108710264> .
+
+hi:System owl:sameAs <http://dbpedia.org/resource/System> .
+
+hi:Task owl:sameAs <http://dbpedia.org/resource/Task> ;
+        owl:sameAs <http://www.wikidata.org/entity/Q759676> .
+
+hi:Tool owl:sameAs <http://dbpedia.org/resource/Tool> ;
+        owl:seeAlso <http://www.wikidata.org/entity/Q39546> .
+
+hi:EthicalConsideration owl:seeAlso <http://dbpedia.org/resource/Applied_ethics> .
+
+# for object properties
+
+hi:allocatesTask owl:seeAlso <http://dbpedia.org/resource/Task_allocation> ;
+                 owl:seeAlso <http://www.wikidata.org/entity/Q90311369> .
+
+hi:hasResult rdfs:seeAlso <http://dbpedia.org/resource/Result> ;
+             rdfs:seeAlso <http://www.wikidata.org/entity/Q2995644> .
+
+hi:partOf owl:sameAs <http://www.wikidata.org/prop/direct/P361> .
+
+# linking data properties
+hi:hasDescription owl:sameAs <http://schema.org/description> ;
+                  owl:sameAs <https://www.wikidata.org/wiki/Q1200750> .
+
+hi:hasDOI owl:sameAs <http://purl.org/dc/terms/identifier> ;
+          owl:seeAlso <http://www.wikidata.org/prop/direct/P356> .
+
+hi:hasTitle owl:sameAs <https://schema.org/title> ;
+            owl:sameAs <http://www.wikidata.org/prop/direct/P1476> .
+
+
+# for an extra instance
+hi:System_CobotLine owl:seeAlso <https://www.orkg.org/orkg/paper/FAIA240203> .
+
+
+[] a owl:Ontology .
+
