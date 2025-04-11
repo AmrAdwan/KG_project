@@ -4,13 +4,13 @@ This repository contains all project materials for our **Knowledge Graphs and Se
 
 ## Folder Structure
 
-### `OriginalOntology/`
+### `OriginalOntology`
 This folder contains the **original Hybrid Intelligence (HI) ontology** provided to us at the start of the project. It serves as the baseline model before any modifications or enhancements were applied.
 
-### `ExpandedOntology/`
+### `ExpandedOntology`
 This folder includes the HI ontology **expanded based on 15 academic papers**. We extracted new concepts, classes, properties, individuals, and OWL axioms, integrating them into the ontology to reflect richer semantic structures. The ontology now includes source paper annotations and uses OWL features such as class restrictions and logical expressions.
 
-### `MergedAndLinkedOntology/`
+### `MergedAndLinkedOntology`
 This is the **final version** of our ontology. It combines:
 - The original HI ontology  
 - Our expanded version  
@@ -19,7 +19,7 @@ This is the **final version** of our ontology. It combines:
 
 This version is ideal for querying, integration, and analysis.
 
-### `SPARQLQueries/`
+### `SPARQLQueries`
 A text file containing **five SPARQL queries** used during our project to analyze and explore the ontology. Full documentation for each query is provided below.
 
 ---
@@ -32,7 +32,7 @@ You can use these ontology files by:
 2. Importing the desired `.ttl` (Turtle) file into tools such as:
    - [**Protégé**](https://protege.stanford.edu/)
    - [**GraphDB**](https://www.ontotext.com/products/graphdb/)
-   - [**RDF4J Workbench**](https://rdf4j.org/)
+   - [**Triply**](https://triply.cc/)
    - Other RDF or OWL-compatible triple stores and reasoning engines.
 
 ---
